@@ -23,3 +23,5 @@ generated_audio/
 # OS Files
 .DS_Store
 Thumbs.db
+
+*.db
