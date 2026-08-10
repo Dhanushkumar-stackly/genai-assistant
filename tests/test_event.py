@@ -8,3 +8,4 @@ log_event(
 )
 
 print("Event logged successfully.")
+
