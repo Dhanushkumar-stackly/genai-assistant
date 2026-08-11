@@ -1,17 +1,23 @@
 from app.core.model_client import ModelClient
 
 
-client = ModelClient()
+def main():
 
-result = client.generate(
-    "Explain artificial intelligence in one simple sentence."
-)
+    client = ModelClient()
 
-print("Response:")
-print(result["text"])
+    prompt = "Explain AI."
 
-print("\nModel:")
-print(result["model"])
+    result = client.generate(prompt)
 
-print("\nLatency:")
-print(f'{result["latency_seconds"]} seconds')
+    print("TEXT:")
+    print(result["text"])
+
+    print("\nMODEL:")
+    print(result["model"])
+
+    print("\nLATENCY:")
+    print(f'{result["latency_ms"]} ms')
+
+
+if __name__ == "__main__":
+    main()
