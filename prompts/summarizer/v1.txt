@@ -1,0 +1,12 @@
+Summarize the following text concisely.
+
+Rules:
+1. Return only valid JSON.
+2. Use exactly one field named "summary".
+3. The summary must be a string.
+4. Do not add extra fields.
+
+TEXT:
+{text}
+
+JSON:

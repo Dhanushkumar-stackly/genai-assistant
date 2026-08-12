@@ -1,0 +1,20 @@
+Classify the following document.
+
+Allowed labels:
+
+- invoice
+- receipt
+- other
+
+Rules:
+
+1. Return only one valid label.
+2. Do not create a new label.
+3. Give a short reason.
+4. Return only valid JSON.
+5. Use exactly these field names: label, reason.
+
+DOCUMENT:
+{text}
+
+JSON:

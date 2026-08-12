@@ -15,4 +15,4 @@ Total Amount: 5000
 result = classifier.classify(text)
 
 print("Classification Result:")
-print(result)
+print(result) 
