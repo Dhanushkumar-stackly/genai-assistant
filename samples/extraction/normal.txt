@@ -1,0 +1,5 @@
+﻿Invoice Number: INV-2025-1023
+Customer Name: Maria Lopez
+Customer Email: maria.lopez@example.com
+Invoice Date: 2025-03-12
+Total Amount: ,340.50

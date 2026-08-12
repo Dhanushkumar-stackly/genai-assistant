@@ -1,0 +1,15 @@
+﻿Classify the document into one of the following labels:
+- invoice
+- receipt
+- other
+
+Instructions:
+1. Return only one label.
+2. Do not invent new labels.
+3. Include a brief reason for the classification.
+4. Return the response as valid JSON with these fields: label, reason.
+
+DOCUMENT:
+{document}
+
+JSON:
