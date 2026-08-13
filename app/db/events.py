@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, UTC
 
 from app.db.database import get_connection
 
@@ -25,9 +25,9 @@ def log_event(
             event_type,
             document_id,
             message,
-            datetime.utcnow().isoformat(),
+            datetime.now(UTC).isoformat(),
         ),
     )
 
     connection.commit()
-    connection.close()  
+    connection.close()
