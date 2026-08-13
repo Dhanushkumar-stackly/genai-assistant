@@ -1,0 +1,3 @@
+{"chunk_id":"chunk-001","document_id":"doc-001","text":"Artificial Intelligence is the field of computer science concerned with creating systems that can perform tasks requiring human intelligence.","metadata":{"source":"sample.txt","chunk_index":0}}
+{"chunk_id":"chunk-002","document_id":"doc-001","text":"Machine learning is a subset of artificial intelligence that enables systems to learn patterns from data.","metadata":{"source":"sample.txt","chunk_index":1}}
+{"chunk_id":"chunk-003","document_id":"doc-002","text":"Python is widely used for artificial intelligence, machine learning, data processing, and automation.","metadata":{"source":"python.txt","chunk_index":0}}
