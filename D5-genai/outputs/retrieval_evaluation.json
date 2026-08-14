@@ -1,0 +1,458 @@
+{
+  "total_questions": 10,
+  "evaluable_questions": 0,
+  "successful_hits": 0,
+  "hit_rate": 0.0,
+  "results": [
+    {
+      "id": "q01",
+      "question": "What is the refund policy?",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "hit": false,
+      "result_count": 5,
+      "results": [
+        {
+          "chunk_id": "DOC-020-CHUNK-0000",
+          "text": "# Leave Policy\n## Leave Request\nEmployees must submit leave requests through the approved process.\n## Manager Approval\nLeave requests must be reviewed and approved by the appropriate manager before the leave begins.\n## Emergency Leave\nEmergency leave should be communicated to the manager as soon as reasonably possible.",
+          "score": 0.1602848768234253,
+          "distance": 0.8397151231765747,
+          "chunk_index": 17
+        },
+        {
+          "chunk_id": "DOC-002-CHUNK-0000",
+          "text": "﻿# Document 32\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.15330612659454346,
+          "distance": 0.8466938734054565,
+          "chunk_index": 1
+        },
+        {
+          "chunk_id": "DOC-001-CHUNK-0000",
+          "text": "﻿# Document 31\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.1529303789138794,
+          "distance": 0.8470696210861206,
+          "chunk_index": 0
+        },
+        {
+          "chunk_id": "DOC-009-CHUNK-0000",
+          "text": "﻿# Document 39\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.15247273445129395,
+          "distance": 0.847527265548706,
+          "chunk_index": 8
+        },
+        {
+          "chunk_id": "DOC-015-CHUNK-0000",
+          "text": "﻿# Document 45\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.15234553813934326,
+          "distance": 0.8476544618606567,
+          "chunk_index": 14
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "How can I request a refund?",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "hit": false,
+      "result_count": 5,
+      "results": [
+        {
+          "chunk_id": "DOC-020-CHUNK-0000",
+          "text": "# Leave Policy\n## Leave Request\nEmployees must submit leave requests through the approved process.\n## Manager Approval\nLeave requests must be reviewed and approved by the appropriate manager before the leave begins.\n## Emergency Leave\nEmergency leave should be communicated to the manager as soon as reasonably possible.",
+          "score": 0.1163172721862793,
+          "distance": 0.8836827278137207,
+          "chunk_index": 17
+        },
+        {
+          "chunk_id": "DOC-001-CHUNK-0000",
+          "text": "﻿# Document 31\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.061678171157836914,
+          "distance": 0.9383218288421631,
+          "chunk_index": 0
+        },
+        {
+          "chunk_id": "DOC-012-CHUNK-0000",
+          "text": "﻿# Document 42\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.06110429763793945,
+          "distance": 0.9388957023620605,
+          "chunk_index": 11
+        },
+        {
+          "chunk_id": "DOC-014-CHUNK-0000",
+          "text": "﻿# Document 44\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.06099599599838257,
+          "distance": 0.9390040040016174,
+          "chunk_index": 13
+        },
+        {
+          "chunk_id": "DOC-015-CHUNK-0000",
+          "text": "﻿# Document 45\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.060960471630096436,
+          "distance": 0.9390395283699036,
+          "chunk_index": 14
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "How long does a refund take?",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "hit": false,
+      "result_count": 5,
+      "results": [
+        {
+          "chunk_id": "DOC-006-CHUNK-0000",
+          "text": "﻿# Document 36\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": -0.0019513368606567383,
+          "distance": 1.0019513368606567,
+          "chunk_index": 5
+        },
+        {
+          "chunk_id": "DOC-012-CHUNK-0000",
+          "text": "﻿# Document 42\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": -0.0019696950912475586,
+          "distance": 1.0019696950912476,
+          "chunk_index": 11
+        },
+        {
+          "chunk_id": "DOC-001-CHUNK-0000",
+          "text": "﻿# Document 31\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": -0.0023398399353027344,
+          "distance": 1.0023398399353027,
+          "chunk_index": 0
+        },
+        {
+          "chunk_id": "DOC-005-CHUNK-0000",
+          "text": "﻿# Document 35\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": -0.0029958486557006836,
+          "distance": 1.0029958486557007,
+          "chunk_index": 4
+        },
+        {
+          "chunk_id": "DOC-007-CHUNK-0000",
+          "text": "﻿# Document 37\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": -0.0030586719512939453,
+          "distance": 1.003058671951294,
+          "chunk_index": 6
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "What are the conditions for getting a refund?",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "hit": false,
+      "result_count": 5,
+      "results": [
+        {
+          "chunk_id": "DOC-020-CHUNK-0000",
+          "text": "# Leave Policy\n## Leave Request\nEmployees must submit leave requests through the approved process.\n## Manager Approval\nLeave requests must be reviewed and approved by the appropriate manager before the leave begins.\n## Emergency Leave\nEmergency leave should be communicated to the manager as soon as reasonably possible.",
+          "score": 0.10960537195205688,
+          "distance": 0.8903946280479431,
+          "chunk_index": 17
+        },
+        {
+          "chunk_id": "DOC-001-CHUNK-0000",
+          "text": "﻿# Document 31\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.0823742151260376,
+          "distance": 0.9176257848739624,
+          "chunk_index": 0
+        },
+        {
+          "chunk_id": "DOC-005-CHUNK-0000",
+          "text": "﻿# Document 35\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.082161545753479,
+          "distance": 0.917838454246521,
+          "chunk_index": 4
+        },
+        {
+          "chunk_id": "DOC-004-CHUNK-0000",
+          "text": "﻿# Document 34\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.08213257789611816,
+          "distance": 0.9178674221038818,
+          "chunk_index": 3
+        },
+        {
+          "chunk_id": "DOC-009-CHUNK-0000",
+          "text": "﻿# Document 39\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.08209216594696045,
+          "distance": 0.9179078340530396,
+          "chunk_index": 8
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Can I cancel my order?",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "hit": false,
+      "result_count": 5,
+      "results": [
+        {
+          "chunk_id": "DOC-020-CHUNK-0000",
+          "text": "# Leave Policy\n## Leave Request\nEmployees must submit leave requests through the approved process.\n## Manager Approval\nLeave requests must be reviewed and approved by the appropriate manager before the leave begins.\n## Emergency Leave\nEmergency leave should be communicated to the manager as soon as reasonably possible.",
+          "score": 0.09166491031646729,
+          "distance": 0.9083350896835327,
+          "chunk_index": 17
+        },
+        {
+          "chunk_id": "DOC-017-CHUNK-0000",
+          "text": "# Employee Handbook\n## Working Hours\nEmployees are expected to follow the working hours defined by their department.\n## Attendance\nEmployees should maintain regular attendance and inform their manager when they cannot attend work.\n## Professional Conduct\nAll employees are expected to communicate respectfully and maintain professional behavior.",
+          "score": 0.040711820125579834,
+          "distance": 0.9592881798744202,
+          "chunk_index": 16
+        },
+        {
+          "chunk_id": "DOC-012-CHUNK-0000",
+          "text": "﻿# Document 42\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.023125767707824707,
+          "distance": 0.9768742322921753,
+          "chunk_index": 11
+        },
+        {
+          "chunk_id": "DOC-014-CHUNK-0000",
+          "text": "﻿# Document 44\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.022289574146270752,
+          "distance": 0.9777104258537292,
+          "chunk_index": 13
+        },
+        {
+          "chunk_id": "DOC-011-CHUNK-0000",
+          "text": "﻿# Document 41\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.02211529016494751,
+          "distance": 0.9778847098350525,
+          "chunk_index": 10
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "What is the cancellation policy?",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "hit": false,
+      "result_count": 5,
+      "results": [
+        {
+          "chunk_id": "DOC-020-CHUNK-0000",
+          "text": "# Leave Policy\n## Leave Request\nEmployees must submit leave requests through the approved process.\n## Manager Approval\nLeave requests must be reviewed and approved by the appropriate manager before the leave begins.\n## Emergency Leave\nEmergency leave should be communicated to the manager as soon as reasonably possible.",
+          "score": 0.2324432134628296,
+          "distance": 0.7675567865371704,
+          "chunk_index": 17
+        },
+        {
+          "chunk_id": "DOC-017-CHUNK-0000",
+          "text": "# Employee Handbook\n## Working Hours\nEmployees are expected to follow the working hours defined by their department.\n## Attendance\nEmployees should maintain regular attendance and inform their manager when they cannot attend work.\n## Professional Conduct\nAll employees are expected to communicate respectfully and maintain professional behavior.",
+          "score": 0.18616145849227905,
+          "distance": 0.813838541507721,
+          "chunk_index": 16
+        },
+        {
+          "chunk_id": "DOC-046-CHUNK-0000",
+          "text": "# Security Policy\n## Password Security\nEmployees must use strong passwords and must not share passwords with other people.\n## Confidential Information\nConfidential company information must only be accessed by authorized personnel.\n## Device Security\nCompany devices must be protected using approved security controls.",
+          "score": 0.1845402717590332,
+          "distance": 0.8154597282409668,
+          "chunk_index": 42
+        },
+        {
+          "chunk_id": "DOC-002-CHUNK-0000",
+          "text": "﻿# Document 32\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.14842772483825684,
+          "distance": 0.8515722751617432,
+          "chunk_index": 1
+        },
+        {
+          "chunk_id": "DOC-012-CHUNK-0000",
+          "text": "﻿# Document 42\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.14804023504257202,
+          "distance": 0.851959764957428,
+          "chunk_index": 11
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "How can I contact customer support?",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "hit": false,
+      "result_count": 5,
+      "results": [
+        {
+          "chunk_id": "DOC-012-CHUNK-0000",
+          "text": "﻿# Document 42\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.19902408123016357,
+          "distance": 0.8009759187698364,
+          "chunk_index": 11
+        },
+        {
+          "chunk_id": "DOC-001-CHUNK-0000",
+          "text": "﻿# Document 31\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.1986134648323059,
+          "distance": 0.8013865351676941,
+          "chunk_index": 0
+        },
+        {
+          "chunk_id": "DOC-011-CHUNK-0000",
+          "text": "﻿# Document 41\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.19784152507781982,
+          "distance": 0.8021584749221802,
+          "chunk_index": 10
+        },
+        {
+          "chunk_id": "DOC-015-CHUNK-0000",
+          "text": "﻿# Document 45\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.19782984256744385,
+          "distance": 0.8021701574325562,
+          "chunk_index": 14
+        },
+        {
+          "chunk_id": "DOC-014-CHUNK-0000",
+          "text": "﻿# Document 44\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.19713443517684937,
+          "distance": 0.8028655648231506,
+          "chunk_index": 13
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "What are the customer support hours?",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "hit": false,
+      "result_count": 5,
+      "results": [
+        {
+          "chunk_id": "DOC-017-CHUNK-0000",
+          "text": "# Employee Handbook\n## Working Hours\nEmployees are expected to follow the working hours defined by their department.\n## Attendance\nEmployees should maintain regular attendance and inform their manager when they cannot attend work.\n## Professional Conduct\nAll employees are expected to communicate respectfully and maintain professional behavior.",
+          "score": 0.29287654161453247,
+          "distance": 0.7071234583854675,
+          "chunk_index": 16
+        },
+        {
+          "chunk_id": "DOC-012-CHUNK-0000",
+          "text": "﻿# Document 42\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.23963111639022827,
+          "distance": 0.7603688836097717,
+          "chunk_index": 11
+        },
+        {
+          "chunk_id": "DOC-014-CHUNK-0000",
+          "text": "﻿# Document 44\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.2370896339416504,
+          "distance": 0.7629103660583496,
+          "chunk_index": 13
+        },
+        {
+          "chunk_id": "DOC-016-CHUNK-0000",
+          "text": "﻿# Document 46\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.23686254024505615,
+          "distance": 0.7631374597549438,
+          "chunk_index": 15
+        },
+        {
+          "chunk_id": "DOC-015-CHUNK-0000",
+          "text": "﻿# Document 45\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.2366366982460022,
+          "distance": 0.7633633017539978,
+          "chunk_index": 14
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What payment methods are supported?",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "hit": false,
+      "result_count": 5,
+      "results": [
+        {
+          "chunk_id": "DOC-001-CHUNK-0000",
+          "text": "﻿# Document 31\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.0885993242263794,
+          "distance": 0.9114006757736206,
+          "chunk_index": 0
+        },
+        {
+          "chunk_id": "DOC-004-CHUNK-0000",
+          "text": "﻿# Document 34\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.08764201402664185,
+          "distance": 0.9123579859733582,
+          "chunk_index": 3
+        },
+        {
+          "chunk_id": "DOC-002-CHUNK-0000",
+          "text": "﻿# Document 32\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.08710122108459473,
+          "distance": 0.9128987789154053,
+          "chunk_index": 1
+        },
+        {
+          "chunk_id": "DOC-005-CHUNK-0000",
+          "text": "﻿# Document 35\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.08658349514007568,
+          "distance": 0.9134165048599243,
+          "chunk_index": 4
+        },
+        {
+          "chunk_id": "DOC-003-CHUNK-0000",
+          "text": "﻿# Document 33\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.0859178900718689,
+          "distance": 0.9140821099281311,
+          "chunk_index": 2
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "Is payment information secure?",
+      "expected_sources": [],
+      "retrieved_sources": [],
+      "hit": false,
+      "result_count": 5,
+      "results": [
+        {
+          "chunk_id": "DOC-046-CHUNK-0000",
+          "text": "# Security Policy\n## Password Security\nEmployees must use strong passwords and must not share passwords with other people.\n## Confidential Information\nConfidential company information must only be accessed by authorized personnel.\n## Device Security\nCompany devices must be protected using approved security controls.",
+          "score": 0.3198333978652954,
+          "distance": 0.6801666021347046,
+          "chunk_index": 42
+        },
+        {
+          "chunk_id": "DOC-014-CHUNK-0000",
+          "text": "﻿# Document 44\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.07084310054779053,
+          "distance": 0.9291568994522095,
+          "chunk_index": 13
+        },
+        {
+          "chunk_id": "DOC-009-CHUNK-0000",
+          "text": "﻿# Document 39\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.07064127922058105,
+          "distance": 0.929358720779419,
+          "chunk_index": 8
+        },
+        {
+          "chunk_id": "DOC-013-CHUNK-0000",
+          "text": "﻿# Document 43\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.06918621063232422,
+          "distance": 0.9308137893676758,
+          "chunk_index": 12
+        },
+        {
+          "chunk_id": "DOC-016-CHUNK-0000",
+          "text": "﻿# Document 46\n## Purpose\nThis document contains approved sample information for the Day 05 document preprocessing pipeline.\n## General Guidelines\nEmployees should follow the approved procedures and organizational guidelines described in this document.\n## Process\nAll required steps should be completed according to the applicable team process. Relevant information must be maintained accurately.\n## Responsibilities\nTeam members are responsible for following the documented process and reporting any issues through the approved communication channel.\n## Review\nThis document should be reviewed periodically to ensure that the information remains accurate and useful.",
+          "score": 0.06811273097991943,
+          "distance": 0.9318872690200806,
+          "chunk_index": 15
+        }
+      ]
+    }
+  ]
+}

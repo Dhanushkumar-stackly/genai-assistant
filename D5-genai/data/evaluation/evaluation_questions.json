@@ -1,0 +1,52 @@
+[
+  {
+    "id": "q01",
+    "question": "What is the refund policy?",
+    "expected_sources": []
+  },
+  {
+    "id": "q02",
+    "question": "How can I request a refund?",
+    "expected_sources": []
+  },
+  {
+    "id": "q03",
+    "question": "How long does a refund take?",
+    "expected_sources": []
+  },
+  {
+    "id": "q04",
+    "question": "What are the conditions for getting a refund?",
+    "expected_sources": []
+  },
+  {
+    "id": "q05",
+    "question": "Can I cancel my order?",
+    "expected_sources": []
+  },
+  {
+    "id": "q06",
+    "question": "What is the cancellation policy?",
+    "expected_sources": []
+  },
+  {
+    "id": "q07",
+    "question": "How can I contact customer support?",
+    "expected_sources": []
+  },
+  {
+    "id": "q08",
+    "question": "What are the customer support hours?",
+    "expected_sources": []
+  },
+  {
+    "id": "q09",
+    "question": "What payment methods are supported?",
+    "expected_sources": []
+  },
+  {
+    "id": "q10",
+    "question": "Is payment information secure?",
+    "expected_sources": []
+  }
+]
