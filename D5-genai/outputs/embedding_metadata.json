@@ -1,0 +1,8 @@
+{
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "batch_size": 32,
+  "total_chunks": 43,
+  "input_file": "C:\\Users\\Stackly_Official\\Desktop\\STACKLY\\d1-4 gen-ai-assistant\\D5-genai\\outputs\\chunks.jsonl",
+  "output_file": "C:\\Users\\Stackly_Official\\Desktop\\STACKLY\\d1-4 gen-ai-assistant\\D5-genai\\outputs\\embeddings.json"
+}
