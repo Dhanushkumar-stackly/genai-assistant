@@ -1,8 +1,0 @@
-{
-  "embedding_model": "all-MiniLM-L6-v2",
-  "batch_size": 32,
-  "normalized": true,
-  "embedding_dimension": 384,
-  "chunk_count": 43,
-  "collection": "d5_chunks"
-}
