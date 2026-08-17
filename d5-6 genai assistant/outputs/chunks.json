@@ -4,539 +4,269 @@
     "doc_id": "document_001",
     "title": "Introduction to Artificial Intelligence",
     "source_path": "data\\documents\\document_001.md",
-    "updated_at": "2026-08-17T14:27:23.724171",
+    "updated_at": "2026-08-17T15:46:50.544377",
     "chunk_index": 0,
-    "text": "# Introduction to Artificial Intelligence\n\n## Purpose\n\nThis document provides an overview of Artificial Intelligence and explains how AI systems are used to perform tasks that normally require human intelligence.\n\n## Requirements\n\nAI systems generally require data, algorithms, computational resources, and a suitable problem definition.\n\n## Process\n\nAn AI system processes available data, applies predefined algorithms or learned patterns, and produces an output based on the input.\n\n## Applications"
-  },
-  {
-    "chunk_id": "document_001_chunk_001",
-    "doc_id": "document_001",
-    "title": "Introduction to Artificial Intelligence",
-    "source_path": "data\\documents\\document_001.md",
-    "updated_at": "2026-08-17T14:27:23.724233",
-    "chunk_index": 1,
-    "text": "edefined algorithms or learned patterns, and produces an output based on the input.\n\n## Applications\n\nArtificial Intelligence is commonly used in recommendation systems, virtual assistants, image recognition, fraud detection, and automated decision-support systems.\n\n## Responsibilities\n\nTeams working with AI systems should ensure that the system is properly tested, documented, and used for its intended purpose."
+    "text": "# Introduction to Artificial Intelligence\n\n## Purpose\n\nThis document provides an overview of Artificial Intelligence and explains how AI systems are used to perform tasks that normally require human intelligence.\n\n## Requirements\n\nAI systems generally require data, algorithms, computational resources, and a suitable problem definition.\n\n## Process\n\nAn AI system processes available data, applies predefined algorithms or learned patterns, and produces an output based on the input.\n\n## Applications\n\nArtificial Intelligence is commonly used in recommendation systems, virtual assistants, image recognition, fraud detection, and automated decision-support systems.\n\n## Responsibilities\n\nTeams working with AI systems should ensure that the system is properly tested, documented, and used for its intended purpose."
   },
   {
     "chunk_id": "document_002_chunk_000",
     "doc_id": "document_002",
     "title": "Machine Learning Fundamentals",
     "source_path": "data\\documents\\document_002.md",
-    "updated_at": "2026-08-17T14:27:23.724410",
+    "updated_at": "2026-08-17T15:46:50.544589",
     "chunk_index": 0,
-    "text": "# Machine Learning Fundamentals\n\n## Purpose\n\nThis document explains the fundamental concepts of Machine Learning and how machines learn patterns from data.\n\n## Requirements\n\nA Machine Learning project requires relevant data, appropriate features, a learning algorithm, and an evaluation method.\n\n## Process\n\nThe process generally includes collecting data, preprocessing the data, selecting features, training a model, evaluating its performance, and improving the model when required.\n\n## Model Evalu"
-  },
-  {
-    "chunk_id": "document_002_chunk_001",
-    "doc_id": "document_002",
-    "title": "Machine Learning Fundamentals",
-    "source_path": "data\\documents\\document_002.md",
-    "updated_at": "2026-08-17T14:27:23.724423",
-    "chunk_index": 1,
-    "text": "training a model, evaluating its performance, and improving the model when required.\n\n## Model Evaluation\n\nModels can be evaluated using metrics such as accuracy, precision, recall, F1-score, mean squared error, or other problem-specific measurements.\n\n## Responsibilities\n\nDevelopers should select suitable algorithms, validate model performance, and maintain proper documentation of the training process."
+    "text": "# Machine Learning Fundamentals\n\n## Purpose\n\nThis document explains the fundamental concepts of Machine Learning and how machines learn patterns from data.\n\n## Requirements\n\nA Machine Learning project requires relevant data, appropriate features, a learning algorithm, and an evaluation method.\n\n## Process\n\nThe process generally includes collecting data, preprocessing the data, selecting features, training a model, evaluating its performance, and improving the model when required.\n\n## Model Evaluation\n\nModels can be evaluated using metrics such as accuracy, precision, recall, F1-score, mean squared error, or other problem-specific measurements.\n\n## Responsibilities\n\nDevelopers should select suitable algorithms, validate model performance, and maintain proper documentation of the training process."
   },
   {
     "chunk_id": "document_003_chunk_000",
     "doc_id": "document_003",
     "title": "Natural Language Processing",
     "source_path": "data\\documents\\document_003.md",
-    "updated_at": "2026-08-17T14:27:23.724561",
+    "updated_at": "2026-08-17T15:46:50.544689",
     "chunk_index": 0,
-    "text": "# Natural Language Processing\n\n## Purpose\n\nThis document explains Natural Language Processing and its role in enabling computers to process and understand human language.\n\n## Requirements\n\nNLP systems require text data, preprocessing techniques, language representations, and suitable machine learning or deep learning models.\n\n## Process\n\nText is commonly cleaned and tokenized before being converted into numerical representations. The processed data is then provided to an NLP model for analysis o"
-  },
-  {
-    "chunk_id": "document_003_chunk_001",
-    "doc_id": "document_003",
-    "title": "Natural Language Processing",
-    "source_path": "data\\documents\\document_003.md",
-    "updated_at": "2026-08-17T14:27:23.724568",
-    "chunk_index": 1,
-    "text": "d into numerical representations. The processed data is then provided to an NLP model for analysis or prediction.\n\n## Applications\n\nNLP is used for sentiment analysis, text classification, machine translation, question answering, summarization, and chatbots.\n\n## Responsibilities\n\nNLP developers should validate the quality of text processing and ensure that the model performs appropriately for the intended language and use case."
+    "text": "# Natural Language Processing\n\n## Purpose\n\nThis document explains Natural Language Processing and its role in enabling computers to process and understand human language.\n\n## Requirements\n\nNLP systems require text data, preprocessing techniques, language representations, and suitable machine learning or deep learning models.\n\n## Process\n\nText is commonly cleaned and tokenized before being converted into numerical representations. The processed data is then provided to an NLP model for analysis or prediction.\n\n## Applications\n\nNLP is used for sentiment analysis, text classification, machine translation, question answering, summarization, and chatbots.\n\n## Responsibilities\n\nNLP developers should validate the quality of text processing and ensure that the model performs appropriately for the intended language and use case."
   },
   {
     "chunk_id": "document_004_chunk_000",
     "doc_id": "document_004",
     "title": "Computer Vision",
     "source_path": "data\\documents\\document_004.md",
-    "updated_at": "2026-08-17T14:27:23.724631",
+    "updated_at": "2026-08-17T15:46:50.544795",
     "chunk_index": 0,
-    "text": "# Computer Vision\n\n## Purpose\n\nThis document describes Computer Vision and explains how AI systems analyze and interpret images and videos.\n\n## Requirements\n\nComputer Vision applications require image or video data, preprocessing methods, suitable models, and computational resources.\n\n## Process\n\nInput images are first prepared through preprocessing operations. A trained model then identifies patterns, objects, features, or other visual information.\n\n## Applications\n\nComputer Vision is used in o"
-  },
-  {
-    "chunk_id": "document_004_chunk_001",
-    "doc_id": "document_004",
-    "title": "Computer Vision",
-    "source_path": "data\\documents\\document_004.md",
-    "updated_at": "2026-08-17T14:27:23.724634",
-    "chunk_index": 1,
-    "text": "erns, objects, features, or other visual information.\n\n## Applications\n\nComputer Vision is used in object detection, facial recognition, medical image analysis, quality inspection, autonomous systems, and image classification.\n\n## Responsibilities\n\nTeams should verify image quality, evaluate model accuracy, and consider variations in lighting, camera position, image resolution, and other environmental factors."
+    "text": "# Computer Vision\n\n## Purpose\n\nThis document describes Computer Vision and explains how AI systems analyze and interpret images and videos.\n\n## Requirements\n\nComputer Vision applications require image or video data, preprocessing methods, suitable models, and computational resources.\n\n## Process\n\nInput images are first prepared through preprocessing operations. A trained model then identifies patterns, objects, features, or other visual information.\n\n## Applications\n\nComputer Vision is used in object detection, facial recognition, medical image analysis, quality inspection, autonomous systems, and image classification.\n\n## Responsibilities\n\nTeams should verify image quality, evaluate model accuracy, and consider variations in lighting, camera position, image resolution, and other environmental factors."
   },
   {
     "chunk_id": "document_005_chunk_000",
     "doc_id": "document_005",
     "title": "Deep Learning",
     "source_path": "data\\documents\\document_005.md",
-    "updated_at": "2026-08-17T14:27:23.724695",
+    "updated_at": "2026-08-17T15:46:50.544898",
     "chunk_index": 0,
-    "text": "# Deep Learning\n\n## Purpose\n\nThis document explains the basic concept of Deep Learning and the use of neural networks for solving complex AI problems.\n\n## Requirements\n\nDeep Learning projects generally require large datasets, neural network architectures, training algorithms, and sufficient computational resources.\n\n## Process\n\nData is provided to a neural network during training. The model calculates predictions, compares them with expected results, calculates an error, and updates its paramete"
-  },
-  {
-    "chunk_id": "document_005_chunk_001",
-    "doc_id": "document_005",
-    "title": "Deep Learning",
-    "source_path": "data\\documents\\document_005.md",
-    "updated_at": "2026-08-17T14:27:23.724698",
-    "chunk_index": 1,
-    "text": "ates predictions, compares them with expected results, calculates an error, and updates its parameters to improve future predictions.\n\n## Applications\n\nDeep Learning is widely used in speech recognition, computer vision, natural language processing, recommendation systems, and generative AI.\n\n## Responsibilities\n\nDevelopers should monitor training performance, prevent overfitting where possible, evaluate the trained model, and maintain reproducible training configurations."
+    "text": "# Deep Learning\n\n## Purpose\n\nThis document explains the basic concept of Deep Learning and the use of neural networks for solving complex AI problems.\n\n## Requirements\n\nDeep Learning projects generally require large datasets, neural network architectures, training algorithms, and sufficient computational resources.\n\n## Process\n\nData is provided to a neural network during training. The model calculates predictions, compares them with expected results, calculates an error, and updates its parameters to improve future predictions.\n\n## Applications\n\nDeep Learning is widely used in speech recognition, computer vision, natural language processing, recommendation systems, and generative AI.\n\n## Responsibilities\n\nDevelopers should monitor training performance, prevent overfitting where possible, evaluate the trained model, and maintain reproducible training configurations."
   },
   {
     "chunk_id": "document_006_chunk_000",
     "doc_id": "document_006",
     "title": "Reinforcement Learning",
     "source_path": "data\\documents\\document_006.md",
-    "updated_at": "2026-08-17T14:27:23.724750",
+    "updated_at": "2026-08-17T15:46:50.544980",
     "chunk_index": 0,
-    "text": "# Reinforcement Learning\n\n## Purpose\n\nThis document explains reinforcement learning and how agents learn through interaction with an environment.\n\n## Requirements\n\nReinforcement Learning requires an environment, an agent, states, actions, rewards, and a learning strategy.\n\n## Process\n\nThe agent observes the current state, selects an action, receives a reward, and updates its policy based on the experience.\n\n## Applications\n\nReinforcement Learning is used in robotics, game playing, recommendation"
-  },
-  {
-    "chunk_id": "document_006_chunk_001",
-    "doc_id": "document_006",
-    "title": "Reinforcement Learning",
-    "source_path": "data\\documents\\document_006.md",
-    "updated_at": "2026-08-17T14:27:23.724753",
-    "chunk_index": 1,
-    "text": "perience.\n\n## Applications\n\nReinforcement Learning is used in robotics, game playing, recommendation systems, resource allocation, and autonomous decision-making.\n\n## Responsibilities\n\nTeams should define suitable reward functions, monitor training behavior, and evaluate whether the learned policy performs safely and effectively."
+    "text": "# Reinforcement Learning\n\n## Purpose\n\nThis document explains reinforcement learning and how agents learn through interaction with an environment.\n\n## Requirements\n\nReinforcement Learning requires an environment, an agent, states, actions, rewards, and a learning strategy.\n\n## Process\n\nThe agent observes the current state, selects an action, receives a reward, and updates its policy based on the experience.\n\n## Applications\n\nReinforcement Learning is used in robotics, game playing, recommendation systems, resource allocation, and autonomous decision-making.\n\n## Responsibilities\n\nTeams should define suitable reward functions, monitor training behavior, and evaluate whether the learned policy performs safely and effectively."
   },
   {
     "chunk_id": "document_007_chunk_000",
     "doc_id": "document_007",
     "title": "Data Preprocessing",
     "source_path": "data\\documents\\document_007.md",
-    "updated_at": "2026-08-17T14:27:23.724802",
+    "updated_at": "2026-08-17T15:46:50.545052",
     "chunk_index": 0,
-    "text": "# Data Preprocessing\n\n## Purpose\n\nThis document explains the importance of preparing raw data before using it for machine learning.\n\n## Requirements\n\nData preprocessing requires relevant datasets, cleaning techniques, transformation methods, and validation procedures.\n\n## Process\n\nData is inspected, cleaned, transformed, and prepared before being provided to a machine learning model.\n\n## Applications\n\nData preprocessing is used in classification, regression, forecasting, recommendation, and anal"
-  },
-  {
-    "chunk_id": "document_007_chunk_001",
-    "doc_id": "document_007",
-    "title": "Data Preprocessing",
-    "source_path": "data\\documents\\document_007.md",
-    "updated_at": "2026-08-17T14:27:23.724804",
-    "chunk_index": 1,
-    "text": "ons\n\nData preprocessing is used in classification, regression, forecasting, recommendation, and analytics applications.\n\n## Responsibilities\n\nTeams should maintain data quality, document transformations, and verify that preprocessing does not introduce unintended changes."
+    "text": "# Data Preprocessing\n\n## Purpose\n\nThis document explains the importance of preparing raw data before using it for machine learning.\n\n## Requirements\n\nData preprocessing requires relevant datasets, cleaning techniques, transformation methods, and validation procedures.\n\n## Process\n\nData is inspected, cleaned, transformed, and prepared before being provided to a machine learning model.\n\n## Applications\n\nData preprocessing is used in classification, regression, forecasting, recommendation, and analytics applications.\n\n## Responsibilities\n\nTeams should maintain data quality, document transformations, and verify that preprocessing does not introduce unintended changes."
   },
   {
     "chunk_id": "document_008_chunk_000",
     "doc_id": "document_008",
     "title": "Feature Engineering",
     "source_path": "data\\documents\\document_008.md",
-    "updated_at": "2026-08-17T14:27:23.724853",
+    "updated_at": "2026-08-17T15:46:50.545123",
     "chunk_index": 0,
-    "text": "# Feature Engineering\n\n## Purpose\n\nThis document explains how useful features can be created from raw data for machine learning models.\n\n## Requirements\n\nFeature engineering requires domain understanding, relevant source data, transformation methods, and validation.\n\n## Process\n\nRaw attributes are analyzed and transformed into features that provide useful information to the learning algorithm.\n\n## Applications\n\nFeature engineering is commonly used in prediction, classification, fraud detection,"
-  },
-  {
-    "chunk_id": "document_008_chunk_001",
-    "doc_id": "document_008",
-    "title": "Feature Engineering",
-    "source_path": "data\\documents\\document_008.md",
-    "updated_at": "2026-08-17T14:27:23.724855",
-    "chunk_index": 1,
-    "text": "Applications\n\nFeature engineering is commonly used in prediction, classification, fraud detection, recommendation, and forecasting.\n\n## Responsibilities\n\nDevelopers should avoid data leakage, document feature definitions, and evaluate whether engineered features improve model performance."
+    "text": "# Feature Engineering\n\n## Purpose\n\nThis document explains how useful features can be created from raw data for machine learning models.\n\n## Requirements\n\nFeature engineering requires domain understanding, relevant source data, transformation methods, and validation.\n\n## Process\n\nRaw attributes are analyzed and transformed into features that provide useful information to the learning algorithm.\n\n## Applications\n\nFeature engineering is commonly used in prediction, classification, fraud detection, recommendation, and forecasting.\n\n## Responsibilities\n\nDevelopers should avoid data leakage, document feature definitions, and evaluate whether engineered features improve model performance."
   },
   {
     "chunk_id": "document_009_chunk_000",
     "doc_id": "document_009",
     "title": "Model Training",
     "source_path": "data\\documents\\document_009.md",
-    "updated_at": "2026-08-17T14:27:23.724902",
+    "updated_at": "2026-08-17T15:46:50.545166",
     "chunk_index": 0,
-    "text": "# Model Training\n\n## Purpose\n\nThis document describes the process of training a machine learning model using prepared data.\n\n## Requirements\n\nModel training requires training data, an algorithm, suitable parameters, and computational resources.\n\n## Process\n\nThe model receives training examples, calculates predictions, measures errors, and updates parameters to improve performance.\n\n## Applications\n\nModel training is used for classification, regression, image recognition, language processing, and"
-  },
-  {
-    "chunk_id": "document_009_chunk_001",
-    "doc_id": "document_009",
-    "title": "Model Training",
-    "source_path": "data\\documents\\document_009.md",
-    "updated_at": "2026-08-17T14:27:23.724904",
-    "chunk_index": 1,
-    "text": "Model training is used for classification, regression, image recognition, language processing, and forecasting.\n\n## Responsibilities\n\nDevelopers should monitor training metrics, maintain reproducible configurations, and validate model behavior."
+    "text": "# Model Training\n\n## Purpose\n\nThis document describes the process of training a machine learning model using prepared data.\n\n## Requirements\n\nModel training requires training data, an algorithm, suitable parameters, and computational resources.\n\n## Process\n\nThe model receives training examples, calculates predictions, measures errors, and updates parameters to improve performance.\n\n## Applications\n\nModel training is used for classification, regression, image recognition, language processing, and forecasting.\n\n## Responsibilities\n\nDevelopers should monitor training metrics, maintain reproducible configurations, and validate model behavior."
   },
   {
     "chunk_id": "document_010_chunk_000",
     "doc_id": "document_010",
     "title": "Model Deployment",
     "source_path": "data\\documents\\document_010.md",
-    "updated_at": "2026-08-17T14:27:23.724952",
+    "updated_at": "2026-08-17T15:46:50.545210",
     "chunk_index": 0,
-    "text": "# Model Deployment\n\n## Purpose\n\nThis document explains how trained machine learning models can be deployed for practical use.\n\n## Requirements\n\nDeployment requires a validated model, an execution environment, an interface, monitoring, and appropriate infrastructure.\n\n## Process\n\nThe trained model is packaged and integrated into an application or service where it can receive inputs and produce predictions.\n\n## Applications\n\nModel deployment is used in recommendation services, fraud detection, aut"
-  },
-  {
-    "chunk_id": "document_010_chunk_001",
-    "doc_id": "document_010",
-    "title": "Model Deployment",
-    "source_path": "data\\documents\\document_010.md",
-    "updated_at": "2026-08-17T14:27:23.724954",
-    "chunk_index": 1,
-    "text": "ictions.\n\n## Applications\n\nModel deployment is used in recommendation services, fraud detection, automation, search systems, and intelligent applications.\n\n## Responsibilities\n\nTeams should monitor model performance, availability, latency, and changes in input data after deployment."
+    "text": "# Model Deployment\n\n## Purpose\n\nThis document explains how trained machine learning models can be deployed for practical use.\n\n## Requirements\n\nDeployment requires a validated model, an execution environment, an interface, monitoring, and appropriate infrastructure.\n\n## Process\n\nThe trained model is packaged and integrated into an application or service where it can receive inputs and produce predictions.\n\n## Applications\n\nModel deployment is used in recommendation services, fraud detection, automation, search systems, and intelligent applications.\n\n## Responsibilities\n\nTeams should monitor model performance, availability, latency, and changes in input data after deployment."
   },
   {
     "chunk_id": "document_011_chunk_000",
     "doc_id": "document_011",
     "title": "Model Monitoring",
     "source_path": "data\\documents\\document_011.md",
-    "updated_at": "2026-08-17T14:27:23.724999",
+    "updated_at": "2026-08-17T15:46:50.545247",
     "chunk_index": 0,
-    "text": "# Model Monitoring\n\n## Purpose\n\nThis document explains how deployed machine learning systems should be monitored over time.\n\n## Requirements\n\nMonitoring requires performance metrics, logging, alerts, data quality checks, and evaluation procedures.\n\n## Process\n\nSystem behavior is continuously observed and important changes are identified through defined monitoring metrics.\n\n## Applications\n\nModel monitoring is used in production classification, recommendation, forecasting, fraud detection, and au"
-  },
-  {
-    "chunk_id": "document_011_chunk_001",
-    "doc_id": "document_011",
-    "title": "Model Monitoring",
-    "source_path": "data\\documents\\document_011.md",
-    "updated_at": "2026-08-17T14:27:23.725001",
-    "chunk_index": 1,
-    "text": "onitoring is used in production classification, recommendation, forecasting, fraud detection, and automated decision systems.\n\n## Responsibilities\n\nTeams should investigate performance degradation, data drift, failures, and unexpected prediction behavior."
+    "text": "# Model Monitoring\n\n## Purpose\n\nThis document explains how deployed machine learning systems should be monitored over time.\n\n## Requirements\n\nMonitoring requires performance metrics, logging, alerts, data quality checks, and evaluation procedures.\n\n## Process\n\nSystem behavior is continuously observed and important changes are identified through defined monitoring metrics.\n\n## Applications\n\nModel monitoring is used in production classification, recommendation, forecasting, fraud detection, and automated decision systems.\n\n## Responsibilities\n\nTeams should investigate performance degradation, data drift, failures, and unexpected prediction behavior."
   },
   {
     "chunk_id": "document_012_chunk_000",
     "doc_id": "document_012",
     "title": "Data Validation",
     "source_path": "data\\documents\\document_012.md",
-    "updated_at": "2026-08-17T14:27:23.725072",
+    "updated_at": "2026-08-17T15:46:50.545284",
     "chunk_index": 0,
-    "text": "# Data Validation\n\n## Purpose\n\nThis document explains how datasets can be checked for quality before model development.\n\n## Requirements\n\nData validation requires validation rules, expected schemas, quality thresholds, and representative samples.\n\n## Process\n\nData is checked for missing values, invalid formats, unexpected ranges, duplicates, and schema inconsistencies.\n\n## Applications\n\nData validation is used in machine learning pipelines, analytics systems, reporting, and automated data proces"
-  },
-  {
-    "chunk_id": "document_012_chunk_001",
-    "doc_id": "document_012",
-    "title": "Data Validation",
-    "source_path": "data\\documents\\document_012.md",
-    "updated_at": "2026-08-17T14:27:23.725076",
-    "chunk_index": 1,
-    "text": "ation is used in machine learning pipelines, analytics systems, reporting, and automated data processing.\n\n## Responsibilities\n\nTeams should document validation rules and prevent invalid data from silently entering downstream processes."
+    "text": "# Data Validation\n\n## Purpose\n\nThis document explains how datasets can be checked for quality before model development.\n\n## Requirements\n\nData validation requires validation rules, expected schemas, quality thresholds, and representative samples.\n\n## Process\n\nData is checked for missing values, invalid formats, unexpected ranges, duplicates, and schema inconsistencies.\n\n## Applications\n\nData validation is used in machine learning pipelines, analytics systems, reporting, and automated data processing.\n\n## Responsibilities\n\nTeams should document validation rules and prevent invalid data from silently entering downstream processes."
   },
   {
     "chunk_id": "document_013_chunk_000",
     "doc_id": "document_013",
     "title": "Data Cleaning",
     "source_path": "data\\documents\\document_013.md",
-    "updated_at": "2026-08-17T14:27:23.725127",
+    "updated_at": "2026-08-17T15:46:50.545320",
     "chunk_index": 0,
-    "text": "# Data Cleaning\n\n## Purpose\n\nThis document describes common techniques for improving the quality of raw datasets.\n\n## Requirements\n\nData cleaning requires source data, quality rules, transformation logic, and validation checks.\n\n## Process\n\nInvalid records, duplicates, missing values, and inconsistent formats are identified and handled according to defined rules.\n\n## Applications\n\nData cleaning is used in analytics, machine learning, reporting, and data integration workflows.\n\n## Responsibilitie"
-  },
-  {
-    "chunk_id": "document_013_chunk_001",
-    "doc_id": "document_013",
-    "title": "Data Cleaning",
-    "source_path": "data\\documents\\document_013.md",
-    "updated_at": "2026-08-17T14:27:23.725130",
-    "chunk_index": 1,
-    "text": "used in analytics, machine learning, reporting, and data integration workflows.\n\n## Responsibilities\n\nTeams should preserve important information, document cleaning decisions, and validate the resulting dataset."
+    "text": "# Data Cleaning\n\n## Purpose\n\nThis document describes common techniques for improving the quality of raw datasets.\n\n## Requirements\n\nData cleaning requires source data, quality rules, transformation logic, and validation checks.\n\n## Process\n\nInvalid records, duplicates, missing values, and inconsistent formats are identified and handled according to defined rules.\n\n## Applications\n\nData cleaning is used in analytics, machine learning, reporting, and data integration workflows.\n\n## Responsibilities\n\nTeams should preserve important information, document cleaning decisions, and validate the resulting dataset."
   },
   {
     "chunk_id": "document_014_chunk_000",
     "doc_id": "document_014",
     "title": "Supervised Learning",
     "source_path": "data\\documents\\document_014.md",
-    "updated_at": "2026-08-17T14:27:23.725178",
+    "updated_at": "2026-08-17T15:46:50.545356",
     "chunk_index": 0,
-    "text": "# Supervised Learning\n\n## Purpose\n\nThis document explains supervised learning using labeled training examples.\n\n## Requirements\n\nSupervised learning requires labeled data, input features, target values, an algorithm, and an evaluation method.\n\n## Process\n\nThe algorithm learns relationships between input features and known target values and uses them to make predictions.\n\n## Applications\n\nSupervised learning is used for classification, regression, forecasting, and many prediction tasks.\n\n## Respo"
-  },
-  {
-    "chunk_id": "document_014_chunk_001",
-    "doc_id": "document_014",
-    "title": "Supervised Learning",
-    "source_path": "data\\documents\\document_014.md",
-    "updated_at": "2026-08-17T14:27:23.725180",
-    "chunk_index": 1,
-    "text": "d learning is used for classification, regression, forecasting, and many prediction tasks.\n\n## Responsibilities\n\nDevelopers should select appropriate evaluation metrics and ensure that training and evaluation data are properly separated."
+    "text": "# Supervised Learning\n\n## Purpose\n\nThis document explains supervised learning using labeled training examples.\n\n## Requirements\n\nSupervised learning requires labeled data, input features, target values, an algorithm, and an evaluation method.\n\n## Process\n\nThe algorithm learns relationships between input features and known target values and uses them to make predictions.\n\n## Applications\n\nSupervised learning is used for classification, regression, forecasting, and many prediction tasks.\n\n## Responsibilities\n\nDevelopers should select appropriate evaluation metrics and ensure that training and evaluation data are properly separated."
   },
   {
     "chunk_id": "document_015_chunk_000",
     "doc_id": "document_015",
     "title": "Unsupervised Learning",
     "source_path": "data\\documents\\document_015.md",
-    "updated_at": "2026-08-17T14:27:23.725229",
+    "updated_at": "2026-08-17T15:46:50.545395",
     "chunk_index": 0,
-    "text": "# Unsupervised Learning\n\n## Purpose\n\nThis document introduces unsupervised learning methods that discover patterns without labeled target values.\n\n## Requirements\n\nUnsupervised learning requires relevant datasets, feature representations, and an appropriate discovery algorithm.\n\n## Process\n\nThe algorithm analyzes the data and identifies structures such as clusters, relationships, or lower-dimensional representations.\n\n## Applications\n\nUnsupervised learning is used for customer segmentation, anom"
-  },
-  {
-    "chunk_id": "document_015_chunk_001",
-    "doc_id": "document_015",
-    "title": "Unsupervised Learning",
-    "source_path": "data\\documents\\document_015.md",
-    "updated_at": "2026-08-17T14:27:23.725232",
-    "chunk_index": 1,
-    "text": "nal representations.\n\n## Applications\n\nUnsupervised learning is used for customer segmentation, anomaly detection, exploratory analysis, and pattern discovery.\n\n## Responsibilities\n\nTeams should validate whether discovered patterns are meaningful and avoid treating automatically discovered groups as ground truth."
+    "text": "# Unsupervised Learning\n\n## Purpose\n\nThis document introduces unsupervised learning methods that discover patterns without labeled target values.\n\n## Requirements\n\nUnsupervised learning requires relevant datasets, feature representations, and an appropriate discovery algorithm.\n\n## Process\n\nThe algorithm analyzes the data and identifies structures such as clusters, relationships, or lower-dimensional representations.\n\n## Applications\n\nUnsupervised learning is used for customer segmentation, anomaly detection, exploratory analysis, and pattern discovery.\n\n## Responsibilities\n\nTeams should validate whether discovered patterns are meaningful and avoid treating automatically discovered groups as ground truth."
   },
   {
     "chunk_id": "document_016_chunk_000",
     "doc_id": "document_016",
     "title": "Classification",
     "source_path": "data\\documents\\document_016.md",
-    "updated_at": "2026-08-17T14:27:23.725276",
+    "updated_at": "2026-08-17T15:46:50.545430",
     "chunk_index": 0,
-    "text": "# Classification\n\n## Purpose\n\nThis document explains classification as a machine learning task for predicting discrete categories.\n\n## Requirements\n\nClassification requires labeled examples, input features, target classes, and evaluation metrics.\n\n## Process\n\nA model learns patterns from labeled examples and assigns an input to one of the defined classes.\n\n## Applications\n\nClassification is used in spam detection, document categorization, fraud detection, and sentiment analysis.\n\n## Responsibili"
-  },
-  {
-    "chunk_id": "document_016_chunk_001",
-    "doc_id": "document_016",
-    "title": "Classification",
-    "source_path": "data\\documents\\document_016.md",
-    "updated_at": "2026-08-17T14:27:23.725279",
-    "chunk_index": 1,
-    "text": "n spam detection, document categorization, fraud detection, and sentiment analysis.\n\n## Responsibilities\n\nDevelopers should evaluate class-specific performance and consider class imbalance when interpreting results."
+    "text": "# Classification\n\n## Purpose\n\nThis document explains classification as a machine learning task for predicting discrete categories.\n\n## Requirements\n\nClassification requires labeled examples, input features, target classes, and evaluation metrics.\n\n## Process\n\nA model learns patterns from labeled examples and assigns an input to one of the defined classes.\n\n## Applications\n\nClassification is used in spam detection, document categorization, fraud detection, and sentiment analysis.\n\n## Responsibilities\n\nDevelopers should evaluate class-specific performance and consider class imbalance when interpreting results."
   },
   {
     "chunk_id": "document_017_chunk_000",
     "doc_id": "document_017",
     "title": "Regression",
     "source_path": "data\\documents\\document_017.md",
-    "updated_at": "2026-08-17T14:27:23.725330",
+    "updated_at": "2026-08-17T15:46:50.545465",
     "chunk_index": 0,
-    "text": "# Regression\n\n## Purpose\n\nThis document explains regression for predicting continuous numerical values.\n\n## Requirements\n\nRegression requires numerical targets, relevant features, training data, and suitable evaluation metrics.\n\n## Process\n\nThe model learns relationships between features and numerical targets and produces a continuous prediction.\n\n## Applications\n\nRegression is used for price prediction, demand forecasting, risk estimation, and resource planning.\n\n## Responsibilities\n\nTeams shou"
-  },
-  {
-    "chunk_id": "document_017_chunk_001",
-    "doc_id": "document_017",
-    "title": "Regression",
-    "source_path": "data\\documents\\document_017.md",
-    "updated_at": "2026-08-17T14:27:23.725332",
-    "chunk_index": 1,
-    "text": "iction, demand forecasting, risk estimation, and resource planning.\n\n## Responsibilities\n\nTeams should evaluate prediction errors and verify that model assumptions are appropriate for the intended problem."
+    "text": "# Regression\n\n## Purpose\n\nThis document explains regression for predicting continuous numerical values.\n\n## Requirements\n\nRegression requires numerical targets, relevant features, training data, and suitable evaluation metrics.\n\n## Process\n\nThe model learns relationships between features and numerical targets and produces a continuous prediction.\n\n## Applications\n\nRegression is used for price prediction, demand forecasting, risk estimation, and resource planning.\n\n## Responsibilities\n\nTeams should evaluate prediction errors and verify that model assumptions are appropriate for the intended problem."
   },
   {
     "chunk_id": "document_018_chunk_000",
     "doc_id": "document_018",
     "title": "Clustering",
     "source_path": "data\\documents\\document_018.md",
-    "updated_at": "2026-08-17T14:27:23.725379",
+    "updated_at": "2026-08-17T15:46:50.545501",
     "chunk_index": 0,
-    "text": "# Clustering\n\n## Purpose\n\nThis document explains clustering techniques for grouping similar data points.\n\n## Requirements\n\nClustering requires feature representations, a similarity concept, and a suitable clustering algorithm.\n\n## Process\n\nData points are analyzed according to their characteristics and assigned to groups based on similarity.\n\n## Applications\n\nClustering is used for customer segmentation, document organization, anomaly analysis, and exploratory data analysis.\n\n## Responsibilities"
-  },
-  {
-    "chunk_id": "document_018_chunk_001",
-    "doc_id": "document_018",
-    "title": "Clustering",
-    "source_path": "data\\documents\\document_018.md",
-    "updated_at": "2026-08-17T14:27:23.725381",
-    "chunk_index": 1,
-    "text": "tation, document organization, anomaly analysis, and exploratory data analysis.\n\n## Responsibilities\n\nTeams should evaluate cluster quality and avoid assuming that every discovered cluster has a business meaning."
+    "text": "# Clustering\n\n## Purpose\n\nThis document explains clustering techniques for grouping similar data points.\n\n## Requirements\n\nClustering requires feature representations, a similarity concept, and a suitable clustering algorithm.\n\n## Process\n\nData points are analyzed according to their characteristics and assigned to groups based on similarity.\n\n## Applications\n\nClustering is used for customer segmentation, document organization, anomaly analysis, and exploratory data analysis.\n\n## Responsibilities\n\nTeams should evaluate cluster quality and avoid assuming that every discovered cluster has a business meaning."
   },
   {
     "chunk_id": "document_019_chunk_000",
     "doc_id": "document_019",
     "title": "Anomaly Detection",
     "source_path": "data\\documents\\document_019.md",
-    "updated_at": "2026-08-17T14:27:23.725428",
+    "updated_at": "2026-08-17T15:46:50.545536",
     "chunk_index": 0,
-    "text": "# Anomaly Detection\n\n## Purpose\n\nThis document explains methods for identifying unusual observations in datasets.\n\n## Requirements\n\nAnomaly detection requires representative data, feature definitions, and a method for identifying unusual behavior.\n\n## Process\n\nThe system learns expected patterns and identifies observations that differ significantly from those patterns.\n\n## Applications\n\nAnomaly detection is used in fraud detection, network monitoring, manufacturing, and system diagnostics.\n\n## R"
-  },
-  {
-    "chunk_id": "document_019_chunk_001",
-    "doc_id": "document_019",
-    "title": "Anomaly Detection",
-    "source_path": "data\\documents\\document_019.md",
-    "updated_at": "2026-08-17T14:27:23.725430",
-    "chunk_index": 1,
-    "text": "tection is used in fraud detection, network monitoring, manufacturing, and system diagnostics.\n\n## Responsibilities\n\nTeams should investigate false positives and false negatives and define appropriate response procedures."
+    "text": "# Anomaly Detection\n\n## Purpose\n\nThis document explains methods for identifying unusual observations in datasets.\n\n## Requirements\n\nAnomaly detection requires representative data, feature definitions, and a method for identifying unusual behavior.\n\n## Process\n\nThe system learns expected patterns and identifies observations that differ significantly from those patterns.\n\n## Applications\n\nAnomaly detection is used in fraud detection, network monitoring, manufacturing, and system diagnostics.\n\n## Responsibilities\n\nTeams should investigate false positives and false negatives and define appropriate response procedures."
   },
   {
     "chunk_id": "document_020_chunk_000",
     "doc_id": "document_020",
     "title": "Recommendation Systems",
     "source_path": "data\\documents\\document_020.md",
-    "updated_at": "2026-08-17T14:27:23.725475",
+    "updated_at": "2026-08-17T15:46:50.545572",
     "chunk_index": 0,
-    "text": "# Recommendation Systems\n\n## Purpose\n\nThis document explains how recommendation systems provide relevant items to users.\n\n## Requirements\n\nRecommendation systems require user interactions, item information, ranking logic, and evaluation methods.\n\n## Process\n\nThe system analyzes available information and predicts items that may be useful or relevant to a user.\n\n## Applications\n\nRecommendation systems are used in e-commerce, streaming platforms, news applications, and content discovery.\n\n## Respon"
-  },
-  {
-    "chunk_id": "document_020_chunk_001",
-    "doc_id": "document_020",
-    "title": "Recommendation Systems",
-    "source_path": "data\\documents\\document_020.md",
-    "updated_at": "2026-08-17T14:27:23.725477",
-    "chunk_index": 1,
-    "text": "ms are used in e-commerce, streaming platforms, news applications, and content discovery.\n\n## Responsibilities\n\nTeams should monitor recommendation quality, relevance, diversity, and changes in user behavior."
+    "text": "# Recommendation Systems\n\n## Purpose\n\nThis document explains how recommendation systems provide relevant items to users.\n\n## Requirements\n\nRecommendation systems require user interactions, item information, ranking logic, and evaluation methods.\n\n## Process\n\nThe system analyzes available information and predicts items that may be useful or relevant to a user.\n\n## Applications\n\nRecommendation systems are used in e-commerce, streaming platforms, news applications, and content discovery.\n\n## Responsibilities\n\nTeams should monitor recommendation quality, relevance, diversity, and changes in user behavior."
   },
   {
     "chunk_id": "document_021_chunk_000",
     "doc_id": "document_021",
     "title": "Generative AI",
     "source_path": "data\\documents\\document_021.md",
-    "updated_at": "2026-08-17T14:27:23.725527",
+    "updated_at": "2026-08-17T15:46:50.545610",
     "chunk_index": 0,
-    "text": "# Generative AI\n\n## Purpose\n\nThis document provides an overview of Generative AI systems that create new content from learned patterns.\n\n## Requirements\n\nGenerative AI systems require training data, model architectures, computational resources, and suitable evaluation methods.\n\n## Process\n\nA trained model receives an input prompt or condition and generates content based on patterns learned during training.\n\n## Applications\n\nGenerative AI is used for text generation, image generation, coding assi"
-  },
-  {
-    "chunk_id": "document_021_chunk_001",
-    "doc_id": "document_021",
-    "title": "Generative AI",
-    "source_path": "data\\documents\\document_021.md",
-    "updated_at": "2026-08-17T14:27:23.725530",
-    "chunk_index": 1,
-    "text": "training.\n\n## Applications\n\nGenerative AI is used for text generation, image generation, coding assistance, summarization, and conversational applications.\n\n## Responsibilities\n\nTeams should evaluate output quality, reliability, safety, and appropriate usage boundaries."
+    "text": "# Generative AI\n\n## Purpose\n\nThis document provides an overview of Generative AI systems that create new content from learned patterns.\n\n## Requirements\n\nGenerative AI systems require training data, model architectures, computational resources, and suitable evaluation methods.\n\n## Process\n\nA trained model receives an input prompt or condition and generates content based on patterns learned during training.\n\n## Applications\n\nGenerative AI is used for text generation, image generation, coding assistance, summarization, and conversational applications.\n\n## Responsibilities\n\nTeams should evaluate output quality, reliability, safety, and appropriate usage boundaries."
   },
   {
     "chunk_id": "document_022_chunk_000",
     "doc_id": "document_022",
     "title": "Large Language Models",
     "source_path": "data\\documents\\document_022.md",
-    "updated_at": "2026-08-17T14:27:23.725580",
+    "updated_at": "2026-08-17T15:46:50.545650",
     "chunk_index": 0,
-    "text": "# Large Language Models\n\n## Purpose\n\nThis document explains the basic concept of Large Language Models and their use in language applications.\n\n## Requirements\n\nLarge Language Models require large text datasets, model architectures, training procedures, and significant computational resources.\n\n## Process\n\nThe model learns statistical patterns in language and uses those patterns to generate or transform text.\n\n## Applications\n\nLarge Language Models are used for question answering, summarization,"
-  },
-  {
-    "chunk_id": "document_022_chunk_001",
-    "doc_id": "document_022",
-    "title": "Large Language Models",
-    "source_path": "data\\documents\\document_022.md",
-    "updated_at": "2026-08-17T14:27:23.725583",
-    "chunk_index": 1,
-    "text": "nsform text.\n\n## Applications\n\nLarge Language Models are used for question answering, summarization, translation, coding assistance, and conversational systems.\n\n## Responsibilities\n\nDevelopers should evaluate factual reliability, prompt behavior, output consistency, and application-specific risks."
+    "text": "# Large Language Models\n\n## Purpose\n\nThis document explains the basic concept of Large Language Models and their use in language applications.\n\n## Requirements\n\nLarge Language Models require large text datasets, model architectures, training procedures, and significant computational resources.\n\n## Process\n\nThe model learns statistical patterns in language and uses those patterns to generate or transform text.\n\n## Applications\n\nLarge Language Models are used for question answering, summarization, translation, coding assistance, and conversational systems.\n\n## Responsibilities\n\nDevelopers should evaluate factual reliability, prompt behavior, output consistency, and application-specific risks."
   },
   {
     "chunk_id": "document_023_chunk_000",
     "doc_id": "document_023",
     "title": "Prompt Engineering",
     "source_path": "data\\documents\\document_023.md",
-    "updated_at": "2026-08-17T14:27:23.725622",
+    "updated_at": "2026-08-17T15:46:50.545680",
     "chunk_index": 0,
-    "text": "# Prompt Engineering\n\n## Purpose\n\nThis document explains how prompts can be designed to guide language model behavior.\n\n## Requirements\n\nPrompt engineering requires a clear task definition, relevant context, expected output format, and evaluation criteria.\n\n## Process\n\nA prompt provides instructions and context to a model, which then generates an output according to the provided information.\n\n## Applications\n\nPrompt engineering is used in summarization, extraction, classification, question answe"
-  },
-  {
-    "chunk_id": "document_023_chunk_001",
-    "doc_id": "document_023",
-    "title": "Prompt Engineering",
-    "source_path": "data\\documents\\document_023.md",
-    "updated_at": "2026-08-17T14:27:23.725624",
-    "chunk_index": 1,
-    "text": "pplications\n\nPrompt engineering is used in summarization, extraction, classification, question answering, and content generation.\n\n## Responsibilities\n\nTeams should test prompts with representative inputs and verify that outputs follow the expected format."
+    "text": "# Prompt Engineering\n\n## Purpose\n\nThis document explains how prompts can be designed to guide language model behavior.\n\n## Requirements\n\nPrompt engineering requires a clear task definition, relevant context, expected output format, and evaluation criteria.\n\n## Process\n\nA prompt provides instructions and context to a model, which then generates an output according to the provided information.\n\n## Applications\n\nPrompt engineering is used in summarization, extraction, classification, question answering, and content generation.\n\n## Responsibilities\n\nTeams should test prompts with representative inputs and verify that outputs follow the expected format."
   },
   {
     "chunk_id": "document_024_chunk_000",
     "doc_id": "document_024",
     "title": "Vector Embeddings",
     "source_path": "data\\documents\\document_024.md",
-    "updated_at": "2026-08-17T14:27:23.725657",
+    "updated_at": "2026-08-17T15:46:50.545706",
     "chunk_index": 0,
-    "text": "# Vector Embeddings\n\n## Purpose\n\nThis document explains vector embeddings as numerical representations of text or other information.\n\n## Requirements\n\nEmbedding systems require input data, an embedding model, and a method for storing or comparing vectors.\n\n## Process\n\nInput information is transformed into numerical vectors that can be compared according to semantic or feature similarity.\n\n## Applications\n\nEmbeddings are used in semantic search, recommendation systems, clustering, and retrieval-a"
-  },
-  {
-    "chunk_id": "document_024_chunk_001",
-    "doc_id": "document_024",
-    "title": "Vector Embeddings",
-    "source_path": "data\\documents\\document_024.md",
-    "updated_at": "2026-08-17T14:27:23.725659",
-    "chunk_index": 1,
-    "text": "cations\n\nEmbeddings are used in semantic search, recommendation systems, clustering, and retrieval-augmented applications.\n\n## Responsibilities\n\nTeams should select appropriate embedding models and verify retrieval quality on representative examples."
+    "text": "# Vector Embeddings\n\n## Purpose\n\nThis document explains vector embeddings as numerical representations of text or other information.\n\n## Requirements\n\nEmbedding systems require input data, an embedding model, and a method for storing or comparing vectors.\n\n## Process\n\nInput information is transformed into numerical vectors that can be compared according to semantic or feature similarity.\n\n## Applications\n\nEmbeddings are used in semantic search, recommendation systems, clustering, and retrieval-augmented applications.\n\n## Responsibilities\n\nTeams should select appropriate embedding models and verify retrieval quality on representative examples."
   },
   {
     "chunk_id": "document_025_chunk_000",
     "doc_id": "document_025",
     "title": "Semantic Search",
     "source_path": "data\\documents\\document_025.md",
-    "updated_at": "2026-08-17T14:27:23.725693",
+    "updated_at": "2026-08-17T15:46:50.545732",
     "chunk_index": 0,
-    "text": "# Semantic Search\n\n## Purpose\n\nThis document explains search methods that retrieve information based on meaning rather than exact keyword matching.\n\n## Requirements\n\nSemantic search requires documents, embeddings, a vector index, and a similarity search mechanism.\n\n## Process\n\nA query is converted into a representation and compared against stored document representations to identify relevant results.\n\n## Applications\n\nSemantic search is used in knowledge bases, document search, customer support,"
-  },
-  {
-    "chunk_id": "document_025_chunk_001",
-    "doc_id": "document_025",
-    "title": "Semantic Search",
-    "source_path": "data\\documents\\document_025.md",
-    "updated_at": "2026-08-17T14:27:23.725695",
-    "chunk_index": 1,
-    "text": "ts.\n\n## Applications\n\nSemantic search is used in knowledge bases, document search, customer support, and enterprise information systems.\n\n## Responsibilities\n\nTeams should evaluate retrieval relevance and maintain accurate source metadata."
+    "text": "# Semantic Search\n\n## Purpose\n\nThis document explains search methods that retrieve information based on meaning rather than exact keyword matching.\n\n## Requirements\n\nSemantic search requires documents, embeddings, a vector index, and a similarity search mechanism.\n\n## Process\n\nA query is converted into a representation and compared against stored document representations to identify relevant results.\n\n## Applications\n\nSemantic search is used in knowledge bases, document search, customer support, and enterprise information systems.\n\n## Responsibilities\n\nTeams should evaluate retrieval relevance and maintain accurate source metadata."
   },
   {
     "chunk_id": "document_026_chunk_000",
     "doc_id": "document_026",
     "title": "Retrieval Augmented Generation",
     "source_path": "data\\documents\\document_026.md",
-    "updated_at": "2026-08-17T14:27:23.725729",
+    "updated_at": "2026-08-17T15:46:50.545758",
     "chunk_index": 0,
-    "text": "# Retrieval Augmented Generation\n\n## Purpose\n\nThis document explains how retrieval can provide relevant external context to a language model.\n\n## Requirements\n\nRetrieval augmented systems require documents, chunking, embeddings, retrieval, and a generation model.\n\n## Process\n\nRelevant document chunks are retrieved for a query and supplied as context to the language model before generating an answer.\n\n## Applications\n\nThese systems are used for enterprise assistants, document question answering,"
-  },
-  {
-    "chunk_id": "document_026_chunk_001",
-    "doc_id": "document_026",
-    "title": "Retrieval Augmented Generation",
-    "source_path": "data\\documents\\document_026.md",
-    "updated_at": "2026-08-17T14:27:23.725735",
-    "chunk_index": 1,
-    "text": "r.\n\n## Applications\n\nThese systems are used for enterprise assistants, document question answering, and knowledge-base applications.\n\n## Responsibilities\n\nTeams should preserve source references and evaluate both retrieval quality and generated answer quality."
+    "text": "# Retrieval Augmented Generation\n\n## Purpose\n\nThis document explains how retrieval can provide relevant external context to a language model.\n\n## Requirements\n\nRetrieval augmented systems require documents, chunking, embeddings, retrieval, and a generation model.\n\n## Process\n\nRelevant document chunks are retrieved for a query and supplied as context to the language model before generating an answer.\n\n## Applications\n\nThese systems are used for enterprise assistants, document question answering, and knowledge-base applications.\n\n## Responsibilities\n\nTeams should preserve source references and evaluate both retrieval quality and generated answer quality."
   },
   {
     "chunk_id": "document_027_chunk_000",
     "doc_id": "document_027",
     "title": "Document Chunking",
     "source_path": "data\\documents\\document_027.md",
-    "updated_at": "2026-08-17T14:27:23.725767",
+    "updated_at": "2026-08-17T15:46:50.545784",
     "chunk_index": 0,
-    "text": "# Document Chunking\n\n## Purpose\n\nThis document explains how large documents can be divided into smaller text segments for retrieval.\n\n## Requirements\n\nChunking requires source documents, chunk-size rules, overlap settings, and quality checks.\n\n## Process\n\nDocuments are divided into smaller segments while attempting to preserve enough context for downstream retrieval.\n\n## Applications\n\nChunking is used in vector search, document assistants, retrieval pipelines, and knowledge-base systems.\n\n## Res"
-  },
-  {
-    "chunk_id": "document_027_chunk_001",
-    "doc_id": "document_027",
-    "title": "Document Chunking",
-    "source_path": "data\\documents\\document_027.md",
-    "updated_at": "2026-08-17T14:27:23.725770",
-    "chunk_index": 1,
-    "text": "used in vector search, document assistants, retrieval pipelines, and knowledge-base systems.\n\n## Responsibilities\n\nTeams should inspect chunk boundaries, avoid empty chunks, and maintain traceability to source documents."
+    "text": "# Document Chunking\n\n## Purpose\n\nThis document explains how large documents can be divided into smaller text segments for retrieval.\n\n## Requirements\n\nChunking requires source documents, chunk-size rules, overlap settings, and quality checks.\n\n## Process\n\nDocuments are divided into smaller segments while attempting to preserve enough context for downstream retrieval.\n\n## Applications\n\nChunking is used in vector search, document assistants, retrieval pipelines, and knowledge-base systems.\n\n## Responsibilities\n\nTeams should inspect chunk boundaries, avoid empty chunks, and maintain traceability to source documents."
   },
   {
     "chunk_id": "document_028_chunk_000",
     "doc_id": "document_028",
     "title": "Vector Databases",
     "source_path": "data\\documents\\document_028.md",
-    "updated_at": "2026-08-17T14:27:23.725801",
+    "updated_at": "2026-08-17T15:46:50.545808",
     "chunk_index": 0,
-    "text": "# Vector Databases\n\n## Purpose\n\nThis document explains how vector databases store and retrieve numerical representations.\n\n## Requirements\n\nVector databases require embeddings, identifiers, metadata, storage, and similarity search capabilities.\n\n## Process\n\nVectors and associated metadata are stored and later searched to find information similar to a query vector.\n\n## Applications\n\nVector databases are used in semantic search, recommendation systems, and retrieval-augmented generation.\n\n## Respo"
-  },
-  {
-    "chunk_id": "document_028_chunk_001",
-    "doc_id": "document_028",
-    "title": "Vector Databases",
-    "source_path": "data\\documents\\document_028.md",
-    "updated_at": "2026-08-17T14:27:23.725804",
-    "chunk_index": 1,
-    "text": "s are used in semantic search, recommendation systems, and retrieval-augmented generation.\n\n## Responsibilities\n\nTeams should maintain consistent identifiers, metadata, embedding configurations, and retrieval evaluation procedures."
+    "text": "# Vector Databases\n\n## Purpose\n\nThis document explains how vector databases store and retrieve numerical representations.\n\n## Requirements\n\nVector databases require embeddings, identifiers, metadata, storage, and similarity search capabilities.\n\n## Process\n\nVectors and associated metadata are stored and later searched to find information similar to a query vector.\n\n## Applications\n\nVector databases are used in semantic search, recommendation systems, and retrieval-augmented generation.\n\n## Responsibilities\n\nTeams should maintain consistent identifiers, metadata, embedding configurations, and retrieval evaluation procedures."
   },
   {
     "chunk_id": "document_029_chunk_000",
     "doc_id": "document_029",
     "title": "Information Retrieval",
     "source_path": "data\\documents\\document_029.md",
-    "updated_at": "2026-08-17T14:27:23.725834",
+    "updated_at": "2026-08-17T15:46:50.545832",
     "chunk_index": 0,
-    "text": "# Information Retrieval\n\n## Purpose\n\nThis document introduces information retrieval systems that identify relevant information from collections.\n\n## Requirements\n\nInformation retrieval requires a document collection, queries, indexing methods, and ranking mechanisms.\n\n## Process\n\nDocuments are indexed and ranked according to their relevance to a user's query.\n\n## Applications\n\nInformation retrieval is used in search engines, enterprise search, document assistants, and knowledge systems.\n\n## Resp"
-  },
-  {
-    "chunk_id": "document_029_chunk_001",
-    "doc_id": "document_029",
-    "title": "Information Retrieval",
-    "source_path": "data\\documents\\document_029.md",
-    "updated_at": "2026-08-17T14:27:23.725836",
-    "chunk_index": 1,
-    "text": "l is used in search engines, enterprise search, document assistants, and knowledge systems.\n\n## Responsibilities\n\nTeams should measure retrieval relevance and maintain accurate indexing information."
+    "text": "# Information Retrieval\n\n## Purpose\n\nThis document introduces information retrieval systems that identify relevant information from collections.\n\n## Requirements\n\nInformation retrieval requires a document collection, queries, indexing methods, and ranking mechanisms.\n\n## Process\n\nDocuments are indexed and ranked according to their relevance to a user's query.\n\n## Applications\n\nInformation retrieval is used in search engines, enterprise search, document assistants, and knowledge systems.\n\n## Responsibilities\n\nTeams should measure retrieval relevance and maintain accurate indexing information."
   },
   {
     "chunk_id": "document_030_chunk_000",
     "doc_id": "document_030",
     "title": "AI Data Preprocessing",
     "source_path": "data\\documents\\document_030.md",
-    "updated_at": "2026-08-17T14:27:23.725880",
+    "updated_at": "2026-08-17T15:46:50.545862",
     "chunk_index": 0,
-    "text": "# AI Data Preprocessing\n\n## Purpose\n\nThis document explains the importance of preprocessing data before using it for Artificial Intelligence and Machine Learning systems.\n\n## Requirements\n\nRaw data should be collected from reliable sources and inspected for missing values, duplicates, incorrect formats, and inconsistent information.\n\n## Process\n\nThe preprocessing workflow may include data cleaning, duplicate removal, missing-value handling, normalization, transformation, and feature preparation."
-  },
-  {
-    "chunk_id": "document_030_chunk_001",
-    "doc_id": "document_030",
-    "title": "AI Data Preprocessing",
-    "source_path": "data\\documents\\document_030.md",
-    "updated_at": "2026-08-17T14:27:23.725883",
-    "chunk_index": 1,
-    "text": ", duplicate removal, missing-value handling, normalization, transformation, and feature preparation.\n\n## Quality Checks\n\nData should be checked for completeness, consistency, correctness, and compatibility with the selected AI model.\n\n## Responsibilities\n\nData and AI teams are responsible for maintaining clean datasets, documenting preprocessing operations, and ensuring that changes to preprocessing logic are properly tested."
+    "text": "# AI Data Preprocessing\n\n## Purpose\n\nThis document explains the importance of preprocessing data before using it for Artificial Intelligence and Machine Learning systems.\n\n## Requirements\n\nRaw data should be collected from reliable sources and inspected for missing values, duplicates, incorrect formats, and inconsistent information.\n\n## Process\n\nThe preprocessing workflow may include data cleaning, duplicate removal, missing-value handling, normalization, transformation, and feature preparation.\n\n## Quality Checks\n\nData should be checked for completeness, consistency, correctness, and compatibility with the selected AI model.\n\n## Responsibilities\n\nData and AI teams are responsible for maintaining clean datasets, documenting preprocessing operations, and ensuring that changes to preprocessing logic are properly tested."
   }
 ]
