@@ -1,4 +1,4 @@
-from typing import Optional, Literal
+from typing import Optional, Literal, Union
 
 from pydantic import BaseModel
 
@@ -12,7 +12,7 @@ class ExtractorOutput(BaseModel):
     customer_name: Optional[str] = None
     customer_email: Optional[str] = None
     invoice_date: Optional[str] = None
-    total_amount: Optional[float] = None
+    total_amount: Optional[Union[str, float, int]] = None
 
 
 class ClassifierOutput(BaseModel):
