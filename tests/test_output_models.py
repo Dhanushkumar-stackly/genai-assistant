@@ -1,5 +1,5 @@
-from pydantic import ValidationError
 import pytest
+from pydantic import ValidationError
 
 from app.models.outputs import (
     SummarizerOutput,
@@ -14,7 +14,7 @@ def test_summarizer_output_valid():
         summary="AI is used to process information."
     )
 
-    assert result.summary
+    assert result.summary == "AI is used to process information."
 
 
 def test_extractor_output_valid():
@@ -28,13 +28,14 @@ def test_extractor_output_valid():
     )
 
     assert result.invoice_number == "INV-001"
+    assert result.total_amount == 5000
 
 
 def test_classifier_output_valid():
 
     result = ClassifierOutput(
         label="invoice",
-        reason="Invoice number is present."
+        reason="Invoice information is present."
     )
 
     assert result.label == "invoice"

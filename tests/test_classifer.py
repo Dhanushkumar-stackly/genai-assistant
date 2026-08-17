@@ -5,12 +5,7 @@ class FakeModelClient:
 
     def generate(self, prompt):
         return {
-            "text": """
-            {
-                "label": "invoice",
-                "reason": "The document contains invoice information."
-            }
-            """,
+            "text": '{"label": "invoice", "reason": "The text contains an invoice number."}',
             "model": "test-model",
             "latency_ms": 10.0,
         }
@@ -19,11 +14,12 @@ class FakeModelClient:
 def test_classifier_returns_label_and_reason():
 
     client = FakeModelClient()
+
     classifier = Classifier(client)
 
     result = classifier.classify(
         "Invoice Number: INV-1001"
     )
 
-    assert result["label"] == "invoice"
-    assert "reason" in result
+    assert result.label == "invoice"
+    assert result.reason

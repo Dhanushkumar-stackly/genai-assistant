@@ -1,16 +1,12 @@
-import json
 from pathlib import Path
-
-from app.core.model_client import ModelClient
-from app.models.outputs import SummarizerOutput
 
 
 class Summarizer:
 
-    def __init__(self, model_client: ModelClient):
+    def __init__(self, model_client):
         self.model_client = model_client
 
-    def summarize(self, text: str) -> SummarizerOutput:
+    def summarize(self, text: str) -> str:
 
         prompt_path = (
             Path(__file__).resolve().parents[2]
@@ -27,6 +23,4 @@ class Summarizer:
 
         response = self.model_client.generate(prompt)
 
-        data = json.loads(response["text"])
-
-        return SummarizerOutput.model_validate(data)
+        return response["text"]
