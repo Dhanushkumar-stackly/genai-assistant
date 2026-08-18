@@ -1,27 +1,36 @@
 def format_source(metadata):
-    """Create a stable source label."""
+    """Create a readable source label."""
 
     if not metadata:
         return "Unknown Source"
-
-    doc_id = metadata.get(
-        "doc_id",
-        "Unknown Document"
-    )
 
     chunk_id = metadata.get(
         "chunk_id",
         "Unknown Chunk"
     )
 
-    return f"{doc_id} | {chunk_id}"
+    chunk_index = metadata.get(
+        "chunk_index",
+        "Unknown Index"
+    )
+
+    return (
+        f"{chunk_id} "
+        f"(index: {chunk_index})"
+    )
 
 
 def prepare_context(
     retrieved_chunks,
     max_chunks=5
 ):
-    """Convert retrieved chunks into generation context."""
+    """
+    Convert retrieved chunks into
+    LLM-ready context.
+    """
+
+    if not retrieved_chunks:
+        return ""
 
     selected_chunks = retrieved_chunks[
         :max_chunks
@@ -29,9 +38,17 @@ def prepare_context(
 
     context_parts = []
 
-    seen = set()
+    seen_chunks = set()
 
-    for chunk in selected_chunks:
+    for rank, chunk in enumerate(
+        selected_chunks,
+        start=1
+    ):
+
+        chunk_id = chunk.get(
+            "chunk_id",
+            f"unknown_{rank}"
+        )
 
         text = chunk.get(
             "text",
@@ -43,22 +60,32 @@ def prepare_context(
             {}
         )
 
+        distance = chunk.get(
+            "distance",
+            None
+        )
+
+        if not text:
+            continue
+
+        # Prevent duplicate chunks
+        if chunk_id in seen_chunks:
+            continue
+
+        seen_chunks.add(chunk_id)
+
         source = format_source(
             metadata
         )
 
-        unique_key = (
-            source,
-            text
-        )
-
-        if unique_key in seen:
-            continue
-
-        seen.add(unique_key)
-
         context_parts.append(
-            f"[Source: {source}]\n{text}"
+            f"""
+[Retrieved Context {rank}]
+Source: {source}
+Distance: {distance}
+
+{text}
+""".strip()
         )
 
     return "\n\n".join(
@@ -66,35 +93,97 @@ def prepare_context(
     )
 
 
-def generate_context(
+def build_generation_input(
+    question,
     retrieved_chunks,
     max_chunks=5
 ):
-    """Prepare final context for the generation stage."""
+    """
+    Build the complete input that can
+    later be passed to an LLM.
+    """
 
     context = prepare_context(
         retrieved_chunks,
         max_chunks=max_chunks
     )
 
-    return context
+    if not context:
+
+        context = (
+            "No relevant context was retrieved."
+        )
+
+    prompt = f"""
+You are a helpful AI assistant.
+
+Answer the user's question using only
+the provided context.
+
+If the answer cannot be found in the
+context, say that the information is
+not available in the provided documents.
+
+User Question:
+{question}
+
+Context:
+{context}
+
+Answer:
+""".strip()
+
+    return prompt
+
+
+def generate_context(
+    question,
+    retrieved_chunks,
+    max_chunks=5
+):
+    """
+    Public generation-stage function.
+    """
+
+    return build_generation_input(
+        question=question,
+        retrieved_chunks=retrieved_chunks,
+        max_chunks=max_chunks
+    )
 
 
 if __name__ == "__main__":
 
     sample_results = [
         {
-            "text": "Team members are responsible for following documented procedures.",
+            "chunk_id": "document_006_chunk_000",
+
+            "text": (
+                "Reinforcement Learning "
+                "allows agents to learn by "
+                "interacting with an environment."
+            ),
+
             "metadata": {
-                "doc_id": "document_001",
-                "chunk_id": "chunk_001"
+                "chunk_id":
+                    "document_006_chunk_000",
+                "chunk_index": 5
             },
-            "score": 0.12
+
+            "distance": 0.25
         }
     ]
 
-    context = generate_context(
+    question = (
+        "What is reinforcement learning?"
+    )
+
+    prompt = generate_context(
+        question,
         sample_results
     )
 
-    print(context)
+    print("=" * 60)
+    print("GENERATION INPUT")
+    print("=" * 60)
+    print(prompt)
