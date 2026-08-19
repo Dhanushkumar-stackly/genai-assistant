@@ -60,6 +60,18 @@ def prepare_context(
             {}
         )
 
+        # Support source directly from chunk
+        # as well as metadata.
+        source = chunk.get(
+            "source"
+        )
+
+        if source and not metadata.get("source"):
+            metadata = {
+                **metadata,
+                "source": source
+            }
+
         distance = chunk.get(
             "distance",
             None
@@ -74,14 +86,15 @@ def prepare_context(
 
         seen_chunks.add(chunk_id)
 
-        source = format_source(
+        source_label = format_source(
             metadata
         )
 
         context_parts.append(
             f"""
 [Retrieved Context {rank}]
-Source: {source}
+Chunk ID: {chunk_id}
+Source: {source_label}
 Distance: {distance}
 
 {text}
@@ -99,8 +112,7 @@ def build_generation_input(
     max_chunks=5
 ):
     """
-    Build the complete input that can
-    later be passed to an LLM.
+    Build the grounded generation prompt.
     """
 
     context = prepare_context(
@@ -109,25 +121,38 @@ def build_generation_input(
     )
 
     if not context:
-
         context = (
             "No relevant context was retrieved."
         )
 
     prompt = f"""
-You are a helpful AI assistant.
+You are a grounded AI assistant.
 
-Answer the user's question using only
+Answer the user's question using ONLY
 the provided context.
 
-If the answer cannot be found in the
-context, say that the information is
-not available in the provided documents.
+Grounding rules:
+
+1. Do not use outside knowledge.
+2. Do not invent or assume facts.
+3. Every factual statement must be supported
+   by the retrieved context.
+4. After each factual statement, include the
+   corresponding chunk ID in square brackets.
+5. Use citations exactly in this format:
+   [chunk_id]
+6. Only cite chunk IDs that appear in the
+   retrieved context.
+7. Do not create or modify chunk IDs.
+8. If the answer cannot be found in the
+   retrieved context, say:
+   "The information is not available in
+   the provided documents."
 
 User Question:
 {question}
 
-Context:
+Retrieved Context:
 {context}
 
 Answer:
@@ -143,6 +168,9 @@ def generate_context(
 ):
     """
     Public generation-stage function.
+
+    This function is used by the RAG pipeline
+    tests and returns the grounded generation input.
     """
 
     return build_generation_input(
@@ -184,6 +212,6 @@ if __name__ == "__main__":
     )
 
     print("=" * 60)
-    print("GENERATION INPUT")
+    print("GROUNDED GENERATION INPUT")
     print("=" * 60)
     print(prompt)

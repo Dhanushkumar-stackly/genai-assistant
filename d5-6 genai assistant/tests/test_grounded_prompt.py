@@ -2,75 +2,88 @@ from src.rag.grounded_prompt import build_grounded_prompt
 
 
 def test_grounded_prompt_contains_question():
-    question = "What is reinforcement learning?"
+    question = "What is Python?"
 
     chunks = [
         {
-            "chunk_id": "document_006_chunk_000",
-            "text": (
-                "Reinforcement Learning allows agents "
-                "to learn by interacting with an environment."
-            ),
-            "metadata": {
-                "chunk_id": "document_006_chunk_000",
-                "chunk_index": 5
-            },
-            "distance": 0.25
+            "chunk_id": "chunk_001",
+            "source": "python_guide.pdf",
+            "text": "Python is a high-level programming language.",
         }
     ]
 
-    prompt = build_grounded_prompt(
-        question,
-        chunks
-    )
+    prompt = build_grounded_prompt(question, chunks)
 
     assert question in prompt
 
 
-def test_grounded_prompt_contains_chunk_id():
-    chunks = [
-        {
-            "chunk_id": "document_006_chunk_000",
-            "text": "Reinforcement learning uses interaction.",
-            "metadata": {},
-            "distance": 0.25
-        }
-    ]
-
-    prompt = build_grounded_prompt(
-        "What is reinforcement learning?",
-        chunks
-    )
-
-    assert "document_006_chunk_000" in prompt
-
-
-def test_grounded_prompt_has_grounding_rules():
+def test_grounded_prompt_contains_context():
     chunks = [
         {
             "chunk_id": "chunk_001",
-            "text": "Sample information.",
-            "metadata": {},
-            "distance": 0.2
+            "source": "python_guide.pdf",
+            "text": "Python is a high-level programming language.",
         }
     ]
 
     prompt = build_grounded_prompt(
-        "What is this?",
-        chunks
+        "What is Python?",
+        chunks,
     )
 
-    assert "ONLY" in prompt
-    assert "Do not use outside knowledge." in prompt
-    assert "Never guess." in prompt
+    assert "Python is a high-level programming language." in prompt
 
 
-def test_grounded_prompt_handles_empty_retrieval():
+def test_grounded_prompt_contains_source_label():
+    chunks = [
+        {
+            "chunk_id": "chunk_001",
+            "source": "python_guide.pdf",
+            "text": "Python is a high-level programming language.",
+        }
+    ]
+
     prompt = build_grounded_prompt(
-        "What is reinforcement learning?",
-        []
+        "What is Python?",
+        chunks,
     )
 
-    assert prompt
-    assert "No relevant context was retrieved." in prompt
-    assert "not available" in prompt
+    assert "python_guide.pdf" in prompt
+    assert "chunk_001" in prompt
+
+
+def test_grounded_prompt_prevents_unsupported_answers():
+    chunks = [
+        {
+            "chunk_id": "chunk_001",
+            "source": "python_guide.pdf",
+            "text": "Python is a high-level programming language.",
+        }
+    ]
+
+    prompt = build_grounded_prompt(
+        "What is Python?",
+        chunks,
+    )
+
+    assert "ONLY the provided context" in prompt
+    assert "Do NOT use outside knowledge" in prompt
+    assert "unsupported assumptions" in prompt
+
+
+def test_grounded_prompt_handles_insufficient_evidence():
+    chunks = [
+        {
+            "chunk_id": "chunk_001",
+            "source": "python_guide.pdf",
+            "text": "Python is a high-level programming language.",
+        }
+    ]
+
+    prompt = build_grounded_prompt(
+        "Who created Python?",
+        chunks,
+    )
+
+    assert "cannot be determined" in prompt
+    assert "provided evidence" in prompt
