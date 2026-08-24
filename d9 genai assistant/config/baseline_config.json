@@ -1,0 +1,36 @@
+{
+    "baseline_version": "day09-task1-v1",
+    "frozen_at": "2026-08-24",
+
+    "embedding": {
+        "model": "all-MiniLM-L6-v2",
+        "dimension": 384,
+        "normalized": true
+    },
+
+    "chunking": {
+        "chunk_size": 800,
+        "overlap": 120,
+        "unit": "characters"
+    },
+
+    "retrieval": {
+        "top_k": 5,
+        "metadata_filter": null,
+        "score_threshold": null,
+        "score_threshold_note": "Day 08 retrieval run does not explicitly configure a retrieval threshold. Day 08 abstention tests use threshold=0.5, but this is not recorded as the retrieval baseline threshold."
+    },
+
+    "prompt": {
+        "version": "v1",
+        "type": "grounded_rag_prompt",
+        "purpose": "Answer only from retrieved evidence, cite supplied sources, and abstain when evidence is insufficient."
+    },
+
+    "vector_database": {
+        "type": "ChromaDB",
+        "collection": "genai_documents"
+    },
+
+    "baseline_status": "FROZEN"
+}
