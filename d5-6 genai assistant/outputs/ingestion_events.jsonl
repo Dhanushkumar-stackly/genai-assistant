@@ -386,3 +386,39 @@
 {"timestamp": "2026-08-19T18:17:47.524517", "stage": "embedding", "status": "success", "message": "embedding completed successfully."}
 {"timestamp": "2026-08-19T18:18:16.177481", "stage": "vector_index", "status": "success", "message": "vector_index completed successfully."}
 {"timestamp": "2026-08-19T18:18:16.178900", "stage": "pipeline", "status": "success", "message": "Complete ingestion pipeline finished successfully."}
+{"timestamp": "2026-08-24T11:59:39.607445", "stage": "pipeline", "status": "started", "message": "Ingestion pipeline started."}
+{"timestamp": "2026-08-24T11:59:39.608684", "stage": "validation", "status": "success", "message": "Found 30 approved documents."}
+{"timestamp": "2026-08-24T11:59:39.609124", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_001.md"}
+{"timestamp": "2026-08-24T11:59:39.609570", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_002.md"}
+{"timestamp": "2026-08-24T11:59:39.610080", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_003.md"}
+{"timestamp": "2026-08-24T11:59:39.610539", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_004.md"}
+{"timestamp": "2026-08-24T11:59:39.610964", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_005.md"}
+{"timestamp": "2026-08-24T11:59:39.611408", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_006.md"}
+{"timestamp": "2026-08-24T11:59:39.611814", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_007.md"}
+{"timestamp": "2026-08-24T11:59:39.612183", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_008.md"}
+{"timestamp": "2026-08-24T11:59:39.612623", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_009.md"}
+{"timestamp": "2026-08-24T11:59:39.612963", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_010.md"}
+{"timestamp": "2026-08-24T11:59:39.613371", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_011.md"}
+{"timestamp": "2026-08-24T11:59:39.613713", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_012.md"}
+{"timestamp": "2026-08-24T11:59:39.614056", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_013.md"}
+{"timestamp": "2026-08-24T11:59:39.614433", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_014.md"}
+{"timestamp": "2026-08-24T11:59:39.614794", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_015.md"}
+{"timestamp": "2026-08-24T11:59:39.615111", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_016.md"}
+{"timestamp": "2026-08-24T11:59:39.615558", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_017.md"}
+{"timestamp": "2026-08-24T11:59:39.615952", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_018.md"}
+{"timestamp": "2026-08-24T11:59:39.616345", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_019.md"}
+{"timestamp": "2026-08-24T11:59:39.616701", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_020.md"}
+{"timestamp": "2026-08-24T11:59:39.617423", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_021.md"}
+{"timestamp": "2026-08-24T11:59:39.617817", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_022.md"}
+{"timestamp": "2026-08-24T11:59:39.618172", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_023.md"}
+{"timestamp": "2026-08-24T11:59:39.618590", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_024.md"}
+{"timestamp": "2026-08-24T11:59:39.618955", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_025.md"}
+{"timestamp": "2026-08-24T11:59:39.619348", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_026.md"}
+{"timestamp": "2026-08-24T11:59:39.619695", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_027.md"}
+{"timestamp": "2026-08-24T11:59:39.620035", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_028.md"}
+{"timestamp": "2026-08-24T11:59:39.620456", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_029.md"}
+{"timestamp": "2026-08-24T11:59:39.620797", "stage": "document", "status": "accepted", "message": "Document accepted for ingestion.", "document": "document_030.md"}
+{"timestamp": "2026-08-24T11:59:39.799321", "stage": "preprocessing", "status": "success", "message": "preprocessing completed successfully."}
+{"timestamp": "2026-08-24T11:59:55.777702", "stage": "embedding", "status": "success", "message": "embedding completed successfully."}
+{"timestamp": "2026-08-24T12:00:12.667685", "stage": "vector_index", "status": "success", "message": "vector_index completed successfully."}
+{"timestamp": "2026-08-24T12:00:12.668637", "stage": "pipeline", "status": "success", "message": "Complete ingestion pipeline finished successfully."}
