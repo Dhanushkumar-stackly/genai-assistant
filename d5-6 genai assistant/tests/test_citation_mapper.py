@@ -1,88 +1,135 @@
-from src.rag.citation_mapper import map_citations
+from src.rag.citation_mapper import (
+    build_allowed_citations,
+    validate_citations,
+    map_citations_to_sources
+)
 
 
-def test_map_citations_returns_source_and_chunk_id():
-    chunks = [
+def sample_chunks():
+
+    return [
         {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_001",
-            "text": "Python is a programming language.",
-        }
-    ]
+            "chunk_id":
+                "document_006_chunk_000",
 
-    citations = map_citations(chunks)
+            "text":
+                "Reinforcement Learning "
+                "uses agents, states, "
+                "actions, and rewards.",
 
-    assert citations == [
-        {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_001",
-        }
-    ]
+            "metadata": {
+                "source":
+                    "document_006"
+            },
 
-
-def test_map_citations_supports_multiple_chunks():
-    chunks = [
-        {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_001",
-            "text": "Python is a programming language.",
+            "distance": 0.25
         },
         {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_002",
-            "text": "Python supports OOP.",
-        },
-    ]
+            "chunk_id":
+                "document_021_chunk_000",
 
-    citations = map_citations(chunks)
+            "text":
+                "Machine learning systems "
+                "can learn from data.",
 
-    assert len(citations) == 2
+            "metadata": {
+                "source":
+                    "document_021"
+            },
 
-
-def test_map_citations_removes_duplicates():
-    chunks = [
-        {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_001",
-            "text": "Python is a programming language.",
-        },
-        {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_001",
-            "text": "Python is a programming language.",
-        },
-    ]
-
-    citations = map_citations(chunks)
-
-    assert len(citations) == 1
-
-
-def test_map_citations_skips_invalid_chunks():
-    chunks = [
-        {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_001",
-        },
-        {
-            "source": "python_guide.pdf",
-        },
-        {
-            "chunk_id": "chunk_003",
-        },
-    ]
-
-    citations = map_citations(chunks)
-
-    assert citations == [
-        {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_001",
+            "distance": 0.40
         }
     ]
 
 
-def test_map_citations_handles_empty_chunks():
-    citations = map_citations([])
+def test_allowed_citations_only_contain_retrieved_chunks():
 
-    assert citations == []
+    chunks = sample_chunks()
+
+    allowed = build_allowed_citations(
+        chunks
+    )
+
+    assert (
+        "document_006_chunk_000"
+        in allowed
+    )
+
+    assert (
+        "document_021_chunk_000"
+        in allowed
+    )
+
+    assert (
+        "document_030_chunk_000"
+        not in allowed
+    )
+
+
+def test_invalid_citation_is_removed():
+
+    chunks = sample_chunks()
+
+    citations = [
+        "document_006_chunk_000",
+        "document_030_chunk_000"
+    ]
+
+    valid = validate_citations(
+        citations,
+        chunks
+    )
+
+    assert valid == [
+        "document_006_chunk_000"
+    ]
+
+
+def test_duplicate_citations_are_removed():
+
+    chunks = sample_chunks()
+
+    citations = [
+        "document_006_chunk_000",
+        "document_006_chunk_000"
+    ]
+
+    valid = validate_citations(
+        citations,
+        chunks
+    )
+
+    assert valid == [
+        "document_006_chunk_000"
+    ]
+
+
+def test_citations_are_mapped_to_sources():
+
+    chunks = sample_chunks()
+
+    citations = [
+        "document_006_chunk_000"
+    ]
+
+    sources = map_citations_to_sources(
+        citations,
+        chunks
+    )
+
+    assert len(sources) == 1
+
+    assert (
+        sources[0]["chunk_id"]
+        == "document_006_chunk_000"
+    )
+
+    assert (
+        sources[0]["source"]
+        == "document_006"
+    )
+
+    assert (
+        sources[0]["distance"]
+        == 0.25
+    )

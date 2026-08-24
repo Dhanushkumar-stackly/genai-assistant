@@ -1,28 +1,58 @@
+DEFAULT_MAX_DISTANCE = 0.80
+
 ABSTENTION_MESSAGE = (
-    "The answer cannot be determined from the provided evidence."
+    "Information is not available in the "
+    "provided documents."
 )
 
 
-def should_abstain(chunks: list[dict]) -> bool:
+def has_sufficient_evidence(
+    retrieved_chunks,
+    max_distance=DEFAULT_MAX_DISTANCE
+):
     """
-    Return True when there is no usable evidence.
-    """
-
-    if not chunks:
-        return True
-
-    for chunk in chunks:
-        text = chunk.get("text", chunk.get("content", ""))
-
-        if text and text.strip():
-            return False
-
-    return True
-
-
-def get_abstention_message() -> str:
-    """
-    Return the standard abstention message.
+    Check whether at least one retrieved chunk
+    passes the configured evidence threshold.
     """
 
-    return ABSTENTION_MESSAGE
+    if not retrieved_chunks:
+        return False
+
+    for chunk in retrieved_chunks:
+
+        distance = chunk.get("distance")
+
+        if distance is None:
+            continue
+
+        if float(distance) <= max_distance:
+            return True
+
+    return False
+
+
+def should_abstain(
+    retrieved_chunks,
+    max_distance=DEFAULT_MAX_DISTANCE
+):
+    """
+    Return True when the system should abstain
+    instead of generating an answer.
+    """
+
+    return not has_sufficient_evidence(
+        retrieved_chunks,
+        max_distance=max_distance
+    )
+
+
+def get_abstention_response():
+    """
+    Return the standard safe fallback response.
+    """
+
+    return {
+        "answer": ABSTENTION_MESSAGE,
+        "sources": [],
+        "status": "insufficient_evidence"
+    }

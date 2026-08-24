@@ -1,51 +1,107 @@
 from src.rag.abstention import (
+    has_sufficient_evidence,
     should_abstain,
-    get_abstention_message,
+    get_abstention_response
 )
 
 
-def test_abstain_when_chunks_are_empty():
-    assert should_abstain([]) is True
+def test_sufficient_evidence_passes():
 
-
-def test_do_not_abstain_when_evidence_exists():
     chunks = [
         {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_001",
-            "text": "Python is a programming language.",
+            "chunk_id":
+                "document_006_chunk_000",
+
+            "distance": 0.25
         }
     ]
 
-    assert should_abstain(chunks) is False
+    assert has_sufficient_evidence(
+        chunks,
+        max_distance=0.80
+    )
 
 
-def test_abstain_when_chunk_text_is_empty():
+def test_insufficient_evidence_fails():
+
     chunks = [
         {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_001",
-            "text": "",
+            "chunk_id":
+                "document_029_chunk_000",
+
+            "distance": 1.35
         }
     ]
 
-    assert should_abstain(chunks) is True
+    assert not has_sufficient_evidence(
+        chunks,
+        max_distance=0.80
+    )
 
 
-def test_abstain_when_chunk_text_is_only_whitespace():
+def test_empty_retrieval_requires_abstention():
+
+    assert should_abstain(
+        [],
+        max_distance=0.80
+    )
+
+
+def test_high_distance_requires_abstention():
+
     chunks = [
         {
-            "source": "python_guide.pdf",
-            "chunk_id": "chunk_001",
-            "text": "   ",
+            "chunk_id":
+                "document_029_chunk_000",
+
+            "distance": 1.50
+        },
+        {
+            "chunk_id":
+                "document_026_chunk_000",
+
+            "distance": 1.40
         }
     ]
 
-    assert should_abstain(chunks) is True
+    assert should_abstain(
+        chunks,
+        max_distance=0.80
+    )
 
 
-def test_abstention_message_is_available():
-    message = get_abstention_message()
+def test_low_distance_does_not_abstain():
 
-    assert message
-    assert "cannot be determined" in message
+    chunks = [
+        {
+            "chunk_id":
+                "document_006_chunk_000",
+
+            "distance": 0.30
+        }
+    ]
+
+    assert not should_abstain(
+        chunks,
+        max_distance=0.80
+    )
+
+
+def test_abstention_response_is_safe():
+
+    response = get_abstention_response()
+
+    assert (
+        response["status"]
+        == "insufficient_evidence"
+    )
+
+    assert (
+        response["answer"]
+        == (
+            "Information is not available "
+            "in the provided documents."
+        )
+    )
+
+    assert response["sources"] == []

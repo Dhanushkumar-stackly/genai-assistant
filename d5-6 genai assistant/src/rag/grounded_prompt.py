@@ -1,60 +1,32 @@
-def build_grounded_prompt(
-    question,
-    retrieved_chunks,
-):
+def build_grounded_prompt(question, retrieved_chunks):
     """
-    Build a strict grounded prompt using
-    only the retrieved context.
+    Build a grounded prompt using only retrieved context.
+
+    Args:
+        question (str): User's question.
+        retrieved_chunks (list): Retrieved context chunks.
+
+    Returns:
+        str: Grounded prompt.
     """
 
-    context_parts = []
+    # Handle empty retrieval
+    if not retrieved_chunks:
+        context_text = "No supporting evidence was retrieved."
+    else:
+        context_parts = []
 
-    for index, chunk in enumerate(
-        retrieved_chunks or [],
-        start=1
-    ):
-        chunk_id = chunk.get(
-            "chunk_id",
-            f"unknown_{index}"
-        )
+        for chunk in retrieved_chunks:
+            chunk_id = chunk.get("chunk_id", "unknown")
+            text = chunk.get("text", "")
 
-        source = chunk.get(
-            "source",
-            "Unknown Source"
-        )
+            context_parts.append(
+                f"[{chunk_id}]\n{text}"
+            )
 
-        text = chunk.get(
-            "text",
-            ""
-        ).strip()
+        context_text = "\n\n".join(context_parts)
 
-        distance = chunk.get(
-            "distance",
-            None
-        )
-
-        context_parts.append(
-            f"""
-[CHUNK {index}]
-Chunk ID: {chunk_id}
-Source: {source}
-Distance: {distance}
-
-{text}
-""".strip()
-        )
-
-    context = "\n\n".join(
-        context_parts
-    )
-
-    if not context:
-        context = (
-            "No relevant context was retrieved."
-        )
-
-    prompt = f"""
-You are a grounded question-answering assistant.
+    prompt = f"""You are a grounded question-answering assistant.
 
 Your task is to answer the user's question using ONLY the provided context.
 
@@ -86,12 +58,11 @@ interaction with an environment. [document_006_chunk_000]
 
 RETRIEVED CONTEXT:
 
-{context}
+{context_text}
 
 USER QUESTION:
 {question}
 
-ANSWER:
-""".strip()
+ANSWER:"""
 
     return prompt
