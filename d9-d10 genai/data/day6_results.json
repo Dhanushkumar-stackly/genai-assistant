@@ -1,0 +1,512 @@
+[
+  {
+    "question": "What is Artificial Intelligence and what tasks can AI systems perform?",
+    "expected_doc_id": "document_001",
+    "retrieved_doc_ids": [
+      "document_001",
+      "document_005",
+      "document_004"
+    ],
+    "distances": [
+      0.7119541764259338,
+      0.9519013166427612,
+      1.081676721572876
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What are the fundamental concepts of Machine Learning?",
+    "expected_doc_id": "document_002",
+    "retrieved_doc_ids": [
+      "document_002",
+      "document_016",
+      "document_014"
+    ],
+    "distances": [
+      0.6550232768058777,
+      0.9472145438194275,
+      0.9763050079345703
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How does Natural Language Processing help computers understand human language?",
+    "expected_doc_id": "document_003",
+    "retrieved_doc_ids": [
+      "document_003",
+      "document_022",
+      "document_026"
+    ],
+    "distances": [
+      0.7755635976791382,
+      1.1201212406158447,
+      1.2099380493164062
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How do AI systems analyze and interpret images and videos?",
+    "expected_doc_id": "document_004",
+    "retrieved_doc_ids": [
+      "document_004",
+      "document_001",
+      "document_005"
+    ],
+    "distances": [
+      0.6466879844665527,
+      1.0169036388397217,
+      1.1251847743988037
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How do neural networks learn during Deep Learning training?",
+    "expected_doc_id": "document_005",
+    "retrieved_doc_ids": [
+      "document_005",
+      "document_009",
+      "document_002"
+    ],
+    "distances": [
+      0.929227888584137,
+      1.2154104709625244,
+      1.2364976406097412
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How does an agent learn through interaction with an environment?",
+    "expected_doc_id": "document_006",
+    "retrieved_doc_ids": [
+      "document_006",
+      "document_021",
+      "document_001"
+    ],
+    "distances": [
+      0.7009137272834778,
+      1.3565508127212524,
+      1.4687310457229614
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "Why is data preprocessing important before machine learning?",
+    "expected_doc_id": "document_007",
+    "retrieved_doc_ids": [
+      "document_007",
+      "document_030",
+      "document_002"
+    ],
+    "distances": [
+      0.48808303475379944,
+      0.6776882410049438,
+      1.0561989545822144
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What is feature engineering and why is it useful in machine learning?",
+    "expected_doc_id": "document_008",
+    "retrieved_doc_ids": [
+      "document_008",
+      "document_002",
+      "document_014"
+    ],
+    "distances": [
+      0.6406053900718689,
+      0.9815136194229126,
+      1.1252247095108032
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How is a machine learning model trained using data?",
+    "expected_doc_id": "document_009",
+    "retrieved_doc_ids": [
+      "document_009",
+      "document_002",
+      "document_014"
+    ],
+    "distances": [
+      0.725540041923523,
+      0.7375708818435669,
+      0.9012861251831055
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What is required to deploy a trained machine learning model?",
+    "expected_doc_id": "document_010",
+    "retrieved_doc_ids": [
+      "document_010",
+      "document_009",
+      "document_011"
+    ],
+    "distances": [
+      0.3854326009750366,
+      0.6982466578483582,
+      0.8839585781097412
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "Why should deployed machine learning models be monitored?",
+    "expected_doc_id": "document_011",
+    "retrieved_doc_ids": [
+      "document_011",
+      "document_010",
+      "document_009"
+    ],
+    "distances": [
+      0.6154160499572754,
+      0.669026255607605,
+      1.0323717594146729
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What checks are performed during data validation?",
+    "expected_doc_id": "document_012",
+    "retrieved_doc_ids": [
+      "document_012",
+      "document_013",
+      "document_030"
+    ],
+    "distances": [
+      0.6459313631057739,
+      1.0408539772033691,
+      1.1743390560150146
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How are missing values, duplicates, and inconsistent data handled?",
+    "expected_doc_id": "document_013",
+    "retrieved_doc_ids": [
+      "document_013",
+      "document_030",
+      "document_012"
+    ],
+    "distances": [
+      1.1604334115982056,
+      1.2556031942367554,
+      1.410512089729309
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What is supervised learning and what does it require?",
+    "expected_doc_id": "document_014",
+    "retrieved_doc_ids": [
+      "document_014",
+      "document_002",
+      "document_016"
+    ],
+    "distances": [
+      0.5830873847007751,
+      0.9479551911354065,
+      1.0032312870025635
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How does unsupervised learning discover patterns in data?",
+    "expected_doc_id": "document_015",
+    "retrieved_doc_ids": [
+      "document_015",
+      "document_002",
+      "document_019"
+    ],
+    "distances": [
+      0.5151410102844238,
+      1.2306171655654907,
+      1.2669271230697632
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What is classification in machine learning?",
+    "expected_doc_id": "document_016",
+    "retrieved_doc_ids": [
+      "document_016",
+      "document_002",
+      "document_014"
+    ],
+    "distances": [
+      0.6330757737159729,
+      0.76813805103302,
+      0.9224139451980591
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What is regression used for in machine learning?",
+    "expected_doc_id": "document_017",
+    "retrieved_doc_ids": [
+      "document_017",
+      "document_002",
+      "document_014"
+    ],
+    "distances": [
+      0.7407232522964478,
+      0.955337643623352,
+      1.0566940307617188
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How does clustering group similar data points?",
+    "expected_doc_id": "document_018",
+    "retrieved_doc_ids": [
+      "document_018",
+      "document_015",
+      "document_024"
+    ],
+    "distances": [
+      0.637306809425354,
+      1.2577621936798096,
+      1.537390112876892
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What is anomaly detection used to identify?",
+    "expected_doc_id": "document_019",
+    "retrieved_doc_ids": [
+      "document_019",
+      "document_015",
+      "document_016"
+    ],
+    "distances": [
+      0.5569605231285095,
+      1.137773036956787,
+      1.2596039772033691
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How do recommendation systems provide relevant items to users?",
+    "expected_doc_id": "document_020",
+    "retrieved_doc_ids": [
+      "document_020",
+      "document_029",
+      "document_026"
+    ],
+    "distances": [
+      0.481159508228302,
+      1.0941967964172363,
+      1.1968164443969727
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What is Generative AI and what type of content can it create?",
+    "expected_doc_id": "document_021",
+    "retrieved_doc_ids": [
+      "document_021",
+      "document_005",
+      "document_001"
+    ],
+    "distances": [
+      0.5520708560943604,
+      1.1184664964675903,
+      1.152727484703064
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What are Large Language Models used for?",
+    "expected_doc_id": "document_022",
+    "retrieved_doc_ids": [
+      "document_022",
+      "document_026",
+      "document_003"
+    ],
+    "distances": [
+      0.41897255182266235,
+      1.0665736198425293,
+      1.1270253658294678
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What is prompt engineering and why is it important?",
+    "expected_doc_id": "document_023",
+    "retrieved_doc_ids": [
+      "document_023",
+      "document_006",
+      "document_008"
+    ],
+    "distances": [
+      0.639175534248352,
+      1.2787320613861084,
+      1.3293546438217163
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What are vector embeddings and how are they used?",
+    "expected_doc_id": "document_024",
+    "retrieved_doc_ids": [
+      "document_024",
+      "document_028",
+      "document_014"
+    ],
+    "distances": [
+      0.7291392087936401,
+      0.9710768461227417,
+      1.4586158990859985
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How does semantic search retrieve information based on meaning?",
+    "expected_doc_id": "document_025",
+    "retrieved_doc_ids": [
+      "document_025",
+      "document_029",
+      "document_026"
+    ],
+    "distances": [
+      0.562065601348877,
+      1.0595057010650635,
+      1.1264399290084839
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How does Retrieval Augmented Generation use retrieved document context?",
+    "expected_doc_id": "document_026",
+    "retrieved_doc_ids": [
+      "document_026",
+      "document_029",
+      "document_025"
+    ],
+    "distances": [
+      0.5232446193695068,
+      1.0140600204467773,
+      1.0735068321228027
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "Why are large documents divided into smaller chunks?",
+    "expected_doc_id": "document_027",
+    "retrieved_doc_ids": [
+      "document_027",
+      "document_026",
+      "document_029"
+    ],
+    "distances": [
+      0.5915741324424744,
+      1.4858516454696655,
+      1.5704786777496338
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What does a vector database store and retrieve?",
+    "expected_doc_id": "document_028",
+    "retrieved_doc_ids": [
+      "document_028",
+      "document_024",
+      "document_029"
+    ],
+    "distances": [
+      0.5210361480712891,
+      1.1611591577529907,
+      1.3856213092803955
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "What is the purpose of an information retrieval system?",
+    "expected_doc_id": "document_029",
+    "retrieved_doc_ids": [
+      "document_029",
+      "document_025",
+      "document_026"
+    ],
+    "distances": [
+      0.578216552734375,
+      0.8462339639663696,
+      0.924573540687561
+    ],
+    "expected_rank": 1,
+    "top1_hit": true,
+    "top3_hit": true
+  },
+  {
+    "question": "How can relevant information be identified from a collection of documents?",
+    "expected_doc_id": "document_030",
+    "retrieved_doc_ids": [
+      "document_029",
+      "document_026",
+      "document_025"
+    ],
+    "distances": [
+      0.8570666313171387,
+      1.0788620710372925,
+      1.127435564994812
+    ],
+    "expected_rank": null,
+    "top1_hit": false,
+    "top3_hit": false
+  }
+]

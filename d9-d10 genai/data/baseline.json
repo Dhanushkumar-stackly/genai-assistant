@@ -1,0 +1,10 @@
+{
+    "day": "Day 09",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "chunk_size": 500,
+    "overlap": 50,
+    "top_k": 5,
+    "filter": null,
+    "score_threshold": 0.3,
+    "prompt_version": "v1"
+}
