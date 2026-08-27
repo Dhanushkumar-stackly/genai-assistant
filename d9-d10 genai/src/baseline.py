@@ -1,124 +1,167 @@
-from pathlib import Path
 import json
+from pathlib import Path
+from datetime import datetime, timezone
 
-
-# ============================================================
-# PROJECT CONFIGURATION
-# ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 DATA_DIR = PROJECT_ROOT / "data"
-BASELINE_FILE = DATA_DIR / "baseline.json"
+BASELINE_PATH = DATA_DIR / "baseline.json"
 
 
-# ============================================================
-# BASELINE CONFIGURATION
-# ============================================================
+DEFAULT_BASELINE = {
+    "day": 9,
 
-baseline = {
-    "day": "Day 09",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
 
-    # Keep these values equal to your current Day 6 / Day 8 setup.
-    "embedding_model": "all-MiniLM-L6-v2",
-    "chunk_size": 500,
-    "overlap": 50,
-    "top_k": 5,
-    "filter": None,
-    "score_threshold": 0.3,
-    "prompt_version": "v1",
+    "chunking": {
+        "chunk_size": 1000,
+        "chunk_overlap": 200
+    },
+
+    "retrieval": {
+        "top_k": 5,
+        "filters": {},
+        "score_threshold": None
+    },
+
+    "prompt": {
+        "version": "v1"
+    },
+
+    "frozen": True,
+
+    "created_at": None
 }
 
 
-# ============================================================
-# DISPLAY BASELINE
-# ============================================================
-
-def display_baseline(config: dict) -> None:
-    """
-    Display the frozen baseline configuration.
-    """
-
-    print()
-    print("=" * 60)
-    print("BASELINE CONFIGURATION")
-    print("=" * 60)
-
-    print(f"Day                : {config.get('day', 'Day 09')}")
-    print(
-        f"Embedding Model    : "
-        f"{config.get('embedding_model', 'Not specified')}"
-    )
-    print(f"Chunk Size         : {config.get('chunk_size', 'Not specified')}")
-    print(f"Overlap            : {config.get('overlap', 'Not specified')}")
-    print(f"Top K              : {config.get('top_k', 'Not specified')}")
-    print(f"Filter             : {config.get('filter', 'None')}")
-    print(
-        f"Score Threshold    : "
-        f"{config.get('score_threshold', 'Not specified')}"
-    )
-    print(
-        f"Prompt Version     : "
-        f"{config.get('prompt_version', 'Not specified')}"
-    )
-
-    print("=" * 60)
-    print()
-
-
-# ============================================================
-# SAVE BASELINE
-# ============================================================
-
-def save_baseline(config: dict) -> None:
-    """
-    Save the baseline configuration as JSON.
-    """
-
+def save_baseline(config=None):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-    with open(BASELINE_FILE, "w", encoding="utf-8") as file:
-        json.dump(config, file, indent=4)
+    if config is None:
+        config = DEFAULT_BASELINE.copy()
 
-    print(f"Baseline saved to: {BASELINE_FILE}")
+    config["frozen"] = True
 
+    if not config.get("created_at"):
+        config["created_at"] = datetime.now(
+            timezone.utc
+        ).replace(microsecond=0).isoformat()
 
-# ============================================================
-# LOAD BASELINE
-# ============================================================
-
-def load_baseline() -> dict:
-    """
-    Load the saved baseline configuration.
-    """
-
-    if not BASELINE_FILE.exists():
-        raise FileNotFoundError(
-            f"Baseline file not found: {BASELINE_FILE}"
+    with open(
+        BASELINE_PATH,
+        "w",
+        encoding="utf-8"
+    ) as file:
+        json.dump(
+            config,
+            file,
+            indent=2,
+            ensure_ascii=False
         )
 
-    with open(BASELINE_FILE, "r", encoding="utf-8") as file:
+    return config
+
+
+def load_baseline():
+    if not BASELINE_PATH.exists():
+        raise FileNotFoundError(
+            f"Baseline file not found: {BASELINE_PATH}"
+        )
+
+    with open(
+        BASELINE_PATH,
+        "r",
+        encoding="utf-8"
+    ) as file:
         return json.load(file)
 
 
-# ============================================================
-# MAIN
-# ============================================================
+def display_baseline(config):
 
-if __name__ == "__main__":
+    print("=" * 70)
+    print("DAY 09 - BASELINE CONFIGURATION")
+    print("=" * 70)
 
-    # Display current baseline
+    print(f"Day                : {config.get('day')}")
+    print(
+        f"Embedding Model    : "
+        f"{config.get('embedding_model')}"
+    )
+
+    chunking = config.get("chunking", {})
+
+    print(
+        f"Chunk Size         : "
+        f"{chunking.get('chunk_size')}"
+    )
+
+    print(
+        f"Chunk Overlap      : "
+        f"{chunking.get('chunk_overlap')}"
+    )
+
+    retrieval = config.get("retrieval", {})
+
+    print(
+        f"Top K              : "
+        f"{retrieval.get('top_k')}"
+    )
+
+    print(
+        f"Filters            : "
+        f"{retrieval.get('filters', {})}"
+    )
+
+    print(
+        f"Score Threshold    : "
+        f"{retrieval.get('score_threshold')}"
+    )
+
+    prompt = config.get("prompt", {})
+
+    print(
+        f"Prompt Version     : "
+        f"{prompt.get('version')}"
+    )
+
+    print(
+        f"Frozen             : "
+        f"{config.get('frozen')}"
+    )
+
+    print(
+        f"Created At         : "
+        f"{config.get('created_at')}"
+    )
+
+    print("=" * 70)
+
+
+def main():
+
+    print("=" * 70)
+    print("DAY 09 - FREEZE BASELINE")
+    print("=" * 70)
+
+    baseline = save_baseline()
+
+    print("\nCURRENT BASELINE\n")
     display_baseline(baseline)
 
-    # Save baseline
-    save_baseline(baseline)
+    print(
+        f"\nBaseline saved to: {BASELINE_PATH}"
+    )
 
-    # Verify saved baseline
-    saved_baseline = load_baseline()
+    print("\nSAVED BASELINE\n")
 
-    print("VERIFICATION")
-    print("-" * 60)
+    saved = load_baseline()
+    display_baseline(saved)
 
-    display_baseline(saved_baseline)
+    print(
+        "\nBaseline configuration frozen successfully."
+    )
 
-    print("Baseline configuration frozen successfully.")
+
+if __name__ == "__main__":
+    main()

@@ -1,286 +1,284 @@
-import json
-from datetime import datetime, timezone
-from pathlib import Path
+"""
+DAY 09 - TASK 1
+FREEZE BASELINE CONFIGURATION
 
-from day09.database import (
-    create_tables,
-    save_baseline
-)
+This module records the current retrieval configuration
+before controlled experiments are performed.
+"""
+
+import json
+from datetime import datetime
+from pathlib import Path
 
 
 # ============================================================
 # PROJECT PATHS
 # ============================================================
 
+# freeze_baseline.py
+#     -> src
+#         -> day09
+#
+# parents[0] = day09
+# parents[1] = src
+# parents[2] = project root
+
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-CONFIG_DIR = PROJECT_ROOT / "config"
+DATA_DIR = PROJECT_ROOT / "data"
 
-OUTPUT_DIR = PROJECT_ROOT / "outputs"
-
-CONFIG_FILE = CONFIG_DIR / "baseline_config.json"
-
-REPORT_FILE = OUTPUT_DIR / "baseline_report.txt"
+BASELINE_FILE = DATA_DIR / "baseline.json"
 
 
 # ============================================================
-# CREATE DIRECTORIES
+# BASELINE CONFIGURATION
 # ============================================================
 
-CONFIG_DIR.mkdir(
-    parents=True,
-    exist_ok=True
-)
+baseline = {
+    "day": 9,
 
-OUTPUT_DIR.mkdir(
-    parents=True,
-    exist_ok=True
-)
+    "embedding_model": (
+        "sentence-transformers/all-MiniLM-L6-v2"
+    ),
 
+    "chunk_size": 1000,
 
-# ============================================================
-# INPUT HELPERS
-# ============================================================
+    "overlap": 200,
 
-def ask_text(
-    label: str,
-    default: str | None = None
-) -> str:
+    "top_k": 5,
 
-    if default:
-        value = input(
-            f"{label} [{default}]: "
-        ).strip()
+    "filters": {},
 
-        return value or default
+    "score_threshold": None,
 
-    while True:
+    "prompt_version": "v1",
 
-        value = input(
-            f"{label}: "
-        ).strip()
-
-        if value:
-            return value
-
-        print("Value cannot be empty.")
-
-
-def ask_integer(
-    label: str
-) -> int:
-
-    while True:
-
-        value = input(
-            f"{label}: "
-        ).strip()
-
-        try:
-
-            number = int(value)
-
-            if number < 0:
-                raise ValueError
-
-            return number
-
-        except ValueError:
-
-            print(
-                "Please enter a valid non-negative integer."
-            )
-
-
-def ask_float_or_none(
-    label: str
-):
-
-    while True:
-
-        value = input(
-            f"{label} "
-            "(enter 'none' if not used): "
-        ).strip()
-
-        if value.lower() == "none":
-
-            return None
-
-        try:
-
-            return float(value)
-
-        except ValueError:
-
-            print(
-                "Please enter a number or 'none'."
-            )
+    "created_at": datetime.now().isoformat(
+        timespec="seconds"
+    ),
+}
 
 
 # ============================================================
-# COLLECT BASELINE CONFIGURATION
+# VALIDATE BASELINE
 # ============================================================
 
-def collect_baseline() -> dict:
+def validate_baseline(config: dict) -> None:
+    """
+    Make sure every required Day 09 field exists.
+    """
+
+    required_fields = [
+        "day",
+        "embedding_model",
+        "chunk_size",
+        "overlap",
+        "top_k",
+        "filters",
+        "score_threshold",
+        "prompt_version",
+        "created_at",
+    ]
+
+    missing_fields = [
+        field
+        for field in required_fields
+        if field not in config
+    ]
+
+    if missing_fields:
+        raise ValueError(
+            "Missing required baseline fields: "
+            + ", ".join(missing_fields)
+        )
+
+
+# ============================================================
+# DISPLAY BASELINE
+# ============================================================
+
+def display_baseline(config: dict) -> None:
+    """
+    Display the baseline configuration.
+    """
 
     print()
-    print("=" * 60)
-    print("DAY 09 - TASK 1")
-    print("FREEZE BASELINE CONFIGURATION")
-    print("=" * 60)
-    print()
+    print("=" * 70)
+    print("DAY 09 - BASELINE CONFIGURATION")
+    print("=" * 70)
 
     print(
-        "Enter the CURRENT Day 08 configuration."
+        f"Day                : "
+        f"{config['day']}"
     )
 
     print(
-        "Do NOT enter experimental/new values."
+        f"Embedding Model    : "
+        f"{config['embedding_model']}"
     )
 
-    print()
-
-    embedding_model = ask_text(
-        "Embedding model",
-        default="all-MiniLM-L6-v2"
+    print(
+        f"Chunk Size         : "
+        f"{config['chunk_size']}"
     )
 
-    chunk_size = ask_integer(
-        "Chunk size"
+    print(
+        f"Overlap            : "
+        f"{config['overlap']}"
     )
 
-    chunk_overlap = ask_integer(
-        "Chunk overlap"
+    print(
+        f"Top K              : "
+        f"{config['top_k']}"
     )
 
-    top_k = ask_integer(
-        "Top-k"
+    print(
+        f"Filters            : "
+        f"{config['filters']}"
     )
 
-    filters = ask_text(
-        "Filters",
-        default="none"
+    print(
+        f"Score Threshold    : "
+        f"{config['score_threshold']}"
     )
 
-    score_threshold = ask_float_or_none(
-        "Score threshold"
+    print(
+        f"Prompt Version     : "
+        f"{config['prompt_version']}"
     )
 
-    prompt_version = ask_text(
-        "Prompt version"
+    print(
+        f"Created At         : "
+        f"{config['created_at']}"
     )
 
-    frozen_at = datetime.now(
-        timezone.utc
-    ).isoformat()
-
-    return {
-        "embedding_model": embedding_model,
-        "chunk_size": chunk_size,
-        "chunk_overlap": chunk_overlap,
-        "top_k": top_k,
-        "filters": filters,
-        "score_threshold": score_threshold,
-        "prompt_version": prompt_version,
-        "frozen_at": frozen_at
-    }
+    print("=" * 70)
 
 
 # ============================================================
-# SAVE JSON CONFIGURATION
+# SAVE BASELINE
 # ============================================================
 
-def save_json(config: dict) -> None:
+def save_baseline(config: dict) -> None:
+    """
+    Save the frozen baseline configuration.
+    """
 
-    with CONFIG_FILE.open(
+    DATA_DIR.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    with open(
+        BASELINE_FILE,
         "w",
-        encoding="utf-8"
+        encoding="utf-8",
     ) as file:
 
         json.dump(
             config,
             file,
-            indent=4
+            indent=2,
+            ensure_ascii=False,
         )
 
-
-# ============================================================
-# SAVE HUMAN-READABLE REPORT
-# ============================================================
-
-def save_report(config: dict) -> None:
-
-    lines = [
-        "=" * 60,
-        "DAY 09 - BASELINE CONFIGURATION",
-        "=" * 60,
-        "",
-        f"Embedding model : {config['embedding_model']}",
-        f"Chunk size      : {config['chunk_size']}",
-        f"Chunk overlap   : {config['chunk_overlap']}",
-        f"Top-k           : {config['top_k']}",
-        f"Filters         : {config['filters']}",
-        f"Score threshold : {config['score_threshold']}",
-        f"Prompt version  : {config['prompt_version']}",
-        f"Frozen at       : {config['frozen_at']}",
-        "",
-        "STATUS: BASELINE FROZEN",
-        "",
-        "No experimental changes have been applied.",
-        "=" * 60
-    ]
-
-    REPORT_FILE.write_text(
-        "\n".join(lines),
-        encoding="utf-8"
+    print()
+    print(
+        f"Baseline saved to: {BASELINE_FILE}"
     )
+
+
+# ============================================================
+# LOAD BASELINE
+# ============================================================
+
+def load_baseline() -> dict:
+    """
+    Load the frozen baseline configuration.
+    """
+
+    if not BASELINE_FILE.exists():
+        raise FileNotFoundError(
+            f"Baseline file does not exist: "
+            f"{BASELINE_FILE}"
+        )
+
+    with open(
+        BASELINE_FILE,
+        "r",
+        encoding="utf-8",
+    ) as file:
+
+        config = json.load(file)
+
+    return config
 
 
 # ============================================================
 # MAIN
 # ============================================================
 
-def main():
+def main() -> None:
 
-    create_tables()
+    print("=" * 70)
+    print("DAY 09 - FREEZE BASELINE")
+    print("=" * 70)
 
-    config = collect_baseline()
+    # --------------------------------------------------------
+    # Validate current configuration
+    # --------------------------------------------------------
 
-    save_json(
-        config
-    )
+    validate_baseline(baseline)
 
-    save_baseline(
-        config
-    )
-
-    save_report(
-        config
-    )
+    # --------------------------------------------------------
+    # Display current configuration
+    # --------------------------------------------------------
 
     print()
-    print("=" * 60)
-    print("BASELINE FROZEN SUCCESSFULLY")
-    print("=" * 60)
+    print("CURRENT BASELINE")
+
+    display_baseline(baseline)
+
+    # --------------------------------------------------------
+    # Save configuration
+    # --------------------------------------------------------
+
+    save_baseline(baseline)
+
+    # --------------------------------------------------------
+    # Load configuration back from disk
+    # --------------------------------------------------------
+
+    saved_baseline = load_baseline()
+
+    # --------------------------------------------------------
+    # Validate saved configuration
+    # --------------------------------------------------------
+
+    validate_baseline(saved_baseline)
+
+    # --------------------------------------------------------
+    # Display saved configuration
+    # --------------------------------------------------------
 
     print()
-    print(
-        f"Configuration : {CONFIG_FILE}"
-    )
+    print("SAVED BASELINE")
 
-    print(
-        f"Database      : "
-        f"{PROJECT_ROOT / 'db' / 'day09.sqlite3'}"
-    )
+    display_baseline(saved_baseline)
 
-    print(
-        f"Report        : {REPORT_FILE}"
-    )
+    # --------------------------------------------------------
+    # Success
+    # --------------------------------------------------------
 
     print()
-    print("Day 09 Task 1 completed.")
+    print("=" * 70)
+    print("Baseline configuration frozen successfully.")
+    print("=" * 70)
 
+
+# ============================================================
+# ENTRY POINT
+# ============================================================
 
 if __name__ == "__main__":
     main()
