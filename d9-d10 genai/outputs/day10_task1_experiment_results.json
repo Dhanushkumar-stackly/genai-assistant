@@ -3,7 +3,7 @@
   "retrieval_recall": 0.8667,
   "top1_accuracy": 0.6333,
   "mrr": 0.7117,
-  "average_latency_ms": 1.21,
+  "average_latency_ms": 1.17,
   "details": [
     {
       "question": "What is Artificial Intelligence and what tasks can AI systems perform?",
@@ -22,7 +22,7 @@
         0.4
       ],
       "recovered": true,
-      "latency_ms": 1.85
+      "latency_ms": 1.08
     },
     {
       "question": "What are the fundamental concepts of Machine Learning?",
@@ -43,7 +43,7 @@
         0.5
       ],
       "recovered": true,
-      "latency_ms": 1.43
+      "latency_ms": 0.83
     },
     {
       "question": "How does Natural Language Processing help computers understand human language?",
@@ -62,7 +62,7 @@
         0.2222
       ],
       "recovered": true,
-      "latency_ms": 1.6
+      "latency_ms": 1.07
     },
     {
       "question": "How do AI systems analyze and interpret images and videos?",
@@ -81,7 +81,7 @@
         0.3333
       ],
       "recovered": true,
-      "latency_ms": 1.7
+      "latency_ms": 1.08
     },
     {
       "question": "How do neural networks learn during Deep Learning training?",
@@ -100,7 +100,7 @@
         0.2222
       ],
       "recovered": true,
-      "latency_ms": 2.12
+      "latency_ms": 1.02
     },
     {
       "question": "How does an agent learn through interaction with an environment?",
@@ -119,7 +119,7 @@
         0.2222
       ],
       "recovered": true,
-      "latency_ms": 1.59
+      "latency_ms": 1.28
     },
     {
       "question": "Why is data preprocessing important before machine learning?",
@@ -140,7 +140,7 @@
         0.625
       ],
       "recovered": true,
-      "latency_ms": 1.22
+      "latency_ms": 1.38
     },
     {
       "question": "What is feature engineering and why is it useful in machine learning?",
@@ -159,7 +159,7 @@
         0.4545
       ],
       "recovered": true,
-      "latency_ms": 0.8
+      "latency_ms": 1.92
     },
     {
       "question": "How is a machine learning model trained using data?",
@@ -180,7 +180,7 @@
         0.75
       ],
       "recovered": true,
-      "latency_ms": 0.78
+      "latency_ms": 1.02
     },
     {
       "question": "What is required to deploy a trained machine learning model?",
@@ -201,7 +201,7 @@
         0.5556
       ],
       "recovered": true,
-      "latency_ms": 0.84
+      "latency_ms": 0.94
     },
     {
       "question": "Why should deployed machine learning models be monitored?",
@@ -222,7 +222,7 @@
         0.375
       ],
       "recovered": true,
-      "latency_ms": 1.07
+      "latency_ms": 0.82
     },
     {
       "question": "What checks are performed during data validation?",
@@ -243,7 +243,7 @@
         0.2857
       ],
       "recovered": false,
-      "latency_ms": 0.94
+      "latency_ms": 0.81
     },
     {
       "question": "How are missing values, duplicates, and inconsistent data handled?",
@@ -264,7 +264,7 @@
         0.4444
       ],
       "recovered": true,
-      "latency_ms": 1.04
+      "latency_ms": 0.83
     },
     {
       "question": "What is supervised learning and what does it require?",
@@ -285,7 +285,7 @@
         0.5
       ],
       "recovered": true,
-      "latency_ms": 1.18
+      "latency_ms": 0.8
     },
     {
       "question": "How does unsupervised learning discover patterns in data?",
@@ -306,7 +306,7 @@
         0.5
       ],
       "recovered": true,
-      "latency_ms": 1.62
+      "latency_ms": 0.8
     },
     {
       "question": "What is classification in machine learning?",
@@ -327,7 +327,7 @@
         0.6667
       ],
       "recovered": true,
-      "latency_ms": 0.93
+      "latency_ms": 0.91
     },
     {
       "question": "What is regression used for in machine learning?",
@@ -348,7 +348,7 @@
         0.75
       ],
       "recovered": false,
-      "latency_ms": 0.85
+      "latency_ms": 1.03
     },
     {
       "question": "How does clustering group similar data points?",
@@ -369,7 +369,7 @@
         0.2857
       ],
       "recovered": true,
-      "latency_ms": 1.31
+      "latency_ms": 0.82
     },
     {
       "question": "What is anomaly detection used to identify?",
@@ -390,7 +390,7 @@
         0.5714
       ],
       "recovered": true,
-      "latency_ms": 1.01
+      "latency_ms": 0.89
     },
     {
       "question": "How do recommendation systems provide relevant items to users?",
@@ -411,7 +411,7 @@
         0.3333
       ],
       "recovered": true,
-      "latency_ms": 0.9
+      "latency_ms": 0.87
     },
     {
       "question": "What is Generative AI and what type of content can it create?",
@@ -430,7 +430,7 @@
         0.3636
       ],
       "recovered": true,
-      "latency_ms": 1.35
+      "latency_ms": 0.86
     },
     {
       "question": "What are Large Language Models used for?",
@@ -449,7 +449,7 @@
         0.5714
       ],
       "recovered": true,
-      "latency_ms": 1.18
+      "latency_ms": 1.07
     },
     {
       "question": "What is prompt engineering and why is it important?",
@@ -466,7 +466,7 @@
         0.375
       ],
       "recovered": true,
-      "latency_ms": 1.11
+      "latency_ms": 2.41
     },
     {
       "question": "What are vector embeddings and how are they used?",
@@ -487,7 +487,7 @@
         0.5
       ],
       "recovered": true,
-      "latency_ms": 1.46
+      "latency_ms": 1.87
     },
     {
       "question": "How does semantic search retrieve information based on meaning?",
@@ -508,7 +508,7 @@
         0.3333
       ],
       "recovered": true,
-      "latency_ms": 0.93
+      "latency_ms": 1.82
     },
     {
       "question": "How does Retrieval Augmented Generation use retrieved document context?",
@@ -529,7 +529,7 @@
         0.3333
       ],
       "recovered": true,
-      "latency_ms": 0.94
+      "latency_ms": 1.7
     },
     {
       "question": "Why are large documents divided into smaller chunks?",
@@ -548,7 +548,7 @@
         0.25
       ],
       "recovered": true,
-      "latency_ms": 0.94
+      "latency_ms": 1.13
     },
     {
       "question": "What does a vector database store and retrieve?",
@@ -569,7 +569,7 @@
         0.2857
       ],
       "recovered": true,
-      "latency_ms": 0.99
+      "latency_ms": 1.32
     },
     {
       "question": "What is the purpose of an information retrieval system?",
@@ -588,7 +588,7 @@
         0.5556
       ],
       "recovered": false,
-      "latency_ms": 1.33
+      "latency_ms": 1.69
     },
     {
       "question": "How can relevant information be identified from a collection of documents?",
@@ -609,7 +609,7 @@
         0.4
       ],
       "recovered": false,
-      "latency_ms": 1.43
+      "latency_ms": 1.02
     }
   ]
 }
