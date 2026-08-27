@@ -1,0 +1,1275 @@
+{
+  "experiment": {
+    "id": "DAY10-TASK1",
+    "name": "Controlled Chunking Experiment",
+    "variable": "chunk_size",
+    "baseline_value": 1000,
+    "experiment_value": 500,
+    "baseline_overlap": 200,
+    "experiment_overlap": 100,
+    "top_k": 5,
+    "hypothesis": "Changing chunk size may improve retrieval quality for weak questions."
+  },
+  "baseline_metrics": {
+    "total_questions": 30,
+    "retrieval_recall": 0.8,
+    "top1_accuracy": 0.6,
+    "mrr": 0.67,
+    "average_latency_ms": 0.71
+  },
+  "experiment_metrics": {
+    "total_questions": 30,
+    "retrieval_recall": 0.8667,
+    "top1_accuracy": 0.6333,
+    "mrr": 0.7117,
+    "average_latency_ms": 1.21
+  },
+  "metric_changes": {
+    "retrieval_recall": 0.0667,
+    "top1_accuracy": 0.0333,
+    "mrr": 0.0417,
+    "average_latency_ms": 0.5
+  },
+  "interpretation": "The smaller chunk configuration improved retrieval recall.",
+  "conclusion": "The controlled experiment changed the chunking configuration while keeping top_k fixed. Retrieval recall improved, indicating that the candidate chunking configuration may be beneficial.",
+  "baseline_results": [
+    {
+      "question": "What is Artificial Intelligence and what tasks can AI systems perform?",
+      "expected_doc_id": "document_001",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_001",
+        "document_030",
+        "document_004",
+        "document_005",
+        "document_010"
+      ],
+      "retrieved_scores": [
+        0.8,
+        0.5,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "recovered": true,
+      "latency_ms": 0.96
+    },
+    {
+      "question": "What are the fundamental concepts of Machine Learning?",
+      "expected_doc_id": "document_002",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_002",
+        "document_013",
+        "document_030",
+        "document_003",
+        "document_007"
+      ],
+      "retrieved_scores": [
+        0.75,
+        0.625,
+        0.625,
+        0.5,
+        0.5
+      ],
+      "recovered": true,
+      "latency_ms": 0.61
+    },
+    {
+      "question": "How does Natural Language Processing help computers understand human language?",
+      "expected_doc_id": "document_003",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_003",
+        "document_005",
+        "document_001",
+        "document_009",
+        "document_012"
+      ],
+      "retrieved_scores": [
+        0.6667,
+        0.3333,
+        0.2222,
+        0.2222,
+        0.2222
+      ],
+      "recovered": true,
+      "latency_ms": 0.6
+    },
+    {
+      "question": "How do AI systems analyze and interpret images and videos?",
+      "expected_doc_id": "document_004",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_004",
+        "document_001",
+        "document_005",
+        "document_006",
+        "document_010"
+      ],
+      "retrieved_scores": [
+        0.8889,
+        0.4444,
+        0.3333,
+        0.3333,
+        0.3333
+      ],
+      "recovered": true,
+      "latency_ms": 0.6
+    },
+    {
+      "question": "How do neural networks learn during Deep Learning training?",
+      "expected_doc_id": "document_005",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_005",
+        "document_002",
+        "document_006",
+        "document_003",
+        "document_008"
+      ],
+      "retrieved_scores": [
+        0.6667,
+        0.4444,
+        0.4444,
+        0.2222,
+        0.2222
+      ],
+      "recovered": true,
+      "latency_ms": 0.57
+    },
+    {
+      "question": "How does an agent learn through interaction with an environment?",
+      "expected_doc_id": "document_006",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_006",
+        "document_001",
+        "document_002",
+        "document_010",
+        "document_023"
+      ],
+      "retrieved_scores": [
+        0.8889,
+        0.3333,
+        0.3333,
+        0.3333,
+        0.3333
+      ],
+      "recovered": true,
+      "latency_ms": 0.61
+    },
+    {
+      "question": "Why is data preprocessing important before machine learning?",
+      "expected_doc_id": "document_007",
+      "expected_rank": 2,
+      "retrieved_doc_ids": [
+        "document_003",
+        "document_007",
+        "document_011",
+        "document_012",
+        "document_013"
+      ],
+      "retrieved_scores": [
+        0.75,
+        0.75,
+        0.625,
+        0.625,
+        0.625
+      ],
+      "recovered": true,
+      "latency_ms": 0.59
+    },
+    {
+      "question": "What is feature engineering and why is it useful in machine learning?",
+      "expected_doc_id": "document_008",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_008",
+        "document_007",
+        "document_010",
+        "document_003",
+        "document_011"
+      ],
+      "retrieved_scores": [
+        0.7273,
+        0.5455,
+        0.5455,
+        0.4545,
+        0.4545
+      ],
+      "recovered": true,
+      "latency_ms": 0.58
+    },
+    {
+      "question": "How is a machine learning model trained using data?",
+      "expected_doc_id": "document_009",
+      "expected_rank": 5,
+      "retrieved_doc_ids": [
+        "document_010",
+        "document_002",
+        "document_007",
+        "document_008",
+        "document_009"
+      ],
+      "retrieved_scores": [
+        0.875,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "recovered": true,
+      "latency_ms": 0.58
+    },
+    {
+      "question": "What is required to deploy a trained machine learning model?",
+      "expected_doc_id": "document_010",
+      "expected_rank": null,
+      "retrieved_doc_ids": [
+        "document_003",
+        "document_005",
+        "document_007",
+        "document_008",
+        "document_009"
+      ],
+      "retrieved_scores": [
+        0.5556,
+        0.5556,
+        0.5556,
+        0.5556,
+        0.5556
+      ],
+      "recovered": false,
+      "latency_ms": 0.56
+    },
+    {
+      "question": "Why should deployed machine learning models be monitored?",
+      "expected_doc_id": "document_011",
+      "expected_rank": 2,
+      "retrieved_doc_ids": [
+        "document_010",
+        "document_011",
+        "document_002",
+        "document_008",
+        "document_003"
+      ],
+      "retrieved_scores": [
+        0.75,
+        0.75,
+        0.625,
+        0.625,
+        0.5
+      ],
+      "recovered": true,
+      "latency_ms": 0.59
+    },
+    {
+      "question": "What checks are performed during data validation?",
+      "expected_doc_id": "document_012",
+      "expected_rank": null,
+      "retrieved_doc_ids": [
+        "document_013",
+        "document_008",
+        "document_011",
+        "document_030",
+        "document_001"
+      ],
+      "retrieved_scores": [
+        0.5714,
+        0.4286,
+        0.4286,
+        0.4286,
+        0.2857
+      ],
+      "recovered": false,
+      "latency_ms": 0.55
+    },
+    {
+      "question": "How are missing values, duplicates, and inconsistent data handled?",
+      "expected_doc_id": "document_013",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_013",
+        "document_030",
+        "document_012",
+        "document_001",
+        "document_004"
+      ],
+      "retrieved_scores": [
+        0.8889,
+        0.7778,
+        0.6667,
+        0.4444,
+        0.4444
+      ],
+      "recovered": true,
+      "latency_ms": 0.57
+    },
+    {
+      "question": "What is supervised learning and what does it require?",
+      "expected_doc_id": "document_014",
+      "expected_rank": 5,
+      "retrieved_doc_ids": [
+        "document_007",
+        "document_003",
+        "document_005",
+        "document_010",
+        "document_014"
+      ],
+      "retrieved_scores": [
+        0.625,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "recovered": true,
+      "latency_ms": 0.61
+    },
+    {
+      "question": "How does unsupervised learning discover patterns in data?",
+      "expected_doc_id": "document_015",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_015",
+        "document_001",
+        "document_002",
+        "document_004",
+        "document_007"
+      ],
+      "retrieved_scores": [
+        0.625,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "recovered": true,
+      "latency_ms": 0.58
+    },
+    {
+      "question": "What is classification in machine learning?",
+      "expected_doc_id": "document_016",
+      "expected_rank": 5,
+      "retrieved_doc_ids": [
+        "document_003",
+        "document_007",
+        "document_008",
+        "document_011",
+        "document_016"
+      ],
+      "retrieved_scores": [
+        0.8333,
+        0.8333,
+        0.8333,
+        0.8333,
+        0.8333
+      ],
+      "recovered": true,
+      "latency_ms": 0.67
+    },
+    {
+      "question": "What is regression used for in machine learning?",
+      "expected_doc_id": "document_017",
+      "expected_rank": null,
+      "retrieved_doc_ids": [
+        "document_007",
+        "document_003",
+        "document_008",
+        "document_009",
+        "document_010"
+      ],
+      "retrieved_scores": [
+        0.875,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "recovered": false,
+      "latency_ms": 0.72
+    },
+    {
+      "question": "How does clustering group similar data points?",
+      "expected_doc_id": "document_018",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_018",
+        "document_001",
+        "document_002",
+        "document_004",
+        "document_007"
+      ],
+      "retrieved_scores": [
+        0.5714,
+        0.2857,
+        0.2857,
+        0.2857,
+        0.2857
+      ],
+      "recovered": true,
+      "latency_ms": 0.72
+    },
+    {
+      "question": "What is anomaly detection used to identify?",
+      "expected_doc_id": "document_019",
+      "expected_rank": null,
+      "retrieved_doc_ids": [
+        "document_001",
+        "document_008",
+        "document_015",
+        "document_016",
+        "document_018"
+      ],
+      "retrieved_scores": [
+        0.5714,
+        0.5714,
+        0.5714,
+        0.5714,
+        0.5714
+      ],
+      "recovered": false,
+      "latency_ms": 0.63
+    },
+    {
+      "question": "How do recommendation systems provide relevant items to users?",
+      "expected_doc_id": "document_020",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_020",
+        "document_008",
+        "document_026",
+        "document_001",
+        "document_028"
+      ],
+      "retrieved_scores": [
+        0.8889,
+        0.5556,
+        0.5556,
+        0.4444,
+        0.4444
+      ],
+      "recovered": true,
+      "latency_ms": 0.69
+    },
+    {
+      "question": "What is Generative AI and what type of content can it create?",
+      "expected_doc_id": "document_021",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_021",
+        "document_005",
+        "document_001",
+        "document_007",
+        "document_010"
+      ],
+      "retrieved_scores": [
+        0.6364,
+        0.4545,
+        0.3636,
+        0.3636,
+        0.3636
+      ],
+      "recovered": true,
+      "latency_ms": 0.82
+    },
+    {
+      "question": "What are Large Language Models used for?",
+      "expected_doc_id": "document_022",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_022",
+        "document_003",
+        "document_005",
+        "document_008",
+        "document_024"
+      ],
+      "retrieved_scores": [
+        0.8571,
+        0.5714,
+        0.5714,
+        0.5714,
+        0.5714
+      ],
+      "recovered": true,
+      "latency_ms": 0.8
+    },
+    {
+      "question": "What is prompt engineering and why is it important?",
+      "expected_doc_id": "document_023",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_023",
+        "document_007",
+        "document_008",
+        "document_010",
+        "document_011"
+      ],
+      "retrieved_scores": [
+        0.5,
+        0.375,
+        0.375,
+        0.375,
+        0.375
+      ],
+      "recovered": true,
+      "latency_ms": 0.8
+    },
+    {
+      "question": "What are vector embeddings and how are they used?",
+      "expected_doc_id": "document_024",
+      "expected_rank": 2,
+      "retrieved_doc_ids": [
+        "document_028",
+        "document_024",
+        "document_026",
+        "document_027",
+        "document_001"
+      ],
+      "retrieved_scores": [
+        0.75,
+        0.625,
+        0.625,
+        0.625,
+        0.5
+      ],
+      "recovered": true,
+      "latency_ms": 0.82
+    },
+    {
+      "question": "How does semantic search retrieve information based on meaning?",
+      "expected_doc_id": "document_025",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_025",
+        "document_028",
+        "document_024",
+        "document_001",
+        "document_006"
+      ],
+      "retrieved_scores": [
+        0.7778,
+        0.5556,
+        0.4444,
+        0.3333,
+        0.3333
+      ],
+      "recovered": true,
+      "latency_ms": 0.78
+    },
+    {
+      "question": "How does Retrieval Augmented Generation use retrieved document context?",
+      "expected_doc_id": "document_026",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_026",
+        "document_028",
+        "document_023",
+        "document_027",
+        "document_010"
+      ],
+      "retrieved_scores": [
+        0.7778,
+        0.5556,
+        0.4444,
+        0.4444,
+        0.3333
+      ],
+      "recovered": true,
+      "latency_ms": 0.99
+    },
+    {
+      "question": "Why are large documents divided into smaller chunks?",
+      "expected_doc_id": "document_027",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_027",
+        "document_026",
+        "document_008",
+        "document_022",
+        "document_024"
+      ],
+      "retrieved_scores": [
+        0.875,
+        0.375,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "recovered": true,
+      "latency_ms": 1.02
+    },
+    {
+      "question": "What does a vector database store and retrieve?",
+      "expected_doc_id": "document_028",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_028",
+        "document_025",
+        "document_007",
+        "document_024",
+        "document_027"
+      ],
+      "retrieved_scores": [
+        0.5714,
+        0.4286,
+        0.2857,
+        0.2857,
+        0.2857
+      ],
+      "recovered": true,
+      "latency_ms": 0.85
+    },
+    {
+      "question": "What is the purpose of an information retrieval system?",
+      "expected_doc_id": "document_029",
+      "expected_rank": null,
+      "retrieved_doc_ids": [
+        "document_001",
+        "document_024",
+        "document_003",
+        "document_005",
+        "document_009"
+      ],
+      "retrieved_scores": [
+        0.6667,
+        0.6667,
+        0.5556,
+        0.5556,
+        0.5556
+      ],
+      "recovered": false,
+      "latency_ms": 0.93
+    },
+    {
+      "question": "How can relevant information be identified from a collection of documents?",
+      "expected_doc_id": "document_030",
+      "expected_rank": null,
+      "retrieved_doc_ids": [
+        "document_002",
+        "document_008",
+        "document_023",
+        "document_029",
+        "document_012"
+      ],
+      "retrieved_scores": [
+        0.6,
+        0.6,
+        0.5,
+        0.5,
+        0.4
+      ],
+      "recovered": false,
+      "latency_ms": 0.98
+    }
+  ],
+  "experiment_results": [
+    {
+      "question": "What is Artificial Intelligence and what tasks can AI systems perform?",
+      "expected_doc_id": "document_001",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_001",
+        "document_030",
+        "document_004",
+        "document_005"
+      ],
+      "retrieved_scores": [
+        0.7,
+        0.5,
+        0.4,
+        0.4
+      ],
+      "recovered": true,
+      "latency_ms": 1.85
+    },
+    {
+      "question": "What are the fundamental concepts of Machine Learning?",
+      "expected_doc_id": "document_002",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_002",
+        "document_013",
+        "document_007",
+        "document_008",
+        "document_009"
+      ],
+      "retrieved_scores": [
+        0.75,
+        0.625,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "recovered": true,
+      "latency_ms": 1.43
+    },
+    {
+      "question": "How does Natural Language Processing help computers understand human language?",
+      "expected_doc_id": "document_003",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_003",
+        "document_005",
+        "document_001",
+        "document_009"
+      ],
+      "retrieved_scores": [
+        0.6667,
+        0.3333,
+        0.2222,
+        0.2222
+      ],
+      "recovered": true,
+      "latency_ms": 1.6
+    },
+    {
+      "question": "How do AI systems analyze and interpret images and videos?",
+      "expected_doc_id": "document_004",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_004",
+        "document_001",
+        "document_005",
+        "document_011"
+      ],
+      "retrieved_scores": [
+        0.8889,
+        0.4444,
+        0.3333,
+        0.3333
+      ],
+      "recovered": true,
+      "latency_ms": 1.7
+    },
+    {
+      "question": "How do neural networks learn during Deep Learning training?",
+      "expected_doc_id": "document_005",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_005",
+        "document_002",
+        "document_006",
+        "document_003"
+      ],
+      "retrieved_scores": [
+        0.6667,
+        0.4444,
+        0.3333,
+        0.2222
+      ],
+      "recovered": true,
+      "latency_ms": 2.12
+    },
+    {
+      "question": "How does an agent learn through interaction with an environment?",
+      "expected_doc_id": "document_006",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_006",
+        "document_002",
+        "document_010",
+        "document_001"
+      ],
+      "retrieved_scores": [
+        0.8889,
+        0.3333,
+        0.3333,
+        0.2222
+      ],
+      "recovered": true,
+      "latency_ms": 1.59
+    },
+    {
+      "question": "Why is data preprocessing important before machine learning?",
+      "expected_doc_id": "document_007",
+      "expected_rank": 2,
+      "retrieved_doc_ids": [
+        "document_003",
+        "document_007",
+        "document_011",
+        "document_012",
+        "document_030"
+      ],
+      "retrieved_scores": [
+        0.75,
+        0.75,
+        0.625,
+        0.625,
+        0.625
+      ],
+      "recovered": true,
+      "latency_ms": 1.22
+    },
+    {
+      "question": "What is feature engineering and why is it useful in machine learning?",
+      "expected_doc_id": "document_008",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_008",
+        "document_007",
+        "document_010",
+        "document_003"
+      ],
+      "retrieved_scores": [
+        0.7273,
+        0.5455,
+        0.5455,
+        0.4545
+      ],
+      "recovered": true,
+      "latency_ms": 0.8
+    },
+    {
+      "question": "How is a machine learning model trained using data?",
+      "expected_doc_id": "document_009",
+      "expected_rank": 2,
+      "retrieved_doc_ids": [
+        "document_007",
+        "document_009",
+        "document_010",
+        "document_011",
+        "document_012"
+      ],
+      "retrieved_scores": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "recovered": true,
+      "latency_ms": 0.78
+    },
+    {
+      "question": "What is required to deploy a trained machine learning model?",
+      "expected_doc_id": "document_010",
+      "expected_rank": 5,
+      "retrieved_doc_ids": [
+        "document_003",
+        "document_005",
+        "document_007",
+        "document_009",
+        "document_010"
+      ],
+      "retrieved_scores": [
+        0.5556,
+        0.5556,
+        0.5556,
+        0.5556,
+        0.5556
+      ],
+      "recovered": true,
+      "latency_ms": 0.84
+    },
+    {
+      "question": "Why should deployed machine learning models be monitored?",
+      "expected_doc_id": "document_011",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_011",
+        "document_010",
+        "document_008",
+        "document_030",
+        "document_002"
+      ],
+      "retrieved_scores": [
+        0.75,
+        0.625,
+        0.5,
+        0.5,
+        0.375
+      ],
+      "recovered": true,
+      "latency_ms": 1.07
+    },
+    {
+      "question": "What checks are performed during data validation?",
+      "expected_doc_id": "document_012",
+      "expected_rank": null,
+      "retrieved_doc_ids": [
+        "document_013",
+        "document_008",
+        "document_011",
+        "document_030",
+        "document_001"
+      ],
+      "retrieved_scores": [
+        0.5714,
+        0.4286,
+        0.4286,
+        0.4286,
+        0.2857
+      ],
+      "recovered": false,
+      "latency_ms": 0.94
+    },
+    {
+      "question": "How are missing values, duplicates, and inconsistent data handled?",
+      "expected_doc_id": "document_013",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_013",
+        "document_012",
+        "document_030",
+        "document_001",
+        "document_004"
+      ],
+      "retrieved_scores": [
+        0.8889,
+        0.6667,
+        0.6667,
+        0.4444,
+        0.4444
+      ],
+      "recovered": true,
+      "latency_ms": 1.04
+    },
+    {
+      "question": "What is supervised learning and what does it require?",
+      "expected_doc_id": "document_014",
+      "expected_rank": 5,
+      "retrieved_doc_ids": [
+        "document_003",
+        "document_005",
+        "document_007",
+        "document_010",
+        "document_014"
+      ],
+      "retrieved_scores": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "recovered": true,
+      "latency_ms": 1.18
+    },
+    {
+      "question": "How does unsupervised learning discover patterns in data?",
+      "expected_doc_id": "document_015",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_015",
+        "document_002",
+        "document_004",
+        "document_008",
+        "document_011"
+      ],
+      "retrieved_scores": [
+        0.625,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "recovered": true,
+      "latency_ms": 1.62
+    },
+    {
+      "question": "What is classification in machine learning?",
+      "expected_doc_id": "document_016",
+      "expected_rank": 4,
+      "retrieved_doc_ids": [
+        "document_007",
+        "document_008",
+        "document_011",
+        "document_016",
+        "document_003"
+      ],
+      "retrieved_scores": [
+        0.8333,
+        0.8333,
+        0.8333,
+        0.8333,
+        0.6667
+      ],
+      "recovered": true,
+      "latency_ms": 0.93
+    },
+    {
+      "question": "What is regression used for in machine learning?",
+      "expected_doc_id": "document_017",
+      "expected_rank": null,
+      "retrieved_doc_ids": [
+        "document_007",
+        "document_008",
+        "document_009",
+        "document_010",
+        "document_012"
+      ],
+      "retrieved_scores": [
+        0.875,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "recovered": false,
+      "latency_ms": 0.85
+    },
+    {
+      "question": "How does clustering group similar data points?",
+      "expected_doc_id": "document_018",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_018",
+        "document_001",
+        "document_002",
+        "document_004",
+        "document_007"
+      ],
+      "retrieved_scores": [
+        0.5714,
+        0.2857,
+        0.2857,
+        0.2857,
+        0.2857
+      ],
+      "recovered": true,
+      "latency_ms": 1.31
+    },
+    {
+      "question": "What is anomaly detection used to identify?",
+      "expected_doc_id": "document_019",
+      "expected_rank": 5,
+      "retrieved_doc_ids": [
+        "document_008",
+        "document_015",
+        "document_016",
+        "document_018",
+        "document_019"
+      ],
+      "retrieved_scores": [
+        0.5714,
+        0.5714,
+        0.5714,
+        0.5714,
+        0.5714
+      ],
+      "recovered": true,
+      "latency_ms": 1.01
+    },
+    {
+      "question": "How do recommendation systems provide relevant items to users?",
+      "expected_doc_id": "document_020",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_020",
+        "document_026",
+        "document_008",
+        "document_028",
+        "document_001"
+      ],
+      "retrieved_scores": [
+        0.8889,
+        0.5556,
+        0.4444,
+        0.4444,
+        0.3333
+      ],
+      "recovered": true,
+      "latency_ms": 0.9
+    },
+    {
+      "question": "What is Generative AI and what type of content can it create?",
+      "expected_doc_id": "document_021",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_021",
+        "document_005",
+        "document_007",
+        "document_010"
+      ],
+      "retrieved_scores": [
+        0.6364,
+        0.3636,
+        0.3636,
+        0.3636
+      ],
+      "recovered": true,
+      "latency_ms": 1.35
+    },
+    {
+      "question": "What are Large Language Models used for?",
+      "expected_doc_id": "document_022",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_022",
+        "document_008",
+        "document_026",
+        "document_027"
+      ],
+      "retrieved_scores": [
+        0.8571,
+        0.5714,
+        0.5714,
+        0.5714
+      ],
+      "recovered": true,
+      "latency_ms": 1.18
+    },
+    {
+      "question": "What is prompt engineering and why is it important?",
+      "expected_doc_id": "document_023",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_023",
+        "document_007",
+        "document_008"
+      ],
+      "retrieved_scores": [
+        0.5,
+        0.375,
+        0.375
+      ],
+      "recovered": true,
+      "latency_ms": 1.11
+    },
+    {
+      "question": "What are vector embeddings and how are they used?",
+      "expected_doc_id": "document_024",
+      "expected_rank": 2,
+      "retrieved_doc_ids": [
+        "document_028",
+        "document_024",
+        "document_026",
+        "document_027",
+        "document_001"
+      ],
+      "retrieved_scores": [
+        0.75,
+        0.625,
+        0.625,
+        0.625,
+        0.5
+      ],
+      "recovered": true,
+      "latency_ms": 1.46
+    },
+    {
+      "question": "How does semantic search retrieve information based on meaning?",
+      "expected_doc_id": "document_025",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_025",
+        "document_028",
+        "document_001",
+        "document_006",
+        "document_024"
+      ],
+      "retrieved_scores": [
+        0.7778,
+        0.5556,
+        0.3333,
+        0.3333,
+        0.3333
+      ],
+      "recovered": true,
+      "latency_ms": 0.93
+    },
+    {
+      "question": "How does Retrieval Augmented Generation use retrieved document context?",
+      "expected_doc_id": "document_026",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_026",
+        "document_028",
+        "document_027",
+        "document_010",
+        "document_023"
+      ],
+      "retrieved_scores": [
+        0.7778,
+        0.5556,
+        0.4444,
+        0.3333,
+        0.3333
+      ],
+      "recovered": true,
+      "latency_ms": 0.94
+    },
+    {
+      "question": "Why are large documents divided into smaller chunks?",
+      "expected_doc_id": "document_027",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_027",
+        "document_026",
+        "document_008",
+        "document_022"
+      ],
+      "retrieved_scores": [
+        0.75,
+        0.375,
+        0.25,
+        0.25
+      ],
+      "recovered": true,
+      "latency_ms": 0.94
+    },
+    {
+      "question": "What does a vector database store and retrieve?",
+      "expected_doc_id": "document_028",
+      "expected_rank": 1,
+      "retrieved_doc_ids": [
+        "document_028",
+        "document_025",
+        "document_007",
+        "document_024",
+        "document_027"
+      ],
+      "retrieved_scores": [
+        0.5714,
+        0.4286,
+        0.2857,
+        0.2857,
+        0.2857
+      ],
+      "recovered": true,
+      "latency_ms": 0.99
+    },
+    {
+      "question": "What is the purpose of an information retrieval system?",
+      "expected_doc_id": "document_029",
+      "expected_rank": null,
+      "retrieved_doc_ids": [
+        "document_024",
+        "document_001",
+        "document_005",
+        "document_009"
+      ],
+      "retrieved_scores": [
+        0.6667,
+        0.5556,
+        0.5556,
+        0.5556
+      ],
+      "recovered": false,
+      "latency_ms": 1.33
+    },
+    {
+      "question": "How can relevant information be identified from a collection of documents?",
+      "expected_doc_id": "document_030",
+      "expected_rank": null,
+      "retrieved_doc_ids": [
+        "document_008",
+        "document_023",
+        "document_029",
+        "document_002",
+        "document_020"
+      ],
+      "retrieved_scores": [
+        0.6,
+        0.5,
+        0.5,
+        0.4,
+        0.4
+      ],
+      "recovered": false,
+      "latency_ms": 1.43
+    }
+  ]
+}
