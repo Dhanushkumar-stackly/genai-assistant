@@ -1,0 +1,17 @@
+﻿Extract the following fields from the document:
+- invoice_number
+- customer_name
+- customer_email
+- invoice_date
+- total_amount
+
+Instructions:
+1. Extract only information explicitly present in the document.
+2. If a field is missing, return null for that field.
+3. Return only valid JSON.
+4. Use exactly the field names shown above.
+
+DOCUMENT:
+{document}
+
+JSON:

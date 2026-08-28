@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .venv/
 __pycache__/
 *.pyc
@@ -6,3 +7,32 @@ __pycache__/
 *.log
 logs/
 outputs/
+=======
+# Virtual Environment
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Environment Variables
+.env
+
+# Database
+*.db
+
+# Logs
+logs/
+
+# Audio
+generated_audio/
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+*.db
+>>>>>>> a082d70d702a3bf8f095d3a7c7862a776493b298

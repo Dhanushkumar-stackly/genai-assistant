@@ -1,0 +1,7 @@
+﻿Invoice 2024-11-18
+
+Company: Acme Corp
+Customer: Jane Doe
+Amount Due: ,250.00
+Due Date: 2024-12-18
+Invoice Number: INV-2024-798
