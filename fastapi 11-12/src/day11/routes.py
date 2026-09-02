@@ -1,20 +1,24 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException, status
 
 from .config import Settings, get_settings
-from .rag import RAGService, rag_service
+from .models import (
+    AskRequest,
+    AskResponse,
+    DocumentResponse,
+    HealthResponse,
+    IngestRequest,
+    IngestResponse,
+    Source,
+)
+from .rag import RAGService, get_rag_service
 
 
 router = APIRouter()
 
 
-def get_rag_service() -> RAGService:
-    return rag_service
-
-
-@router.get("/")
+@router.get("/", response_model=dict[str, str])
 def root(
     settings: Settings = Depends(get_settings),
-    rag: RAGService = Depends(get_rag_service),
 ) -> dict[str, str]:
     return {
         "service": settings.app_name,
@@ -22,3 +26,71 @@ def root(
         "environment": settings.environment,
         "status": "running",
     }
+
+
+@router.get("/health", response_model=HealthResponse)
+def health(
+    settings: Settings = Depends(get_settings),
+    rag: RAGService = Depends(get_rag_service),
+) -> HealthResponse:
+    return HealthResponse(
+        status="ok",
+        service=settings.app_name,
+        version=settings.app_version,
+    )
+
+
+@router.post("/ingest", response_model=IngestResponse)
+def ingest(
+    request: IngestRequest,
+    rag: RAGService = Depends(get_rag_service),
+) -> IngestResponse:
+    result = rag.ingest_document(
+        title=request.title,
+        content=request.content,
+    )
+
+    return IngestResponse(**result)
+
+
+@router.post("/ask", response_model=AskResponse)
+def ask(
+    request: AskRequest,
+    rag: RAGService = Depends(get_rag_service),
+) -> AskResponse:
+    result = rag.ask(
+        question=request.question,
+        filters=request.filters,
+    )
+
+    return AskResponse(
+        answer=result["answer"],
+        sources=[
+            Source(**source)
+            for source in result["sources"]
+        ],
+    )
+
+
+@router.get(
+    "/documents/{document_id}",
+    response_model=DocumentResponse,
+)
+def get_document(
+    document_id: str,
+    rag: RAGService = Depends(get_rag_service),
+) -> DocumentResponse:
+    document = rag.get_document(document_id)
+
+    if document is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Document not found",
+        )
+
+    return DocumentResponse(
+        document_id=document["document_id"],
+        title=document["title"],
+        chunk_count=len(document["chunks"]),
+        status=document["status"],
+    )
