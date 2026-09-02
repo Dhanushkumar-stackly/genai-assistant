@@ -1,8 +1,8 @@
 from contextlib import asynccontextmanager
+from uuid import uuid4
 
 from fastapi import FastAPI
 
-from .config import get_settings
 from .database import init_db
 from .rag import rag_service
 from .routes import router
@@ -10,12 +10,9 @@ from .routes import router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    settings = get_settings()
-
     print(
-        f"Starting {settings.app_name} "
-        f"v{settings.app_version} "
-        f"in {settings.environment} environment"
+        "Starting GenAI RAG API v0.1.0 "
+        "in development environment"
     )
 
     await init_db()
@@ -24,15 +21,27 @@ async def lifespan(app: FastAPI):
 
     yield
 
-    print("Shutting down GenAI RAG API")
+    rag_service.shutdown()
 
-
-settings = get_settings()
 
 app = FastAPI(
-    title=settings.app_name,
-    version=settings.app_version,
+    title="GenAI RAG API",
+    version="0.1.0",
+    description="GenAI Retrieval-Augmented Generation API",
     lifespan=lifespan,
 )
 
+
 app.include_router(router)
+
+
+@app.get("/health")
+async def health():
+    request_id = str(uuid4())
+
+    return {
+        "status": "ok",
+        "service": "GenAI RAG API",
+        "version": "0.1.0",
+        "request_id": request_id,
+    }
