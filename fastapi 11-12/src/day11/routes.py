@@ -1,6 +1,7 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends
 
 from .config import Settings, get_settings
+from .database import get_db
 from .models import (
     AskRequest,
     AskResponse,
@@ -83,8 +84,10 @@ def get_document(
     document = rag.get_document(document_id)
 
     if document is None:
+        from fastapi import HTTPException
+
         raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
+            status_code=404,
             detail="Document not found",
         )
 

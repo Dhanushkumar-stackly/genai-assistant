@@ -8,6 +8,11 @@ class Settings(BaseSettings):
     app_version: str = "0.1.0"
     environment: str = "development"
 
+    model_version: str = "rag-model-v1"
+    prompt_version: str = "prompt-v1"
+
+    database_url: str = "sqlite+aiosqlite:///./genai.db"
+
     model_config = SettingsConfigDict(
         env_prefix="GENAI_",
         env_file=".env",
