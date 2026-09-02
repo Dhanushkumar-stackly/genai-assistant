@@ -5,6 +5,7 @@ class HealthResponse(BaseModel):
     status: str
     service: str
     version: str
+    request_id: str
 
 
 class IngestRequest(BaseModel):
@@ -13,6 +14,7 @@ class IngestRequest(BaseModel):
 
 
 class IngestResponse(BaseModel):
+    request_id: str
     document_id: str
     chunk_count: int
     status: str
@@ -29,11 +31,13 @@ class Source(BaseModel):
 
 
 class AskResponse(BaseModel):
+    request_id: str
     answer: str
     sources: list[Source]
 
 
 class DocumentResponse(BaseModel):
+    request_id: str
     document_id: str
     title: str
     chunk_count: int
