@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GenAI Evaluation Case",
+  "description": "Schema for one golden evaluation case used to evaluate the GenAI RAG pipeline.",
+  "type": "object",
+  "required": [
+    "case_id",
+    "question",
+    "category",
+    "expected_source_ids",
+    "answerability"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^D13-[0-9]{3}$",
+      "description": "Unique evaluation case identifier."
+    },
+    "question": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The user question sent to the RAG system."
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "answerable",
+        "unanswerable",
+        "ambiguous",
+        "multi_document",
+        "adversarial"
+      ],
+      "description": "Evaluation category for the case."
+    },
+    "expected_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "description": "Source document IDs expected to support the answer."
+    },
+    "answerability": {
+      "type": "string",
+      "enum": [
+        "answerable",
+        "unanswerable",
+        "ambiguous"
+      ],
+      "description": "Whether the question can be reliably answered from the available corpus."
+    },
+    "expected_facts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Optional facts that should appear or be supported by the answer."
+    },
+    "answer_notes": {
+      "type": "string",
+      "description": "Optional evaluator notes describing what a good answer should contain."
+    }
+  },
+  "additionalProperties": false
+}
