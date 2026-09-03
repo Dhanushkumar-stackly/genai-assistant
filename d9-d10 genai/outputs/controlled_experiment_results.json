@@ -1,0 +1,190 @@
+{
+  "experiment": {
+    "metrics": {
+      "total_questions": 30,
+      "retrieval_recall": 0.9667,
+      "top1_accuracy": 0.9667,
+      "mrr": 0.9667
+    },
+    "weak_questions": [
+      {
+        "question": "How can relevant information be identified from a collection of documents?",
+        "expected_doc_id": "document_030",
+        "expected_rank": null,
+        "retrieved_doc_ids": [
+          "document_029",
+          "document_026",
+          "document_025",
+          "document_027",
+          "document_028",
+          "document_015",
+          "document_019",
+          "document_024",
+          "document_013",
+          "document_016"
+        ],
+        "recovered": false
+      },
+      {
+        "question": "How are missing values, duplicates, and inconsistent data handled?",
+        "expected_doc_id": "document_013",
+        "expected_rank": 1,
+        "retrieved_doc_ids": [
+          "document_013",
+          "document_030",
+          "document_012",
+          "document_028",
+          "document_007",
+          "document_019",
+          "document_018",
+          "document_024",
+          "document_027",
+          "document_015"
+        ],
+        "recovered": true
+      },
+      {
+        "question": "How do AI systems analyze and interpret images and videos?",
+        "expected_doc_id": "document_004",
+        "expected_rank": 1,
+        "retrieved_doc_ids": [
+          "document_004",
+          "document_001",
+          "document_005",
+          "document_002",
+          "document_014",
+          "document_030",
+          "document_021",
+          "document_006",
+          "document_009",
+          "document_003"
+        ],
+        "recovered": true
+      },
+      {
+        "question": "How do neural networks learn during Deep Learning training?",
+        "expected_doc_id": "document_005",
+        "expected_rank": 1,
+        "retrieved_doc_ids": [
+          "document_005",
+          "document_009",
+          "document_002",
+          "document_014",
+          "document_010",
+          "document_021",
+          "document_006",
+          "document_016",
+          "document_015",
+          "document_004"
+        ],
+        "recovered": true
+      },
+      {
+        "question": "How do recommendation systems provide relevant items to users?",
+        "expected_doc_id": "document_020",
+        "expected_rank": 1,
+        "retrieved_doc_ids": [
+          "document_020",
+          "document_029",
+          "document_026",
+          "document_024",
+          "document_025",
+          "document_001",
+          "document_028",
+          "document_014",
+          "document_015",
+          "document_016"
+        ],
+        "recovered": true
+      }
+    ]
+  },
+  "baseline": {
+    "metrics": {
+      "total_questions": 30,
+      "retrieval_recall": 0.9667,
+      "top1_accuracy": 0.9667,
+      "mrr": 0.9667
+    },
+    "weak_questions": [
+      {
+        "question": "How can relevant information be identified from a collection of documents?",
+        "expected_doc_id": "document_030",
+        "expected_rank": null,
+        "retrieved_doc_ids": [
+          "document_029",
+          "document_026",
+          "document_025",
+          "document_027",
+          "document_028"
+        ],
+        "recovered": false
+      },
+      {
+        "question": "How are missing values, duplicates, and inconsistent data handled?",
+        "expected_doc_id": "document_013",
+        "expected_rank": 1,
+        "retrieved_doc_ids": [
+          "document_013",
+          "document_030",
+          "document_012",
+          "document_028",
+          "document_007"
+        ],
+        "recovered": true
+      },
+      {
+        "question": "How do AI systems analyze and interpret images and videos?",
+        "expected_doc_id": "document_004",
+        "expected_rank": 1,
+        "retrieved_doc_ids": [
+          "document_004",
+          "document_001",
+          "document_005",
+          "document_002",
+          "document_014"
+        ],
+        "recovered": true
+      },
+      {
+        "question": "How do neural networks learn during Deep Learning training?",
+        "expected_doc_id": "document_005",
+        "expected_rank": 1,
+        "retrieved_doc_ids": [
+          "document_005",
+          "document_009",
+          "document_002",
+          "document_014",
+          "document_010"
+        ],
+        "recovered": true
+      },
+      {
+        "question": "How do recommendation systems provide relevant items to users?",
+        "expected_doc_id": "document_020",
+        "expected_rank": 1,
+        "retrieved_doc_ids": [
+          "document_020",
+          "document_029",
+          "document_026",
+          "document_024",
+          "document_025"
+        ],
+        "recovered": true
+      }
+    ]
+  },
+  "improvement": {
+    "recall_change": 0.0,
+    "top1_accuracy_change": 0.0,
+    "mrr_change": 0.0
+  },
+  "interpretation": "Increasing top_k produced no recall improvement.",
+  "root_cause_fix": {
+    "original_metadata_key": "doc_id",
+    "actual_metadata_key": "chunk_id",
+    "example_chunk_id": "document_001_chunk_000",
+    "extracted_document_id": "document_001",
+    "reason": "Day 8 ChromaDB stores document identity inside chunk_id rather than doc_id."
+  }
+}
