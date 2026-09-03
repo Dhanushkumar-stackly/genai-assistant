@@ -1,0 +1,73 @@
+[
+  {
+    "question": "How can relevant information be identified from a collection of documents?",
+    "expected_doc_id": "document_030",
+    "day6_rank": null,
+    "day8_rank": null,
+    "day8_status": "context_available",
+    "failure_reasons": [
+      "expected_source_missing_from_day6_top_k",
+      "expected_source_missing_from_day8_top_k"
+    ],
+    "diagnosis": "retrieval_recall_failure",
+    "experiment_variable": "top_k",
+    "proposed_change": "Increase top_k and measure whether the expected source enters the retrieved set.",
+    "expected_outcome": "Improve retrieval for: document_030"
+  },
+  {
+    "question": "How are missing values, duplicates, and inconsistent data handled?",
+    "expected_doc_id": "document_013",
+    "day6_rank": 1,
+    "day8_rank": null,
+    "day8_status": "context_available",
+    "failure_reasons": [
+      "expected_source_missing_from_day8_top_k"
+    ],
+    "diagnosis": "mixed_retrieval_failure",
+    "experiment_variable": "top_k",
+    "proposed_change": "Run a controlled top_k experiment first to determine whether broader retrieval recovers the expected source.",
+    "expected_outcome": "Improve retrieval for: document_013"
+  },
+  {
+    "question": "How do AI systems analyze and interpret images and videos?",
+    "expected_doc_id": "document_004",
+    "day6_rank": 1,
+    "day8_rank": null,
+    "day8_status": "context_available",
+    "failure_reasons": [
+      "expected_source_missing_from_day8_top_k"
+    ],
+    "diagnosis": "mixed_retrieval_failure",
+    "experiment_variable": "top_k",
+    "proposed_change": "Run a controlled top_k experiment first to determine whether broader retrieval recovers the expected source.",
+    "expected_outcome": "Improve retrieval for: document_004"
+  },
+  {
+    "question": "How do neural networks learn during Deep Learning training?",
+    "expected_doc_id": "document_005",
+    "day6_rank": 1,
+    "day8_rank": null,
+    "day8_status": "context_available",
+    "failure_reasons": [
+      "expected_source_missing_from_day8_top_k"
+    ],
+    "diagnosis": "mixed_retrieval_failure",
+    "experiment_variable": "top_k",
+    "proposed_change": "Run a controlled top_k experiment first to determine whether broader retrieval recovers the expected source.",
+    "expected_outcome": "Improve retrieval for: document_005"
+  },
+  {
+    "question": "How do recommendation systems provide relevant items to users?",
+    "expected_doc_id": "document_020",
+    "day6_rank": 1,
+    "day8_rank": null,
+    "day8_status": "context_available",
+    "failure_reasons": [
+      "expected_source_missing_from_day8_top_k"
+    ],
+    "diagnosis": "mixed_retrieval_failure",
+    "experiment_variable": "top_k",
+    "proposed_change": "Run a controlled top_k experiment first to determine whether broader retrieval recovers the expected source.",
+    "expected_outcome": "Improve retrieval for: document_020"
+  }
+]
