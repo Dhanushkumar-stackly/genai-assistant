@@ -7,6 +7,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from .config import Settings, get_settings
 from .database import get_db
 from .logging_service import log_request
+from .metrics import request_metrics
 from .models import (
     AskRequest,
     AskResponse,
@@ -26,6 +27,7 @@ def root(
     settings: Settings = Depends(get_settings),
 ) -> dict[str, str]:
     return {
+        "message": "GenAI RAG API is running",
         "service": settings.app_name,
         "version": settings.app_version,
         "environment": settings.environment,
@@ -33,15 +35,13 @@ def root(
     }
 
 
-@router.post(
-    "/ingest",
-    response_model=IngestResponse,
-)
+@router.post("/ingest", response_model=IngestResponse)
 async def ingest(
     request: IngestRequest,
     rag: RAGService = Depends(get_rag_service),
     db=Depends(get_db),
 ) -> IngestResponse:
+
     request_id = str(uuid4())
     start_time = datetime.now(timezone.utc)
     start_counter = time.perf_counter()
@@ -51,9 +51,9 @@ async def ingest(
         content=request.content,
     )
 
-    latency_ms = (
-        time.perf_counter() - start_counter
-    ) * 1000
+    latency_ms = (time.perf_counter() - start_counter) * 1000
+
+    request_metrics.record_success(latency_ms)
 
     await log_request(
         db,
@@ -70,15 +70,13 @@ async def ingest(
     )
 
 
-@router.post(
-    "/ask",
-    response_model=AskResponse,
-)
+@router.post("/ask", response_model=AskResponse)
 async def ask(
     request: AskRequest,
     rag: RAGService = Depends(get_rag_service),
     db=Depends(get_db),
 ) -> AskResponse:
+
     request_id = str(uuid4())
     start_time = datetime.now(timezone.utc)
     start_counter = time.perf_counter()
@@ -88,9 +86,9 @@ async def ask(
         filters=request.filters,
     )
 
-    latency_ms = (
-        time.perf_counter() - start_counter
-    ) * 1000
+    latency_ms = (time.perf_counter() - start_counter) * 1000
+
+    request_metrics.record_success(latency_ms)
 
     await log_request(
         db,
@@ -120,17 +118,19 @@ async def get_document(
     rag: RAGService = Depends(get_rag_service),
     db=Depends(get_db),
 ) -> DocumentResponse:
+
     request_id = str(uuid4())
     start_time = datetime.now(timezone.utc)
     start_counter = time.perf_counter()
 
     document = rag.get_document(document_id)
 
-    latency_ms = (
-        time.perf_counter() - start_counter
-    ) * 1000
+    latency_ms = (time.perf_counter() - start_counter) * 1000
 
     if document is None:
+
+        request_metrics.record_failure(latency_ms)
+
         await log_request(
             db,
             request_id=request_id,
@@ -145,6 +145,8 @@ async def get_document(
             status_code=404,
             detail="Document not found",
         )
+
+    request_metrics.record_success(latency_ms)
 
     await log_request(
         db,

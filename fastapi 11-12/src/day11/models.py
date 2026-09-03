@@ -42,3 +42,9 @@ class DocumentResponse(BaseModel):
     title: str
     chunk_count: int
     status: str
+
+class MetricsResponse(BaseModel):
+    total_requests: int
+    successful_requests: int
+    failed_requests: int
+    average_latency_ms: float
