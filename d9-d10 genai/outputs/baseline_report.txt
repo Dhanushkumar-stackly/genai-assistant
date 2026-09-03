@@ -1,0 +1,17 @@
+============================================================
+DAY 09 - BASELINE CONFIGURATION
+============================================================
+
+Embedding model : all-MiniLM-L6-v2
+Chunk size      : 500
+Chunk overlap   : 50
+Top-k           : 5
+Filters         : none
+Score threshold : 0.35
+Prompt version  : v1
+Frozen at       : 2026-08-24T12:16:44.845029+00:00
+
+STATUS: BASELINE FROZEN
+
+No experimental changes have been applied.
+============================================================

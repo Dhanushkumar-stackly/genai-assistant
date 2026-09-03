@@ -8,7 +8,7 @@ from src.preprocessing.metadata import create_chunk_metadata
 
 DOCUMENT_FOLDER = "data/documents"
 
-CHUNK_SIZE = 500
+CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 100
 
 

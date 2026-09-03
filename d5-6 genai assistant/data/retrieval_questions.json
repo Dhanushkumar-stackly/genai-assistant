@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What is Artificial Intelligence and what tasks can AI systems perform?",
+    "expected_doc_id": "document_001"
+  },
+  {
+    "question": "What are the fundamental concepts of Machine Learning?",
+    "expected_doc_id": "document_002"
+  },
+  {
+    "question": "How does Natural Language Processing help computers understand human language?",
+    "expected_doc_id": "document_003"
+  },
+  {
+    "question": "How do AI systems analyze and interpret images and videos?",
+    "expected_doc_id": "document_004"
+  },
+  {
+    "question": "How do neural networks learn during Deep Learning training?",
+    "expected_doc_id": "document_005"
+  },
+  {
+    "question": "How does an agent learn through interaction with an environment?",
+    "expected_doc_id": "document_006"
+  },
+  {
+    "question": "Why is data preprocessing important before machine learning?",
+    "expected_doc_id": "document_007"
+  },
+  {
+    "question": "What is feature engineering and why is it useful in machine learning?",
+    "expected_doc_id": "document_008"
+  },
+  {
+    "question": "How is a machine learning model trained using data?",
+    "expected_doc_id": "document_009"
+  },
+  {
+    "question": "What is required to deploy a trained machine learning model?",
+    "expected_doc_id": "document_010"
+  },
+  {
+    "question": "Why should deployed machine learning models be monitored?",
+    "expected_doc_id": "document_011"
+  },
+  {
+    "question": "What checks are performed during data validation?",
+    "expected_doc_id": "document_012"
+  },
+  {
+    "question": "How are missing values, duplicates, and inconsistent data handled?",
+    "expected_doc_id": "document_013"
+  },
+  {
+    "question": "What is supervised learning and what does it require?",
+    "expected_doc_id": "document_014"
+  },
+  {
+    "question": "How does unsupervised learning discover patterns in data?",
+    "expected_doc_id": "document_015"
+  },
+  {
+    "question": "What is classification in machine learning?",
+    "expected_doc_id": "document_016"
+  },
+  {
+    "question": "What is regression used for in machine learning?",
+    "expected_doc_id": "document_017"
+  },
+  {
+    "question": "How does clustering group similar data points?",
+    "expected_doc_id": "document_018"
+  },
+  {
+    "question": "What is anomaly detection used to identify?",
+    "expected_doc_id": "document_019"
+  },
+  {
+    "question": "How do recommendation systems provide relevant items to users?",
+    "expected_doc_id": "document_020"
+  },
+  {
+    "question": "What is Generative AI and what type of content can it create?",
+    "expected_doc_id": "document_021"
+  },
+  {
+    "question": "What are Large Language Models used for?",
+    "expected_doc_id": "document_022"
+  },
+  {
+    "question": "What is prompt engineering and why is it important?",
+    "expected_doc_id": "document_023"
+  },
+  {
+    "question": "What are vector embeddings and how are they used?",
+    "expected_doc_id": "document_024"
+  },
+  {
+    "question": "How does semantic search retrieve information based on meaning?",
+    "expected_doc_id": "document_025"
+  },
+  {
+    "question": "How does Retrieval Augmented Generation use retrieved document context?",
+    "expected_doc_id": "document_026"
+  },
+  {
+    "question": "Why are large documents divided into smaller chunks?",
+    "expected_doc_id": "document_027"
+  },
+  {
+    "question": "What does a vector database store and retrieve?",
+    "expected_doc_id": "document_028"
+  },
+  {
+    "question": "What is the purpose of an information retrieval system?",
+    "expected_doc_id": "document_029"
+  },
+  {
+    "question": "How can relevant information be identified from a collection of documents?",
+    "expected_doc_id": "document_030"
+  }
+]
