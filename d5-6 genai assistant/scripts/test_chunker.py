@@ -5,7 +5,7 @@ from src.preprocessing.chunker import chunk_text
 
 DOCUMENT_FOLDER = "data/documents"
 
-CHUNK_SIZE = 500
+CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 100
 
 
