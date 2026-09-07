@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.log
+logs/
+outputs/
+=======
 # Virtual Environment
 venv/
 
@@ -25,3 +35,8 @@ generated_audio/
 Thumbs.db
 
 *.db
+<<<<<<< HEAD
+>>>>>>> a082d70d702a3bf8f095d3a7c7862a776493b298
+=======
+d9-d10 genai.zip
+>>>>>>> day-09
