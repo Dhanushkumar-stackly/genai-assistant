@@ -1,0 +1,6 @@
+{
+    "runner_version": "1.0.0",
+    "dataset_version": "day13-v1",
+    "dataset_path": "eval/golden_dataset.json",
+    "results_dir": "eval/results"
+}
