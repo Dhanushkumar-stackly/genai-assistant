@@ -1,57 +1,39 @@
 """
 Day 15 - Task 3
-Input validation and safe parsing.
+Strict input validation for user questions.
 """
 
-from typing import Any
-
-from pydantic import (
-    BaseModel,
-    ConfigDict,
-    Field,
-    StrictStr,
-    ValidationError,
-    field_validator,
-)
+from pydantic import BaseModel, ConfigDict, Field, StrictStr, field_validator
 
 
-MAX_QUESTION_LENGTH = 2000
+MAX_QUESTION_LENGTH = 500
 
 
 class QueryRequest(BaseModel):
-    """
-    Strict request schema for the RAG API.
-    """
+    """Validated request model for user questions."""
 
-    model_config = ConfigDict(
-        extra="forbid",
-        str_strip_whitespace=True,
-    )
+    model_config = ConfigDict(extra="forbid")
 
     question: StrictStr = Field(
         ...,
         min_length=1,
         max_length=MAX_QUESTION_LENGTH,
-        description="User question for the RAG system.",
     )
 
     @field_validator("question")
     @classmethod
     def validate_question(cls, value: str) -> str:
-        if not value.strip():
-            raise ValueError(
-                "Question must contain meaningful text."
-            )
+        """Reject empty or whitespace-only questions."""
+
+        value = value.strip()
+
+        if not value:
+            raise ValueError("Question cannot be empty")
 
         return value
 
 
-def validate_query(payload: Any) -> QueryRequest:
-    """
-    Safely validate incoming request data.
-
-    Raises:
-        ValidationError: when the payload is invalid.
-    """
+def validate_query(payload) -> QueryRequest:
+    """Validate and return a QueryRequest model."""
 
     return QueryRequest.model_validate(payload)
