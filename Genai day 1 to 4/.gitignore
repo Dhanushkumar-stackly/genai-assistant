@@ -1,42 +1,34 @@
-<<<<<<< HEAD
+# Virtual environments
 .venv/
+venv/
+
+# Python cache
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Environment variables / secrets
 .env
-*.log
-logs/
-outputs/
-=======
-# Virtual Environment
-venv/
+.env.*
+!.env.example
 
-# Python Cache
-__pycache__/
-*.pyc
-
-# Environment Variables
-.env
-
-# Database
+# Databases
 *.db
 
 # Logs
+*.log
 logs/
 
-# Audio
+# Generated files
+outputs/
 generated_audio/
 
 # VS Code
 .vscode/
 
-# OS Files
+# OS files
 .DS_Store
 Thumbs.db
 
-*.db
-<<<<<<< HEAD
->>>>>>> a082d70d702a3bf8f095d3a7c7862a776493b298
-=======
+# Archive
 d9-d10 genai.zip
->>>>>>> day-09
