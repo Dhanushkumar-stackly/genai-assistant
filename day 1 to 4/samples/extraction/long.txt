@@ -1,0 +1,13 @@
+﻿Billing Details:
+Invoice Number: 2024-5567-XYZ
+Customer:
+  Name: Jordan Smith
+  Email: jordan.smith@enterprise.com
+Date Issued: August 10, 2024
+Notes: Payment due within 30 days.
+
+Line items:
+- Consulting services: ,600.00
+- Travel reimbursement: .00
+
+Total Amount: ,080.00

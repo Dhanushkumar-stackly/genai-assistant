@@ -1,0 +1,11 @@
+﻿Summarize the following text concisely.
+
+Instructions:
+1. Keep the summary short and clear.
+2. Focus on the main topic and key facts.
+3. Do not add new information.
+
+TEXT:
+{document}
+
+SUMMARY:

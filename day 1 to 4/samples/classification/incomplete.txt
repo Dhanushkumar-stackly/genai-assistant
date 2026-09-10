@@ -1,0 +1,4 @@
+﻿Receipt
+
+Store: Corner Market
+Total: .75
