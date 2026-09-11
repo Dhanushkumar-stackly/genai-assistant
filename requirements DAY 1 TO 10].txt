@@ -1,0 +1,16 @@
+# GenAI Assistant Training Project
+# Day 1-4
+pytest
+
+# Day 5-8
+numpy
+chromadb
+sentence-transformers
+pydantic
+scikit-learn
+python-dotenv
+
+# Day 9-10
+chromadb
+sentence-transformers
+pytest
