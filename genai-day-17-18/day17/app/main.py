@@ -81,38 +81,14 @@ async def transcribe(
     }
 
 
-@app.post("/voice/ask")
-async def voice_ask(
-    payload: VoiceAskRequest,
-) -> dict:
-
-    rag = get_rag_client()
-
-    try:
-
-        result = await rag.ask(
-            transcript=payload.transcript,
-            filters=payload.filters,
-        )
-
-    except EmptyTranscriptError as exc:
-
-        raise HTTPException(
-            status_code=400,
-            detail=str(exc),
-        ) from exc
-
-    except RAGConnectionError as exc:
-
-        raise HTTPException(
-            status_code=502,
-            detail=str(exc),
-        ) from exc
+@app.post("/voice/input")
+async def voice_input(file: UploadFile = File(...)) -> dict:
+    audio = await validate_audio_upload(file)
 
     return {
-        "status": "answered",
-        "question": payload.transcript.strip(),
-        "answer": result.answer,
-        "sources": result.sources,
-        "rag_latency_ms": result.rag_latency_ms,
+        "request_id": audio.request_id,
+        "status": "accepted",
+        "filename": audio.filename,
+        "content_type": audio.content_type,
+        "size_bytes": audio.size_bytes,
     }
