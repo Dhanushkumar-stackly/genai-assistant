@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from app.pipeline import run_voice_flow
+from day18_app.pipeline import run_voice_flow
 
 
 def main() -> None:

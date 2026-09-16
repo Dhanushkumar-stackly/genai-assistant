@@ -1,6 +1,6 @@
 import time
 
-from app.latency_tracker import LatencyTracker
+from day18_app.latency_tracker import LatencyTracker
 
 
 def main():
