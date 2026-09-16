@@ -2,7 +2,7 @@ import io
 
 from fastapi.testclient import TestClient
 
-from app.main import app
+from day17_app.main import app
 
 
 client = TestClient(app)
@@ -127,7 +127,7 @@ def test_voice_and_text_have_same_grounded_answer(
     monkeypatch,
 ):
 
-    from app import rag_client
+    from day17_app import rag_client
 
     class FakeResponse:
 
@@ -213,7 +213,7 @@ def test_voice_and_text_have_same_grounded_answer(
         == text_result.sources
     )
 def test_voice_and_text_use_same_question():
-    from app.rag_client import clean_transcript
+    from day17_app.rag_client import clean_transcript
 
     voice_transcript = (
         "  What   is   the   leave   policy? "
@@ -227,3 +227,4 @@ def test_voice_and_text_use_same_question():
         clean_transcript(voice_transcript)
         == text_question
     )
+

@@ -1,6 +1,6 @@
 import pytest
 
-from app.rag_client import (
+from day17_app.rag_client import (
     EmptyTranscriptError,
     ExistingRAGClient,
 )
@@ -62,7 +62,7 @@ async def test_transcript_is_cleaned_and_sent_to_ask(
     monkeypatch,
 ):
 
-    import app.rag_client as module
+    import day17_app.rag_client as module
 
     monkeypatch.setattr(
         module.httpx,
@@ -123,3 +123,4 @@ def test_empty_string_transcript_is_rejected():
         asyncio.run(
             client.ask("")
         )
+

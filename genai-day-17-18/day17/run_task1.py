@@ -2,7 +2,7 @@ from pathlib import Path
 
 from fastapi.testclient import TestClient
 
-from app.main import app
+from day17_app.main import app
 
 
 client = TestClient(app)
@@ -74,3 +74,4 @@ def run_task1_demo():
 
 if __name__ == "__main__":
     run_task1_demo()
+
