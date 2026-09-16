@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from app.failure_recovery import (
+from day18_app.failure_recovery import (
     recoverable_voice_flow,
 )
 

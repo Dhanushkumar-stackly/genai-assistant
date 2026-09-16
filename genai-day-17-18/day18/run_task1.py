@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from app.tts import (
+from day18_app.tts import (
     GroundedAnswer,
     synthesize_grounded_answer,
 )

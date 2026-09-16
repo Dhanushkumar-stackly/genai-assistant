@@ -2,8 +2,8 @@ import io
 
 from fastapi.testclient import TestClient
 
-from app.main import app
-from app.voice_input import MAX_AUDIO_BYTES
+from day17_app.main import app
+from day17_app.voice_input import MAX_AUDIO_BYTES
 
 
 client = TestClient(app)
@@ -117,3 +117,4 @@ def test_mpeg_is_accepted():
         response.json()["status"]
         == "accepted"
     )
+

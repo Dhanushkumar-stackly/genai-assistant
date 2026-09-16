@@ -130,3 +130,4 @@ rag_client = ExistingRAGClient()
 
 def get_rag_client() -> ExistingRAGClient:
     return rag_client
+

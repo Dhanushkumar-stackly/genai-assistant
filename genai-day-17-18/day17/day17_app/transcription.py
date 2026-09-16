@@ -172,3 +172,4 @@ def transcribe_audio(
         latency_ms=round(latency_ms, 3),
         provider=provider.name,
     )
+

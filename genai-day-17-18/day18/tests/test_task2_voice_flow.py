@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from app.pipeline import (
+from day18_app.pipeline import (
     PipelineError,
     run_voice_flow,
 )
