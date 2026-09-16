@@ -1,0 +1,18 @@
+# Core
+numpy
+pydantic
+
+# Vector Database
+chromadb
+
+# Embeddings
+sentence-transformers
+
+# Machine Learning
+scikit-learn
+
+# Testing
+pytest
+
+# Environment Variables
+python-dotenv

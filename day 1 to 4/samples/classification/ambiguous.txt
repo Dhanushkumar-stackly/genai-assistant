@@ -1,0 +1,7 @@
+﻿Payment confirmation:
+
+Order #12345
+Amount: .00
+Date: 2024-06-22
+
+This document confirms that the payment has been received in full for an online purchase. Thank you for shopping with us.
