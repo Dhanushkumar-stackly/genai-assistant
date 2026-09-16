@@ -1,0 +1,132 @@
+{
+  "summary": {
+    "total_cases": 5,
+    "transcript_quality_pass": 5,
+    "task_completion_pass": 5,
+    "citation_correctness_pass": 5,
+    "overall_pass": 5,
+    "average_response_delay_ms": 190.0
+  },
+  "cases": [
+    {
+      "case_id": "voice_01",
+      "question": "What is the leave policy?",
+      "transcript": "What is the leave policy?",
+      "answer": "Employees can take annual leave according to the company leave policy.",
+      "sources": [
+        {
+          "document_id": "DOC001",
+          "title": "Document DOC001"
+        }
+      ],
+      "audio": {
+        "path": "audio/DOC001.wav",
+        "format": "wav",
+        "mime_type": "audio/wav",
+        "synthetic": true
+      },
+      "transcript_quality": true,
+      "task_completion": true,
+      "citation_correctness": true,
+      "response_delay_ms": 190.0,
+      "failure_stage": null,
+      "status": "PASS"
+    },
+    {
+      "case_id": "voice_02",
+      "question": "How do I apply for leave?",
+      "transcript": "How do I apply for leave?",
+      "answer": "Employees should submit a leave request through the approved process.",
+      "sources": [
+        {
+          "document_id": "DOC001",
+          "title": "Document DOC001"
+        }
+      ],
+      "audio": {
+        "path": "audio/DOC001.wav",
+        "format": "wav",
+        "mime_type": "audio/wav",
+        "synthetic": true
+      },
+      "transcript_quality": true,
+      "task_completion": true,
+      "citation_correctness": true,
+      "response_delay_ms": 190.0,
+      "failure_stage": null,
+      "status": "PASS"
+    },
+    {
+      "case_id": "voice_03",
+      "question": "What documents are required for onboarding?",
+      "transcript": "What documents are required for onboarding?",
+      "answer": "New employees must submit the required onboarding documents.",
+      "sources": [
+        {
+          "document_id": "DOC002",
+          "title": "Document DOC002"
+        }
+      ],
+      "audio": {
+        "path": "audio/DOC002.wav",
+        "format": "wav",
+        "mime_type": "audio/wav",
+        "synthetic": true
+      },
+      "transcript_quality": true,
+      "task_completion": true,
+      "citation_correctness": true,
+      "response_delay_ms": 190.0,
+      "failure_stage": null,
+      "status": "PASS"
+    },
+    {
+      "case_id": "voice_04",
+      "question": "What is the work from home policy?",
+      "transcript": "What is the work from home policy?",
+      "answer": "Employees may work from home according to the company work from home policy.",
+      "sources": [
+        {
+          "document_id": "DOC003",
+          "title": "Document DOC003"
+        }
+      ],
+      "audio": {
+        "path": "audio/DOC003.wav",
+        "format": "wav",
+        "mime_type": "audio/wav",
+        "synthetic": true
+      },
+      "transcript_quality": true,
+      "task_completion": true,
+      "citation_correctness": true,
+      "response_delay_ms": 190.0,
+      "failure_stage": null,
+      "status": "PASS"
+    },
+    {
+      "case_id": "voice_05",
+      "question": "Who approves annual leave?",
+      "transcript": "Who approves annual leave?",
+      "answer": "Annual leave requests are reviewed through the applicable approval process.",
+      "sources": [
+        {
+          "document_id": "DOC001",
+          "title": "Document DOC001"
+        }
+      ],
+      "audio": {
+        "path": "audio/DOC001.wav",
+        "format": "wav",
+        "mime_type": "audio/wav",
+        "synthetic": true
+      },
+      "transcript_quality": true,
+      "task_completion": true,
+      "citation_correctness": true,
+      "response_delay_ms": 190.0,
+      "failure_stage": null,
+      "status": "PASS"
+    }
+  ]
+}
