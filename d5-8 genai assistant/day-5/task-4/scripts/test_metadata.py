@@ -6,7 +6,7 @@ from src.preprocessing.chunker import chunk_text
 from src.preprocessing.metadata import create_chunk_metadata
 
 
-DOCUMENT_FOLDER = "data/documents"
+DOCUMENT_FOLDER = str(Path(__file__).resolve().parents[1] / "data" / "documents")
 
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 100

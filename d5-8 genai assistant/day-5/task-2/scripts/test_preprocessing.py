@@ -1,8 +1,9 @@
+from pathlib import Path
 from src.preprocessing.loader import load_documents
 from src.preprocessing.cleaner import clean_text
 
 
-DOCUMENT_FOLDER = "data/documents"
+DOCUMENT_FOLDER = str(Path(__file__).resolve().parents[1] / "data" / "documents")
 
 
 documents = load_documents(DOCUMENT_FOLDER)
