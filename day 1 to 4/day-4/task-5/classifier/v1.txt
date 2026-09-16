@@ -1,1 +1,0 @@
-Choose exactly one label: business, technical, general. Return the label and a short reason.
