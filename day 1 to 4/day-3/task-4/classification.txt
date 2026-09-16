@@ -1,0 +1,1 @@
+Classify the supplied text using exactly one of these labels: business, technical, general. Return only the valid label and one short reason based on the source.

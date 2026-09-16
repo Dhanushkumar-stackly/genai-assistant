@@ -1,0 +1,17 @@
+﻿Dear valued customer,
+
+Thank you for your business. This is a detailed statement of charges for the services provided throughout the month of November. Below you will find the full breakdown of items, fees, taxes, and discounts applied.
+
+Service Description:
+- Website design and migration
+- Monthly hosting and maintenance
+- SSL certificate renewal
+- Domain registration and DNS support
+
+Subtotal: ,900.00
+Tax: .00
+Total Amount Due: ,292.00
+Invoice Number: ACME-INV-2024-1112
+Billed To: Example Company
+Billing Date: November 30, 2024
+Due Date: December 30, 2024
