@@ -1,27 +1,7 @@
-# Virtual Environment
-venv/
-
-# Python Cache
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
 
-# Environment Variables
-.env
-
-# Database
-*.db
-
-# Logs
-logs/
-
-# Audio
-generated_audio/
-
-# VS Code
-.vscode/
-
-# OS Files
-.DS_Store
-Thumbs.db
-
-*.db
+# Pytest
+.pytest_cache/

@@ -1,0 +1,18 @@
+{
+  "day": 9,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunking": {
+    "chunk_size": 1000,
+    "chunk_overlap": 200
+  },
+  "retrieval": {
+    "top_k": 5,
+    "filters": {},
+    "score_threshold": null
+  },
+  "prompt": {
+    "version": "v1"
+  },
+  "frozen": true,
+  "created_at": "2026-08-27T06:24:13+00:00"
+}

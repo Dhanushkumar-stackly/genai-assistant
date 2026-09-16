@@ -1,0 +1,59 @@
+# GenAI Assistant Training Project — Recorded Outputs
+
+## Day 1-4 — Pytest
+Command: python -m pytest -q
+......... [100%]
+9 passed in 0.08s
+
+## Day 1-4 — Prompt Evaluation
+Total: 10 | Passed: 6 | Failed: 4
+Failed: case_05 malformed, case_06 malformed, case_07 empty, case_08 empty.
+
+## Day 5 — Chunk Quality
+Documents: 30 | Chunks: 60 | Empty: 0 | Duplicate IDs: 0 | Missing metadata: 0
+Min length: 198 | Max length: 500 | Average: 392.07
+Chunk size: 500 | Overlap: 100
+
+## Day 6 — Retrieval
+Embedding: all-MiniLM-L6-v2 | Vector DB: ChromaDB | Collection: genai_documents
+Retrieval test set: 10 questions
+
+## Day 7 — RAG
+Ingestion logs contain both successful and failed historical runs.
+
+## Day 8 — Grounded Generation
+Context-only answering, citation validation, and abstention are implemented.
+Actual LLM generation is not connected; a retrieved chunk is used as a temporary deterministic answer for pipeline testing.
+
+## Day 9 — Frozen Baseline
+Embedding: all-MiniLM-L6-v2 | Chunk: 500 | Overlap: 50 | Top-k: 5
+Filters: none | Threshold: 0.35 | Prompt: v1 | Status: BASELINE FROZEN
+
+## Day 9 — Controlled Experiment
+Questions: 30 | Recall: 0.9667 | Top-1: 0.9667 | MRR: 0.9667
+Increasing top-k did not recover the first weak question. Artifacts identify a doc_id/chunk_id metadata identity mismatch.
+
+## Day 10 Task 1 — Chunking
+Baseline (1000/200/5): Recall 0.8000 | Top-1 0.6000 | MRR 0.6700 | Latency 1.23 ms
+Experiment (500/100/5): Recall 0.8667 | Top-1 0.6333 | MRR 0.7117 | Latency 1.17 ms
+Change: Recall +0.0667 | Top-1 +0.0333 | MRR +0.0417 | Latency -0.06 ms
+
+## Day 10 Task 2 — Multi-Query
+Recall change 0.0000 | Top-1 change -0.0334 | MRR change -0.0167 | Latency +35.662 ms | Decision REJECT
+
+## Day 10 Task 3 — Reranking
+Candidate top-k 10 | Final top-k 5 | Reranker cross-encoder/ms-marco-MiniLM-L-6-v2
+Recall 0.9667 | Top-1 0.9333 | MRR 0.9444 | Latency 242.808 ms
+
+## Day 10 Task 4 — Best Configuration
+Decision SELECT_CANDIDATE | Configuration: chunk 500 / overlap 100 / top-k 5
+Previously good: 24 | Regressions: 0 | Improvements: 2
+
+## Day 10 Task 5 — Before / After
+30 questions | Recall 0.8000 -> 0.8667 | Top-1 0.6000 -> 0.6333
+MRR 0.6700 -> 0.7117 | Latency 1.23 -> 1.17 ms
+Improved 5 | Regressed 0 | Unchanged 25
+Improved IDs: Q9, Q10, Q11, Q16, Q19
+
+## Evidence Note
+Individual pytest pass/fail counts for Day 5-10 are not recorded in the available evidence. The commands are included for execution and verification.

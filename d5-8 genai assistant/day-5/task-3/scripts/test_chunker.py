@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 from pathlib import Path
+=======
+>>>>>>> origin/main
 from src.preprocessing.loader import load_documents
 from src.preprocessing.cleaner import clean_text
 from src.preprocessing.chunker import chunk_text
 
 
+<<<<<<< HEAD
 DOCUMENT_FOLDER = str(Path(__file__).resolve().parents[1] / "data" / "documents")
+=======
+DOCUMENT_FOLDER = "data/documents"
+>>>>>>> origin/main
 
 CHUNK_SIZE = 1000
 CHUNK_OVERLAP = 100

@@ -1,0 +1,31 @@
+# GenAI Assistant Training Project — Pytest Commands
+# Run from project root after activating the virtual environment.
+
+# Day 1-4
+python -m pytest -q
+
+# Day 5-8
+pytest -v
+pytest -v .\tests\test_abstention.py
+pytest -v .\tests\test_citation_mapper.py
+pytest -v .\tests\test_grounded_generation.py
+pytest -v .\tests\test_grounded_prompt.py
+pytest -v .\tests\test_response_schema.py
+pytest -v .\tests\test_day08_pipeline.py
+
+# Day 9-10
+pytest -v .\tests\test_baseline.py
+pytest -v .\tests\test_select_weak_questions.py
+pytest -v .\tests\test_diagnose_retrieval_failures.py
+pytest -v .\tests\test_controlled_experiment.py
+pytest -v .\tests\test_task1_experiments.py
+pytest -v .\tests\test_task1_chunking_experiment.py
+pytest -v .\tests\test_task2_multi_query.py
+pytest -v .\tests\test_day10_task3.py
+pytest -v .\tests\test_task4_choose_best_configuration.py
+pytest -v .\tests\test_task5_before_after_report.py
+pytest -v
+
+# Note: Day 1-4 recorded result: 9 passed in 0.08s.
+# Individual Day 5-10 pytest counts were not recorded in the available evidence,
+# so they are intentionally not invented here.
