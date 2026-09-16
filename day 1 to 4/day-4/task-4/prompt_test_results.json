@@ -9,7 +9,7 @@
       "case_id": "case_01",
       "prompt_version": "v1",
       "model_version": "test-model-v1",
-      "latency_ms": 0.017,
+      "latency_ms": 0.005,
       "validation_result": "PASS",
       "failure_reason": null,
       "expected_label": "valid"
@@ -18,7 +18,7 @@
       "case_id": "case_02",
       "prompt_version": "v1",
       "model_version": "test-model-v1",
-      "latency_ms": 0.003,
+      "latency_ms": 0.001,
       "validation_result": "PASS",
       "failure_reason": null,
       "expected_label": "valid"
@@ -27,7 +27,7 @@
       "case_id": "case_03",
       "prompt_version": "v1",
       "model_version": "test-model-v1",
-      "latency_ms": 0.001,
+      "latency_ms": 0.0,
       "validation_result": "PASS",
       "failure_reason": null,
       "expected_label": "ambiguous"
@@ -36,7 +36,7 @@
       "case_id": "case_04",
       "prompt_version": "v1",
       "model_version": "test-model-v1",
-      "latency_ms": 0.001,
+      "latency_ms": 0.0,
       "validation_result": "PASS",
       "failure_reason": null,
       "expected_label": "ambiguous"
@@ -45,7 +45,7 @@
       "case_id": "case_05",
       "prompt_version": "v1",
       "model_version": "test-model-v1",
-      "latency_ms": 0.001,
+      "latency_ms": 0.0,
       "validation_result": "FAIL",
       "failure_reason": "malformed_input",
       "expected_label": "malformed"
@@ -54,7 +54,7 @@
       "case_id": "case_06",
       "prompt_version": "v1",
       "model_version": "test-model-v1",
-      "latency_ms": 0.002,
+      "latency_ms": 0.0,
       "validation_result": "FAIL",
       "failure_reason": "malformed_input",
       "expected_label": "malformed"
@@ -63,7 +63,7 @@
       "case_id": "case_07",
       "prompt_version": "v1",
       "model_version": "test-model-v1",
-      "latency_ms": 0.002,
+      "latency_ms": 0.0,
       "validation_result": "FAIL",
       "failure_reason": "empty_input",
       "expected_label": "empty"
@@ -72,7 +72,7 @@
       "case_id": "case_08",
       "prompt_version": "v1",
       "model_version": "test-model-v1",
-      "latency_ms": 0.002,
+      "latency_ms": 0.0,
       "validation_result": "FAIL",
       "failure_reason": "empty_input",
       "expected_label": "empty"
@@ -81,7 +81,7 @@
       "case_id": "case_09",
       "prompt_version": "v1",
       "model_version": "test-model-v1",
-      "latency_ms": 0.003,
+      "latency_ms": 0.0,
       "validation_result": "PASS",
       "failure_reason": null,
       "expected_label": "valid"
@@ -90,7 +90,7 @@
       "case_id": "case_10",
       "prompt_version": "v1",
       "model_version": "test-model-v1",
-      "latency_ms": 0.002,
+      "latency_ms": 0.0,
       "validation_result": "PASS",
       "failure_reason": null,
       "expected_label": "valid"

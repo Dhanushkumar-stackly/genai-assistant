@@ -1,4 +1,13 @@
-<<<<<<< HEAD
+# Day 1–4 Taskwise Fixed Project
+
+This package keeps `main`, Day 1, Day 2, Day 3, and Day 4 separate and provides executable tests for the supplied task split.
+
+## Test
+
+From this project root:
+
+```bash
+pytest -q
 # AI Enterprise Project
 
 ## Setup
@@ -29,31 +38,5 @@ Create a `.env` file from `.env.example` and provide the required environment va
 
 ## 5. Run the Application
 Start the application and verify that it launches successfully using the smoke-check command.
-=======
-# GenAI Assistant — Day 1 to Day 4 Taskwise Split
-
-This is the corrected taskwise organization of the supplied project.
-
-```text
-main/
-day-1/
-day-2/
-day-3/
-  task-1/
-  task-2/
-  task-3/
-  task-4/
-  task-5/
-day-4/
-  task-1/
-  task-2/
-  task-3/
-  task-4/
-  task-5/
 ```
 
-Only Day 1 through Day 4 are included.
-
-Day 3 and Day 4 assignments follow the supplied practical roadmap. Missing
-deliverables are documented rather than invented.
->>>>>>> origin/main
