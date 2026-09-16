@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 fastapi
 uvicorn[standard]
 pydantic
@@ -6,6 +5,3 @@ pydantic-settings
 pytest
 httpx
 python-dotenv
-=======
-
->>>>>>> a082d70d702a3bf8f095d3a7c7862a776493b298
