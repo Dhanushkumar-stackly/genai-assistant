@@ -1,6 +1,6 @@
 import json
 
-from app.voice_logging import (
+from day17_app.voice_logging import (
     VoiceRequestLog,
     redact_transcript,
 )
@@ -105,3 +105,4 @@ def test_log_is_json_serializable():
 
     assert data["request_id"] == "req-json"
     assert data["rag_latency_ms"] == 120.5
+

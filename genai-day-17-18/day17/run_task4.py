@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from app.voice_logging import (
+from day17_app.voice_logging import (
     VoiceRequestLog,
     redact_transcript,
     write_voice_log,
@@ -53,3 +53,4 @@ with log_file.open(
     print(
         lines[-1].strip()
     )
+

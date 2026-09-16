@@ -1,6 +1,6 @@
 import asyncio
 
-from app.rag_client import ExistingRAGClient
+from day17_app.rag_client import ExistingRAGClient
 
 
 async def main():
@@ -32,3 +32,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+

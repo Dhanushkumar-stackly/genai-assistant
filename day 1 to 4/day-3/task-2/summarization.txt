@@ -1,0 +1,1 @@
+Summarize the supplied text in 3 concise bullet points. Use only facts present in the source. Do not add missing facts or assumptions.

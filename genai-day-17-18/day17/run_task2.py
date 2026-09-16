@@ -2,7 +2,7 @@ import io
 
 from fastapi.testclient import TestClient
 
-from app.main import app
+from day17_app.main import app
 
 
 client = TestClient(app)
@@ -25,3 +25,4 @@ response = client.post(
 print("STATUS:", response.status_code)
 print("RESPONSE:")
 print(response.json())
+
