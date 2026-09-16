@@ -1,9 +1,9 @@
 {
   "run_metadata": {
-    "timestamp_utc": "2026-09-07T08:35:20.802296+00:00",
+    "timestamp_utc": "2026-09-16T12:35:20.586921+00:00",
     "runner_version": "1.0.0",
     "dataset_version": "day13-v1",
-    "config_path": "C:\\Users\\Stackly_Official\\Desktop\\STACKLY\\d1-4 gen-ai-assistant\\fastapi 13 & 14\\eval\\config\\evaluation_config.json"
+    "config_path": "C:\\Users\\Stackly_Official\\Desktop\\STACKLY\\genai assistant 20 days challenge\\Genai_13-14\\eval\\config\\evaluation_config.json"
   },
   "configuration": {
     "runner_version": "1.0.0",
