@@ -1,0 +1,12 @@
+[
+{"case_id":"case_01","input":"Summarize this document.","expected_label":"valid"},
+{"case_id":"case_02","input":"Classify this text.","expected_label":"valid"},
+{"case_id":"case_03","input":"What does this mean?","expected_label":"ambiguous"},
+{"case_id":"case_04","input":"Can you process this?","expected_label":"ambiguous"},
+{"case_id":"case_05","input":null,"expected_label":"malformed"},
+{"case_id":"case_06","input":12345,"expected_label":"malformed"},
+{"case_id":"case_07","input":"","expected_label":"empty"},
+{"case_id":"case_08","input":"   ","expected_label":"empty"},
+{"case_id":"case_09","input":"Give a short summary of the text.","expected_label":"valid"},
+{"case_id":"case_10","input":"Please classify this document.","expected_label":"valid"}
+]

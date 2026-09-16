@@ -1,26 +1,19 @@
-# GenAI Assistant — Day 1 to Day 4 Taskwise Split
+# Day 1–4 Taskwise Fixed Project
 
-This is the corrected taskwise organization of the supplied project.
+This package keeps `main`, Day 1, Day 2, Day 3, and Day 4 separate and provides executable tests for the supplied task split.
 
-```text
-main/
-day-1/
-day-2/
-day-3/
-  task-1/
-  task-2/
-  task-3/
-  task-4/
-  task-5/
-day-4/
-  task-1/
-  task-2/
-  task-3/
-  task-4/
-  task-5/
+## Test
+
+From this project root:
+
+```bash
+pytest -q
 ```
 
-Only Day 1 through Day 4 are included.
+Expected result for the included task tests: **20 passed**.
 
-Day 3 and Day 4 assignments follow the supplied practical roadmap. Missing
-deliverables are documented rather than invented.
+Day 1 and Day 2 contain documentation only because the supplied taskwise source did not contain their implementation files. Missing implementation was not silently invented.
+
+Day 3 includes an offline model-client wrapper and prompt builders so the prompt work can be tested without an API key.
+
+Day 4 includes output models, response validation, a populated 10-case dataset, a repeatable prompt test runner, and version comparison fixtures.
