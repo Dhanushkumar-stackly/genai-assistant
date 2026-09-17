@@ -1,19 +1,20 @@
-# Day 1–4 Taskwise Fixed Project
+# GenAI Assistant — Day 1 to Day 4 Roadmap-Aligned Split
 
-This package keeps `main`, Day 1, Day 2, Day 3, and Day 4 separate and provides executable tests for the supplied task split.
+This ZIP is organized against the supplied **GENAI TEAM PRACTICAL TASK ROADMAP**.
 
-## Test
+## Roadmap mapping
 
-From this project root:
+- Day-1 — Repository foundation
+- Day-2 — JSON validation / engineering test-related material available in the supplied project
+- Day-3 — Prompt playground: summarization, extraction, classification, prompts and sample inputs
+- Day-4 — Structured prompt testing: prompt test runner and machine-readable results
 
-```bash
-pytest -q
-```
+## Important
+The supplied project does NOT contain every deliverable required by the roadmap.
+Missing roadmap items are not fabricated.
 
-Expected result for the included task tests: **20 passed**.
+All original files are preserved:
+- `Original - Day 1 to 4/` = untouched complete original project
+- `Additional Existing Files/` = existing files that do not map cleanly to the Day 1–4 roadmap scope
 
-Day 1 and Day 2 contain documentation only because the supplied taskwise source did not contain their implementation files. Missing implementation was not silently invented.
-
-Day 3 includes an offline model-client wrapper and prompt builders so the prompt work can be tested without an API key.
-
-Day 4 includes output models, response validation, a populated 10-case dataset, a repeatable prompt test runner, and version comparison fixtures.
+No original files were deleted or modified.
