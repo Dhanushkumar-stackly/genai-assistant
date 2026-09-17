@@ -1,8 +1,11 @@
-from src.rag.retrieve import retrieve
-from src.rag.generate import generate_context
-
+__test__ = False
 
 def main():
+
+    # Imports are intentionally inside main so pytest can discover this
+    # executable helper without importing the task's runtime dependencies.
+    from src.rag.retrieve import retrieve
+    from src.rag.generate import generate_context
 
     question = (
         "What is reinforcement learning?"
