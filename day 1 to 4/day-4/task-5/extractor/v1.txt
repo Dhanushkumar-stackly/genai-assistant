@@ -1,1 +1,0 @@
-Extract name and email. Return null when a field is missing.
