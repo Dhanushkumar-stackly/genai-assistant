@@ -1,1 +1,0 @@
-Extract the requested fields from the supplied document. Return missing values as null. Do not infer values that are not present in the source.
