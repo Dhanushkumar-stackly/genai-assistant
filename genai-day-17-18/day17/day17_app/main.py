@@ -13,6 +13,7 @@ from pydantic import BaseModel
 from .rag_client import (
     EmptyTranscriptError,
     RAGConnectionError,
+    clean_transcript,
     get_rag_client,
 )
 from .transcription import (
@@ -162,13 +163,17 @@ async def voice_ask(
 ) -> dict:
 
     total_started = time.perf_counter()
+    request_id = f"voice-ask-{int(time.time() * 1000)}"
 
     rag = get_rag_client()
 
     try:
+        cleaned_transcript = clean_transcript(
+            payload.transcript
+        )
 
         result = await rag.ask(
-            transcript=payload.transcript,
+            transcript=cleaned_transcript,
             filters=payload.filters,
         )
 
@@ -176,6 +181,7 @@ async def voice_ask(
 
         write_voice_log(
             VoiceRequestLog(
+                request_id=request_id,
                 transcript="[EMPTY]",
                 stage="transcript_validation",
                 status="failed",
@@ -200,8 +206,9 @@ async def voice_ask(
 
         write_voice_log(
             VoiceRequestLog(
+                request_id=request_id,
                 transcript=redact_transcript(
-                    payload.transcript
+                    cleaned_transcript
                 ),
                 stage="rag",
                 status="failed",
@@ -233,8 +240,9 @@ async def voice_ask(
 
     write_voice_log(
         VoiceRequestLog(
+            request_id=request_id,
             transcript=redact_transcript(
-                payload.transcript
+                cleaned_transcript
             ),
             rag_latency_ms=result.rag_latency_ms,
             total_latency_ms=total_latency,
@@ -245,7 +253,7 @@ async def voice_ask(
 
     return {
         "status": "answered",
-        "question": payload.transcript.strip(),
+        "question": cleaned_transcript,
         "answer": result.answer,
         "sources": result.sources,
         "rag_latency_ms": result.rag_latency_ms,

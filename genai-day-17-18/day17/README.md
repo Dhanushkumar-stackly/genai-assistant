@@ -587,6 +587,12 @@ For an external existing RAG API:
 RAG_API_URL=http://127.0.0.1:8000
 ```
 
+`run_task3.py` uses this variable. You can also override it for one run:
+
+```powershell
+python run_task3.py --base-url http://127.0.0.1:8000
+```
+
 ---
 
 # 12. Run the Application
@@ -608,6 +614,25 @@ Swagger API documentation:
 ```text
 http://127.0.0.1:8000/docs
 ```
+
+## Run the Task 3 RAG connection
+
+Task 3 calls the `/ask` endpoint from the existing Day 11/12 RAG service;
+starting the Day 17 voice API alone does not provide that endpoint. Start the
+existing RAG service in a second terminal from `Genai 11-12`:
+
+```powershell
+uvicorn src.day11.main:app --reload
+```
+
+Then, from this `day17` directory, run:
+
+```powershell
+python run_task3.py
+```
+
+If the RAG service uses another host or port, set `RAG_API_URL` or pass
+`--base-url`.
 
 ---
 

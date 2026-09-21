@@ -1192,3 +1192,8 @@ The complete Day 18 test suite passed with:
 ```
 
 This provides the implementation and automated evidence required for the Day 18 voice-assistant workflow.
+test_task1_tts.py
+test_task2_voice_flow.py
+test_task3_failure_recovery.py
+test_task4_latency.py
+test_task5_voice_evaluation.py
