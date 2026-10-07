@@ -1,0 +1,45 @@
+{
+    "release": {
+        "day": 20,
+        "status": "release-candidate",
+        "project": "GenAI Assistant",
+        "release_date": "2026-10-07"
+    },
+
+    "configuration": {
+        "environment": "development",
+        "configuration_status": "frozen"
+    },
+
+    "python": {
+        "version": "RECORD_ACTUAL_VERSION"
+    },
+
+    "dependencies": {
+        "status": "frozen",
+        "source": "requirements.txt"
+    },
+
+    "prompt": {
+        "version": "RECORD_ACTUAL_PROMPT_VERSION"
+    },
+
+    "model": {
+        "version": "RECORD_ACTUAL_MODEL_VERSION"
+    },
+
+    "database": {
+        "migration_status": "RECORD_ACTUAL_MIGRATION_STATE"
+    },
+
+    "evaluation": {
+        "dataset_version": "RECORD_ACTUAL_DATASET_VERSION"
+    },
+
+    "validation": {
+        "tests_required": true,
+        "evaluation_required": true,
+        "guardrail_validation_required": true
+    }
+}
+
